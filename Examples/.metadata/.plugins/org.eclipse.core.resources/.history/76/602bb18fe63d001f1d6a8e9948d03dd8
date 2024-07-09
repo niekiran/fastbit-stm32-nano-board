@@ -56,13 +56,29 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-static void display_vibgyor_sequence();
 static void display_gesture(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+/**
+  * @brief  Displays a VIBGYOR color sequence on the LCD.
+  *         This function assumes VIOLET, INDIGO, BLUE, GREEN, YELLOW, ORANGE, and RED are defined color values.
+  * @retval None
+  */
+static void display_vibgyor_sequence() {
+  uint8_t x_start = 0;
+  //uint8_t y_start = 0;
+  uint8_t x_width = 240;
+  uint8_t y_height = 34;
+  gc9a01a_fill_rect(x_start, x_width, y_height*0, y_height, VIOLET);
+  gc9a01a_fill_rect(x_start, x_width, y_height*1, y_height, INDIGO);
+  gc9a01a_fill_rect(x_start, x_width, y_height*2, y_height, BLUE);
+  gc9a01a_fill_rect(x_start, x_width, y_height*3, y_height, GREEN);
+  gc9a01a_fill_rect(x_start, x_width, y_height*4, y_height, YELLOW);
+  gc9a01a_fill_rect(x_start, x_width, y_height*5, y_height, ORANGE );
+  gc9a01a_fill_rect(x_start, x_width, y_height*6, y_height, RED);
+}
 /* USER CODE END 0 */
 
 /**
@@ -271,25 +287,6 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-/**
-  * @brief  Displays a VIBGYOR color sequence on the LCD.
-  *         This function assumes VIOLET, INDIGO, BLUE, GREEN, YELLOW, ORANGE, and RED are defined color values.
-  * @retval None
-  */
-static void display_vibgyor_sequence() {
-  uint8_t x_start = 0;
-  //uint8_t y_start = 0;
-  uint8_t x_width = 240;
-  uint8_t y_height = 34;
-  gc9a01a_fill_rect(x_start, x_width, y_height*0, y_height, VIOLET);
-  gc9a01a_fill_rect(x_start, x_width, y_height*1, y_height, INDIGO);
-  gc9a01a_fill_rect(x_start, x_width, y_height*2, y_height, BLUE);
-  gc9a01a_fill_rect(x_start, x_width, y_height*3, y_height, GREEN);
-  gc9a01a_fill_rect(x_start, x_width, y_height*4, y_height, YELLOW);
-  gc9a01a_fill_rect(x_start, x_width, y_height*5, y_height, ORANGE );
-  gc9a01a_fill_rect(x_start, x_width, y_height*6, y_height, RED);
-}
-
 /**
   * @brief  Prints a string on the LCD at a specified position and with specified colors.
   * @param  str: Pointer to the null-terminated string to be printed.

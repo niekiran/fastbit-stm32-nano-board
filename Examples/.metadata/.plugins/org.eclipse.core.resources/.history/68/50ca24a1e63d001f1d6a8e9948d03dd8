@@ -56,7 +56,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-static void display_vibgyor_sequence();
 static void display_gesture(void);
 /* USER CODE END PFP */
 

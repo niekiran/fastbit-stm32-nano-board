@@ -2742,18 +2742,18 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .text.gc9a01a_lcd_fill_image
                 0x08001e08       0x20 ./Core/Src/GC9A01A.o
                 0x08001e08                gc9a01a_lcd_fill_image
- .text.display_vibgyor_sequence
-                0x08001e28       0xee ./Core/Src/main.o
- *fill*         0x08001f16        0x2 
- .text.main     0x08001f18       0x38 ./Core/Src/main.o
-                0x08001f18                main
+ .text.main     0x08001e28       0x38 ./Core/Src/main.o
+                0x08001e28                main
  .text.SystemClock_Config
-                0x08001f50       0xb8 ./Core/Src/main.o
-                0x08001f50                SystemClock_Config
+                0x08001e60       0xb8 ./Core/Src/main.o
+                0x08001e60                SystemClock_Config
  .text.MX_I2C1_Init
-                0x08002008       0x80 ./Core/Src/main.o
+                0x08001f18       0x80 ./Core/Src/main.o
  .text.MX_GPIO_Init
-                0x08002088       0xf0 ./Core/Src/main.o
+                0x08001f98       0xf0 ./Core/Src/main.o
+ .text.display_vibgyor_sequence
+                0x08002088       0xee ./Core/Src/main.o
+ *fill*         0x08002176        0x2 
  .text.bsp_lcd_print
                 0x08002178       0x30 ./Core/Src/main.o
  .text.display_gesture
@@ -3418,24 +3418,24 @@ LOAD C:/ST/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x00007e36     0x148a ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o
  .debug_info    0x000092c0      0x5b9 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o
 
-.debug_abbrev   0x00000000     0x1f32
+.debug_abbrev   0x00000000     0x1f33
  .debug_abbrev  0x00000000      0x2a3 ./Core/Src/CST816S.o
  .debug_abbrev  0x000002a3      0x26b ./Core/Src/GC9A01A.o
  .debug_abbrev  0x0000050e       0xb3 ./Core/Src/font.o
- .debug_abbrev  0x000005c1      0x332 ./Core/Src/main.o
- .debug_abbrev  0x000008f3      0x1af ./Core/Src/stm32f3xx_hal_msp.o
- .debug_abbrev  0x00000aa2       0xa0 ./Core/Src/stm32f3xx_it.o
- .debug_abbrev  0x00000b42      0x1b6 ./Core/Src/syscalls.o
- .debug_abbrev  0x00000cf8       0xbc ./Core/Src/sysmem.o
- .debug_abbrev  0x00000db4      0x11a ./Core/Src/system_stm32f3xx.o
- .debug_abbrev  0x00000ece       0x24 ./Core/Startup/startup_stm32f303cctx.o
- .debug_abbrev  0x00000ef2      0x215 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o
- .debug_abbrev  0x00001107      0x31e ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o
- .debug_abbrev  0x00001425      0x1ca ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o
- .debug_abbrev  0x000015ef      0x260 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o
- .debug_abbrev  0x0000184f      0x1c2 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o
- .debug_abbrev  0x00001a11      0x300 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o
- .debug_abbrev  0x00001d11      0x221 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o
+ .debug_abbrev  0x000005c1      0x333 ./Core/Src/main.o
+ .debug_abbrev  0x000008f4      0x1af ./Core/Src/stm32f3xx_hal_msp.o
+ .debug_abbrev  0x00000aa3       0xa0 ./Core/Src/stm32f3xx_it.o
+ .debug_abbrev  0x00000b43      0x1b6 ./Core/Src/syscalls.o
+ .debug_abbrev  0x00000cf9       0xbc ./Core/Src/sysmem.o
+ .debug_abbrev  0x00000db5      0x11a ./Core/Src/system_stm32f3xx.o
+ .debug_abbrev  0x00000ecf       0x24 ./Core/Startup/startup_stm32f303cctx.o
+ .debug_abbrev  0x00000ef3      0x215 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o
+ .debug_abbrev  0x00001108      0x31e ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o
+ .debug_abbrev  0x00001426      0x1ca ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o
+ .debug_abbrev  0x000015f0      0x260 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o
+ .debug_abbrev  0x00001850      0x1c2 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o
+ .debug_abbrev  0x00001a12      0x300 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o
+ .debug_abbrev  0x00001d12      0x221 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o
 
 .debug_aranges  0x00000000      0x918
  .debug_aranges
