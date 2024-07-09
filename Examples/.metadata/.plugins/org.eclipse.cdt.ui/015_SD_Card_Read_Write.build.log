@@ -1,0 +1,10 @@
+09:49:19 **** Build of configuration Debug for project 015_SD_Card_Read_Write ****
+make -j4 all 
+arm-none-eabi-size  015_SD_Card_Read_Write.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43672	    116	  11084	  54872	   d658	015_SD_Card_Read_Write.elf
+Finished building: default.size.stdout
+ 
+
+09:49:20 Build Finished. 0 errors, 0 warnings. (took 1s.237ms)
+

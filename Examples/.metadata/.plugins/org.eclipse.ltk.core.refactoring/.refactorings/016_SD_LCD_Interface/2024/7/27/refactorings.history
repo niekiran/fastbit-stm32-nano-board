@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;016_SD_LCD_Interface/Core/Src/cordinates.h&apos; to &apos;cordinates.c&apos;" description="Rename resource &apos;cordinates.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/cordinates.h" name="cordinates.c" stamp="1720083788958" updateReferences="true"/>
+</session>

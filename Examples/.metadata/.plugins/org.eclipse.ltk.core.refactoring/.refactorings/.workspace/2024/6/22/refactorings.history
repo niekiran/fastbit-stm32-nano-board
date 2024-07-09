@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;012_USB_HID_Mouse/Core/Src/i2c.c&apos;" deleteContents="false" description="Delete resource &apos;012_USB_HID_Mouse/Core/Src/i2c.c&apos;" element1="/012_USB_HID_Mouse/Core/Src/i2c.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1717241090026"/>&#x0A;<refactoring comment="Delete resource &apos;012_USB_HID_Mouse/Core/Inc/i2c.h&apos;" deleteContents="false" description="Delete resource &apos;012_USB_HID_Mouse/Core/Inc/i2c.h&apos;" element1="/012_USB_HID_Mouse/Core/Inc/i2c.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1717241094515"/>
+</session>

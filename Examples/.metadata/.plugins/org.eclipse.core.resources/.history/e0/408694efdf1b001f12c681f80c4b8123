@@ -1,0 +1,26 @@
+/*
+ * mouse_click.c
+ *
+ *  Created on: May 25, 2024
+ *      Author: Shreyas Acharya, BHARATI SOFTWARE
+ */
+
+#include "mouse_click.h"
+#include "usbd_hid.h"
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
+void handle_mouse_click(mouseHID *mouse_hid)
+{
+  GPIO_PinState pin_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+  if (pin_state == GPIO_PIN_SET)
+  {
+    mouse_hid->button = 1;
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t *)&mouse_hid, sizeof(mouse_hid));
+    HAL_Delay(50);
+
+    mouse_hid->button = 0;
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t *)&mouse_hid, sizeof(mouse_hid));
+    // button_flag = 0;
+  }
+}

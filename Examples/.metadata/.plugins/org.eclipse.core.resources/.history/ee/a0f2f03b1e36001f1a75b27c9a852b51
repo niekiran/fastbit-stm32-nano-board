@@ -1,0 +1,127 @@
+/*
+ * CST816S.c
+ *
+ *  Created on: Jun 29, 2024
+ *      Author: shrey
+ */
+#include <CST816S.h>
+#include "main.h"
+
+#define CST816S_ADDRESS     0x15 // Update with the correct I2C address for CST816S if different
+
+static uint8_t is_touch_detected = 0;
+static struct touch_data data;
+
+void CST816S_read_touch(void) {
+    uint8_t data_raw[8];
+    uint8_t reg_addr = 0x01;
+    if (HAL_I2C_Master_Transmit(&hi2c1, CST816S_ADDRESS<<1, &reg_addr, 1, HAL_MAX_DELAY) != HAL_OK) {
+        while (1);
+    }
+   // HAL_I2C_Master_Transmit(hi2c, DevAddress, pData, Size, Timeout)
+    HAL_I2C_Master_Receive(&hi2c1, CST816S_ADDRESS, data_raw, 6, HAL_MAX_DELAY);
+
+    data.gestureID = data_raw[0];
+    data.points = data_raw[1];
+    data.event = data_raw[2] >> 6;
+    data.x = ((data_raw[2] & 0xF) << 8) + data_raw[3];
+    data.y = ((data_raw[4] & 0xF) << 8) + data_raw[5];
+}
+
+struct touch_data* CST816S_get_data(void) {
+    return &data;
+}
+
+void CST816S_handleISR(void) {
+    is_touch_detected = 1;
+}
+
+void CST816S_hw_reset(void) {
+    HAL_GPIO_WritePin(TP_RST_GPIO_Port, TP_RST_Pin, GPIO_PIN_SET);
+    HAL_Delay(50);
+    HAL_GPIO_WritePin(TP_RST_GPIO_Port, TP_RST_Pin, GPIO_PIN_RESET);
+    HAL_Delay(300);
+    HAL_GPIO_WritePin(TP_RST_GPIO_Port, TP_RST_Pin, GPIO_PIN_SET);
+    HAL_Delay(300);
+}
+
+void CST816S_init(void) {
+    CST816S_hw_reset();
+    HAL_Delay(1000);
+
+    uint8_t pdata = 0;
+    for(uint8_t i = 0; i<=0xff; i++) {
+
+    	HAL_I2C_Master_Receive(&hi2c1, 0xB0 ,&data.version, 1, HAL_MAX_DELAY);
+    	//HAL_I2C_Master_Transmit(&hi2c1, CST816S_ADDRESS<<1, pdata, 1, HAL_MAX_DELAY);
+    }
+    uint8_t reg_version = 0x01;
+    uint8_t reg_version_info  = 0xa7;
+    uint8_t dat[2];
+
+    HAL_I2C_Mem_Write(&hi2c1, CST816S_ADDRESS<<1, 0x1f, 1, &reg_version, 1, HAL_MAX_DELAY);
+  	//HAL_I2C_Mem_Read(&hi2c1, CST816S_ADDRESS, 0xA7, I2C_MEMADD_SIZE_8BIT, dat, 1, HAL_MAX_DELAY);
+
+   //HAL_I2C_Master_Transmit(&hi2c1, CST816S_ADDRESS << 1, 0xa7, 1, HAL_MAX_DELAY); ;
+    HAL_I2C_Master_Receive(&hi2c1, CST816S_ADDRESS << 1, &data.version, 1, HAL_MAX_DELAY);
+
+    HAL_I2C_Master_Transmit(&hi2c1, CST816S_ADDRESS << 1, &reg_version_info, 1, HAL_MAX_DELAY);
+    HAL_I2C_Master_Receive(&hi2c1, CST816S_ADDRESS << 1, data.versionInfo, 3, HAL_MAX_DELAY);
+}
+
+uint8_t CST816S_data_available(void) {
+    uint8_t data_flag = 0;
+//    HAL_NVIC_DisableIRQ(EXTI2_TSC_IRQn);
+    HAL_NVIC_DisableIRQ(EXTI9_5_IRQn);
+    if (is_touch_detected) {
+        CST816S_read_touch();
+        is_touch_detected = 0;
+        data_flag = 1;
+    } else {
+        data_flag = 0;
+    }
+
+//    HAL_NVIC_EnableIRQ(EXTI2_TSC_IRQn);
+    HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
+    return data_flag;
+}
+
+void CST816S_sleep() {
+    // Add sleep code if needed
+}
+
+const char* CST816S_gesture() {
+    switch (data.gestureID) {
+        case NONE:
+            return "NONE";
+        case SWIPE_DOWN:
+            return "SWIPE DOWN";
+        case SWIPE_UP:
+            return "SWIPE UP";
+        case SWIPE_LEFT:
+            return "SWIPE LEFT";
+        case SWIPE_RIGHT:
+            return "SWIPE RIGHT";
+        case SINGLE_CLICK:
+            return "SINGLE CLICK";
+        case DOUBLE_CLICK:
+            return "DOUBLE CLICK";
+        case LONG_PRESS:
+            return "LONG PRESS";
+        default:
+            return "UNKNOWN";
+    }
+}
+
+#if 0
+void CST816S_i2c_read(uint16_t addr, uint8_t reg_addr, uint8_t *reg_data, size_t length) {
+    HAL_I2C_Mem_Read(&hi2c2, addr << 1, reg_addr, I2C_MEMADD_SIZE_8BIT, reg_data, length, HAL_MAX_DELAY);
+}
+
+void CST816S_i2c_write(uint8_t addr, uint8_t reg_addr, const uint8_t *reg_data, size_t length) {
+    HAL_I2C_Mem_Write(&hi2c2, addr << 1, reg_addr, I2C_MEMADD_SIZE_8BIT, (uint8_t*)reg_data, length, HAL_MAX_DELAY);
+}
+#endif
+
+

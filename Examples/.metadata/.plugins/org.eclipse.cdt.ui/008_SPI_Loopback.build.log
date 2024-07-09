@@ -1,0 +1,18 @@
+16:08:11 **** Build of configuration Debug for project 008_SPI_Loopback ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc -o "008_SPI_Loopback.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\008_SPI_Loopback\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="008_SPI_Loopback.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 008_SPI_Loopback.elf
+ 
+arm-none-eabi-size  008_SPI_Loopback.elf 
+arm-none-eabi-objdump -h -S 008_SPI_Loopback.elf  > "008_SPI_Loopback.list"
+   text	   data	    bss	    dec	    hex	filename
+  14732	    104	   2008	  16844	   41cc	008_SPI_Loopback.elf
+Finished building: default.size.stdout
+ 
+Finished building: 008_SPI_Loopback.list
+ 
+
+16:08:14 Build Finished. 0 errors, 0 warnings. (took 2s.394ms)
+

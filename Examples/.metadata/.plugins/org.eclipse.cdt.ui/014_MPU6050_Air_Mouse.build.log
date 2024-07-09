@@ -1,0 +1,10 @@
+13:36:50 **** Build of configuration Debug for project 014_MPU6050_Air_Mouse ****
+make -j4 all 
+arm-none-eabi-size  014_MPU6050_Air_Mouse.elf 
+   text	   data	    bss	    dec	    hex	filename
+  63340	    976	   4088	  68404	  10b34	014_MPU6050_Air_Mouse.elf
+Finished building: default.size.stdout
+ 
+
+13:36:51 Build Finished. 0 errors, 0 warnings. (took 793ms)
+

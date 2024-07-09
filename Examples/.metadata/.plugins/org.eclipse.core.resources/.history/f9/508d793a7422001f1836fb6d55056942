@@ -1,0 +1,442 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2024 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "usb_device.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "usbd_hid.h"
+#include "mpu6050.h"
+#include "map.h"
+#include <stdio.h>
+#include <math.h>
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+typedef struct {
+  uint8_t button;
+  int8_t mouse_x;
+  int8_t mouse_y;
+  int8_t wheel;
+} mouseHID;
+mouseHID mouse_hid = {0, 0, 0, 0};
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+#define THRESHOLD 1
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+float temperature = 0;
+MPU6050_t MPU6050_Data0;
+char data[120];
+
+/* Variables to store previous state */
+unsigned long last_read_time;
+float last_x_angle;
+float last_y_angle;
+float last_z_angle;
+float last_gyro_x_angle;
+float last_gyro_y_angle;
+float last_gyro_z_angle;
+
+/* Function to set the previous state */
+void set_last_read_angle_data(unsigned long time, float x, float y, float z, float x_gyro, float y_gyro, float z_gyro) {
+  last_read_time = time;
+  last_x_angle = x;
+  last_y_angle = y;
+  last_z_angle = z;
+  last_gyro_x_angle = x_gyro;
+  last_gyro_y_angle = y_gyro;
+  last_gyro_z_angle = z_gyro;
+}
+
+/* Getters for previous state */
+
+
+/* Global variables for gyroscope calibration */
+float base_x_gyro = 0;
+float base_y_gyro = 0;
+float base_z_gyro = 0;
+float base_x_accel = 0;
+float base_y_accel = 0;
+float base_z_accel = 0;
+
+float gyro_angle_z = 0;
+
+/* Scaling factor for gyroscope data */
+float GYRO_FACTOR = 0;
+
+unsigned long t_now = 0, t_last = 0;
+float dt = 0;
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
+UART_HandleTypeDef huart1;
+
+/* USER CODE BEGIN PV */
+extern USBD_HandleTypeDef hUsbDeviceFS;
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_I2C1_Init(void);
+static void MX_USART1_UART_Init(void);
+/* USER CODE BEGIN PFP */
+static unsigned long get_last_time();
+static float get_last_x_angle();
+static float get_last_y_angle();
+static float get_last_z_angle();
+static float get_last_gyro_x_angle();
+static float get_last_gyro_y_angle();
+static float get_last_gyro_z_angle();
+
+void update_mouse_movement(double gyroz_thresh, double gyroy_thresh, mouseHID *mouse_hid);
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+
+  /* USER CODE BEGIN 1 */
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_I2C1_Init();
+  MX_USB_DEVICE_Init();
+  MX_USART1_UART_Init();
+  /* USER CODE BEGIN 2 */
+  MPU6050_Init();
+  char     data[120];
+  GYRO_FACTOR = 131.0;
+  const double RADIANS_TO_DEGREES = 57.2958; // 180/3.14159
+
+
+  double gyroz_thresh = 0.0;
+  double gyroy_thresh = 0.0;
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+    t_now = HAL_GetTick();
+    MPU6050_Read_All(&MPU6050_Data0);
+    dt = (t_now - get_last_time()) / 1000.0;
+
+    /* Gyroscope data processing */
+    double gyro_x = MPU6050_Data0.Gyro_X_RAW / GYRO_FACTOR;
+    double gyro_y = MPU6050_Data0.Gyro_Y_RAW / GYRO_FACTOR;
+    double gyro_z = MPU6050_Data0.Gyro_Z_RAW / GYRO_FACTOR;
+//    printf("%.2f   %.2f  %.2f\n", gyro_x, gyro_y, gyro_z);
+    /* Accelerometer data processing */
+    double accel_x = MPU6050_Data0.Accel_X_RAW;
+    double accel_y = MPU6050_Data0.Accel_Y_RAW;
+    double accel_z = MPU6050_Data0.Accel_Z_RAW;
+//    printf("%.2f   %.2f  %.2f\n", accel_x, accel_y, accel_z);
+    /* Calculate angles from accelerometer data */
+    double accel_angle_y = asin(accel_y / sqrt(accel_y * accel_y + accel_z * accel_z)) * RADIANS_TO_DEGREES;
+    double accel_angle_x = asin(accel_x / sqrt(accel_x * accel_x + accel_z * accel_z)) * RADIANS_TO_DEGREES;
+    double accel_angle_z = 0;
+    //  radianx = asin(accx / sqrt(accx * accx + accz * accz)); // Fix the arguments passed to asin
+    //  radiany = asin(accy / sqrt(accy * accy + accz * accz)); // Fix the arguments passed to asin
+
+      /* Convert roll and pitch angles from radians to degrees */
+    //  *gyrox_thresh = radianx * (180.0 / M_PI); // Roll
+    //  *gyrox_thresh = radiany * (180.0 / M_PI); // Pitch
+    /* Compute the (filtered) gyro angles */
+    double gyro_angle_x = gyro_x * dt + get_last_x_angle();
+    double gyro_angle_y = gyro_y * dt + get_last_y_angle();
+
+    int gz_threshold = 2;
+    if (gyro_z < gz_threshold && gyro_z > -gz_threshold) {
+      gyro_z = 0;
+    }
+
+    gyro_angle_z = gyro_z * dt + get_last_z_angle();
+
+    /* Compute the drifting gyro angles */
+    double unfiltered_gyro_angle_x = gyro_x * dt + get_last_gyro_x_angle();
+    double unfiltered_gyro_angle_y = gyro_y * dt + get_last_gyro_y_angle();
+    double unfiltered_gyro_angle_z = gyro_z * dt + get_last_gyro_z_angle();
+
+    /* Apply the complementary filter */
+    const double alpha = 0.96;
+    double angle_x = alpha * gyro_angle_x + (1.0 - alpha) * accel_angle_x;
+    double angle_y = alpha * gyro_angle_y + (1.0 - alpha) * accel_angle_y;
+    double angle_z = gyro_angle_z;
+    //printf("%d   %d\n", gyro_angle_z, accel_angle_y);
+//
+//    /* Update the saved data with the latest values */
+    set_last_read_angle_data(t_now, angle_x, angle_y, angle_z, unfiltered_gyro_angle_x, unfiltered_gyro_angle_y, unfiltered_gyro_angle_z);
+    update_mouse_movement(angle_z, angle_y, &mouse_hid);
+    //printf("%d   %d\n", mouse_hid.mouse_x, mouse_hid.mouse_y);
+    //printf("%d   %d\n", gyro_angle_z, accel_angle_y);
+//    printf("%d   %d\n", angle_z, angle_y);
+    USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t *)&mouse_hid, sizeof(mouse_hid));
+//    HAL_UART_Transmit(&huart1, (uint8_t *)data, sprintf(data, "%1.0f%, %1.0f%",angle_z, angle_y), HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart1, (uint8_t *)data, sprintf(data, "%1.0f%\n",angle_y), HAL_MAX_DELAY);
+//    HAL_UART_Transmit(&huart1, (uint8_t *)data, sprintf(data, "%1.0f\n",angle_z), HAL_MAX_DELAY);
+    HAL_Delay(5);
+  }
+  /* USER CODE END 3 */
+}
+
+/**
+  * @brief System Clock Configuration
+  * @retval None
+  */
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Initializes the CPU, AHB and APB buses clocks
+  */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB|RCC_PERIPHCLK_USART1
+                              |RCC_PERIPHCLK_I2C1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
+  PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_HSI;
+  PeriphClkInit.USBClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x2000090E;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 38400;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
+}
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_GPIO_Init(void)
+{
+/* USER CODE BEGIN MX_GPIO_Init_1 */
+/* USER CODE END MX_GPIO_Init_1 */
+
+  /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+/* USER CODE BEGIN MX_GPIO_Init_2 */
+/* USER CODE END MX_GPIO_Init_2 */
+}
+
+/* USER CODE BEGIN 4 */
+unsigned long get_last_time() { return last_read_time; }
+float get_last_x_angle() { return last_x_angle; }
+float get_last_y_angle() { return last_y_angle; }
+float get_last_z_angle() { return last_z_angle; }
+float get_last_gyro_x_angle() { return last_gyro_x_angle; }
+float get_last_gyro_y_angle() { return last_gyro_y_angle; }
+float get_last_gyro_z_angle() { return last_gyro_z_angle; }
+
+void update_mouse_movement(double gyroz_thresh, double gyroy_thresh, mouseHID *mouse_hid)
+{
+  if ( (gyroz_thresh > THRESHOLD) || (gyroz_thresh < -THRESHOLD) )  {
+    mouse_hid->mouse_x = -(gyroz_thresh/15);
+  } else {
+    mouse_hid->mouse_x = 0;
+  }
+
+  if ( (gyroy_thresh > THRESHOLD) || (gyroy_thresh < -THRESHOLD) ) {
+    mouse_hid->mouse_y = -(gyroy_thresh/15);
+  } else {
+    mouse_hid->mouse_y = 0;
+  }
+//  printf("%d   %d\n", mouse_hid->mouse_x, mouse_hid->mouse_y);
+}
+/* USER CODE END 4 */
+
+/**
+  * @brief  This function is executed in case of error occurrence.
+  * @retval None
+  */
+void Error_Handler(void)
+{
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
+  __disable_irq();
+  while (1)
+  {
+  }
+  /* USER CODE END Error_Handler_Debug */
+}
+
+#ifdef  USE_FULL_ASSERT
+/**
+  * @brief  Reports the name of the source file and the source line number
+  *         where the assert_param error has occurred.
+  * @param  file: pointer to the source file name
+  * @param  line: assert_param error line source number
+  * @retval None
+  */
+void assert_failed(uint8_t *file, uint32_t line)
+{
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */

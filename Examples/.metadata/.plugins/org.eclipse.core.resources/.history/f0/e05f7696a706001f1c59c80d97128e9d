@@ -1,0 +1,59 @@
+/*
+ * obstacle.c
+ *
+ *  Created on: Apr 25, 2024
+ *      Author: shrey
+ */
+
+#include "obstacle.h"
+#include "background.h"
+
+void bsp_lcd_set_obstacle(bsp_lcd_t *hlcd)
+{
+	for(int x_start=240;x_start>=0;x_start--){
+
+	uint8_t top_pillar_b=60;
+	//uint8_t top_pillar_b1=40;
+	uint8_t bottom_t=top_pillar_b+80;
+	//uint8_t bottom_t1=top_pillar_b1+80;
+	uint8_t bottom_b=240-bottom_t;
+	//uint8_t	bottom_b1=240-bottom_t1;
+
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE,x_start,30,0,top_pillar_b);
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE,x_start,30,bottom_t,bottom_b);
+//
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE,x_start+70,30,0,top_pillar_b1);
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE,x_start+70,30,bottom_t1,bottom_b1);
+	//HAL_Delay(50);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND,0,240,0,240);
+
+	}
+	//bsp_lcd_fill_rect(hlcd, OBSTACLE,105,(BSP_LCD_OBSTACLE_WIDTH),0,(BSP_LCD_OBSTACLE_HEIGHT));
+}
+//bsp_lcd_fill_rect(hlcd, OBSTACLE,105,30,0,80);
+		//bsp_lcd_fill_rect(hlcd, OBSTACLE,105,30,160,80);
+
+void move_obstacle(bsp_lcd_t *hlcd, int x_start) {
+	display_obstacle(hlcd, x_start);
+
+	display_bush(hlcd);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND ,(x_start)+30, 30, 0, 60);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND ,(x_start)+30, 30, 140, 70);
+}
+
+void display_obstacle(bsp_lcd_t *hlcd, int x_start) {
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,30,0,60);
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,30,140,70);
+//
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,20,0,60);
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,20,140,70);
+//
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,15,0,60);
+//	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,15,140,70);
+//
+//	bsp_lcd_fill_rect(hlcd, WHITE,x_start+7,10,0,60);
+//	bsp_lcd_fill_rect(hlcd, WHITE,x_start+7,10,140,70);
+		bsp_lcd_fill_rect(hlcd, BLACK,x_start,30,0,60);
+		bsp_lcd_fill_rect(hlcd, BLACK,x_start,30,140,70);
+
+}

@@ -1,0 +1,15 @@
+../Core/Src/GC9A01A.c:16:13:gc9a01a_write_cmd	16	static
+../Core/Src/GC9A01A.c:27:13:gc9a01a_write_data	24	static
+../Core/Src/GC9A01A.c:40:13:gc9a01a_hw_reset	8	static
+../Core/Src/GC9A01A.c:57:6:gc9a01a_set_address_window	24	static
+../Core/Src/GC9A01A.c:87:13:gc9a01a_init	24	static
+../Core/Src/GC9A01A.c:387:6:bsp_lcd_init	8	static
+../Core/Src/GC9A01A.c:407:6:gc9a01a_draw_pixel	24	static
+../Core/Src/GC9A01A.c:430:13:gc9a01a_write_char	40	static
+../Core/Src/GC9A01A.c:459:6:gc9a01a_write_string	32	static
+../Core/Src/GC9A01A.c:494:6:gc9a01a_fill_rect	32	static
+../Core/Src/GC9A01A.c:516:6:gc9a01a_set_orientation	24	static
+../Core/Src/GC9A01A.c:562:6:gc9a01a_fill_screen	24	static
+../Core/Src/GC9A01A.c:575:6:gc9a01a_draw_image	32	static
+../Core/Src/GC9A01A.c:597:6:gc9a01a_invert_colors	16	static
+../Core/Src/GC9A01A.c:608:6:gc9a01a_lcd_fill_image	24	static

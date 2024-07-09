@@ -1,0 +1,10 @@
+10:38:19 **** Build of configuration Debug for project 003_UserButton_IT ****
+make -j4 all 
+arm-none-eabi-size  003_UserButton_IT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8284	     12	   1580	   9876	   2694	003_UserButton_IT.elf
+Finished building: default.size.stdout
+ 
+
+10:38:19 Build Finished. 0 errors, 0 warnings. (took 427ms)
+

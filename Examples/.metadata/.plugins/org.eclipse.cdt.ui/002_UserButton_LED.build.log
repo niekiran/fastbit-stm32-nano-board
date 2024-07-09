@@ -1,0 +1,10 @@
+10:38:18 **** Build of configuration Debug for project 002_UserButton_LED ****
+make -j4 all 
+arm-none-eabi-size  002_UserButton_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8032	     12	   1572	   9616	   2590	002_UserButton_LED.elf
+Finished building: default.size.stdout
+ 
+
+10:38:19 Build Finished. 0 errors, 0 warnings. (took 532ms)
+

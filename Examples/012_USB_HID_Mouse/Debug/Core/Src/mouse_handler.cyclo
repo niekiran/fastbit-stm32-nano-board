@@ -1,0 +1,4 @@
+../Core/Src/mouse_handler.c:16:9:handle_mouse_button	9
+../Core/Src/mouse_handler.c:57:9:read_btn_state	1
+../Core/Src/mouse_handler.c:70:6:update_btn_state	3
+../Core/Src/mouse_handler.c:92:6:move_cursor	1
