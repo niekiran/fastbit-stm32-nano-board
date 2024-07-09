@@ -1,0 +1,10 @@
+18:10:19 **** Incremental Build of configuration Debug for project CST816S_TP_test ****
+make -j4 all 
+arm-none-eabi-size  CST816S_TP_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21072	    104	   2144	  23320	   5b18	CST816S_TP_test.elf
+Finished building: default.size.stdout
+ 
+
+18:10:20 Build Finished. 0 errors, 0 warnings. (took 529ms)
+

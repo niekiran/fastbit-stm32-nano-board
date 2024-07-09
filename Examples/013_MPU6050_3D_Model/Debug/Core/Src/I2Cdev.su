@@ -1,0 +1,17 @@
+../Core/Src/I2Cdev.c:46:6:I2Cdev_init	16	static
+../Core/Src/I2Cdev.c:58:9:I2Cdev_readBit	24	static
+../Core/Src/I2Cdev.c:74:9:I2Cdev_readBitW	24	static
+../Core/Src/I2Cdev.c:91:9:I2Cdev_readBits	32	static
+../Core/Src/I2Cdev.c:118:9:I2Cdev_readBitsW	32	static
+../Core/Src/I2Cdev.c:144:9:I2Cdev_readByte	24	static
+../Core/Src/I2Cdev.c:156:9:I2Cdev_readWord	24	static
+../Core/Src/I2Cdev.c:169:9:I2Cdev_readBytes	32	static
+../Core/Src/I2Cdev.c:186:9:I2Cdev_readWords	32	static
+../Core/Src/I2Cdev.c:204:10:I2Cdev_writeBit	32	static
+../Core/Src/I2Cdev.c:219:10:I2Cdev_writeBitW	32	static
+../Core/Src/I2Cdev.c:235:10:I2Cdev_writeBits	32	static
+../Core/Src/I2Cdev.c:268:10:I2Cdev_writeBitsW	32	static
+../Core/Src/I2Cdev.c:299:10:I2Cdev_writeByte	16	static
+../Core/Src/I2Cdev.c:310:10:I2Cdev_writeWord	16	static
+../Core/Src/I2Cdev.c:322:10:I2Cdev_writeBytes	48	static
+../Core/Src/I2Cdev.c:335:10:I2Cdev_writeWords	48	static

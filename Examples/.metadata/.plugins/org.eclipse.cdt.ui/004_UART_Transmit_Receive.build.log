@@ -1,0 +1,10 @@
+15:44:39 **** Incremental Build of configuration Debug for project 004_UART_Transmit_Receive ****
+make -j4 all 
+arm-none-eabi-size  004_UART_Transmit_Receive.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12888	     96	   2024	  15008	   3aa0	004_UART_Transmit_Receive.elf
+Finished building: default.size.stdout
+ 
+
+15:44:39 Build Finished. 0 errors, 0 warnings. (took 254ms)
+

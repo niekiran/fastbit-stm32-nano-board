@@ -1,0 +1,1137 @@
+2024-07-03 09:28:06,569 [INFO] Activator:176 - 
+
+
+2024-07-03 09:28:06,578 [INFO] Activator:177 - !SESSION log4j initialized
+2024-07-03 09:28:19,197 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-07-03 09:28:33,864 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753
+2024-07-03 09:28:33,885 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2024-07-03 09:28:33,885 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2024-07-03 09:28:33,886 [WARN] ApiDb:259 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2024-07-03 09:28:33,891 [INFO] ApiDb:250 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:33,893 [INFO] DbMcusAds:125 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:33,923 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-07-03 09:28:34,081 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-07-03 09:28:34,175 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2024-07-03 09:28:34,175 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2024-07-03 09:28:34,175 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2024-07-03 09:28:34,176 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,176 [INFO] ApiDb:250 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:34,176 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,176 [INFO] DbMcusAds:125 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:34,176 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,176 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,176 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-07-03 09:28:34,297 [INFO] MainPanel:264 - HeapMemory: 591396864
+2024-07-03 09:28:34,405 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2024-07-03 09:28:34,405 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2024-07-03 09:28:34,405 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2024-07-03 09:28:34,406 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,406 [INFO] ApiDb:250 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:34,406 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,406 [INFO] DbMcusAds:125 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/
+2024-07-03 09:28:34,406 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,406 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\shrey\.stmcufinder\plugins\mcufinder/ => C:\Users\shrey\.stmcufinder\plugins\mcufinder
+2024-07-03 09:28:34,407 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\shrey\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-07-03 09:28:34,431 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753
+2024-07-03 09:28:34,433 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2024-07-03 09:28:34,435 [INFO] PluginManage:310 - Check plugin analytics
+2024-07-03 09:28:34,777 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2024-07-03 09:28:34,777 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2024-07-03 09:28:34,777 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.F4.1.28.0
+2024-07-03 09:28:34,783 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2024-07-03 09:28:34,783 [INFO] PluginManage:310 - Check plugin cadmodel
+2024-07-03 09:28:34,814 [INFO] CADModel:105 - Init CAD model plugin
+2024-07-03 09:28:34,814 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2024-07-03 09:28:34,814 [INFO] PluginManage:310 - Check plugin clock
+2024-07-03 09:28:34,828 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2024-07-03 09:28:34,828 [INFO] PluginManage:310 - Check plugin ddr
+2024-07-03 09:28:34,832 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2024-07-03 09:28:34,832 [INFO] PluginManage:310 - Check plugin filemanager
+2024-07-03 09:28:35,137 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2024-07-03 09:28:35,138 [INFO] PluginManage:310 - Check plugin ipmanager
+2024-07-03 09:28:35,151 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2024-07-03 09:28:35,151 [INFO] PluginManage:310 - Check plugin lpbam
+2024-07-03 09:28:35,166 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2024-07-03 09:28:35,167 [INFO] PluginManage:310 - Check plugin memorymap
+2024-07-03 09:28:35,192 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2024-07-03 09:28:35,192 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2024-07-03 09:28:35,205 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2024-07-03 09:28:35,206 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2024-07-03 09:28:35,344 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2024-07-03 09:28:35,582 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2024-07-03 09:28:35,584 [INFO] PluginManage:310 - Check plugin power
+2024-07-03 09:28:35,601 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2024-07-03 09:28:35,602 [INFO] PluginManage:310 - Check plugin projectmanager
+2024-07-03 09:28:35,640 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2024-07-03 09:28:35,640 [INFO] PluginManage:310 - Check plugin thirdparty
+2024-07-03 09:28:36,033 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2024-07-03 09:28:36,033 [INFO] PluginManage:310 - Check plugin tools
+2024-07-03 09:28:36,041 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2024-07-03 09:28:36,042 [INFO] PluginManage:310 - Check plugin tutovideos
+2024-07-03 09:28:36,041 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2024-07-03 09:28:36,052 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2024-07-03 09:28:36,061 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2024-07-03 09:28:36,338 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2024-07-03 09:28:36,338 [INFO] PluginManage:310 - Check plugin updater
+2024-07-03 09:28:36,370 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2024-07-03 09:28:36,370 [INFO] PluginManage:310 - Check plugin userauth
+2024-07-03 09:28:36,370 [INFO] UserAuth:114 - Init User Auth plugin
+2024-07-03 09:28:36,370 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2024-07-03 09:28:36,370 [INFO] PluginManage:283 - PluginManage : Loaded plugins [17]
+2024-07-03 09:28:36,967 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-07-03 09:28:37,157 [INFO] CADModel:165 - CPN selected for project level
+2024-07-03 09:28:37,157 [INFO] CADModel:114 - Register for checkConnection events
+2024-07-03 09:28:37,204 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,204 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2024-07-03 09:28:37,219 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,219 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2024-07-03 09:28:37,219 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,219 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2024-07-03 09:28:37,235 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,235 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2024-07-03 09:28:37,235 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,235 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2024-07-03 09:28:37,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,251 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2024-07-03 09:28:37,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,266 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2024-07-03 09:28:37,266 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,266 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2024-07-03 09:28:37,266 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,266 [INFO] PluginManager:220 - loadIPPluginJar : add extmemmanager
+2024-07-03 09:28:37,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,282 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2024-07-03 09:28:37,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,282 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2024-07-03 09:28:37,297 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,297 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2024-07-03 09:28:37,313 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,316 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2024-07-03 09:28:37,317 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,317 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2024-07-03 09:28:37,331 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,331 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2024-07-03 09:28:37,331 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,331 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2024-07-03 09:28:37,345 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,345 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2024-07-03 09:28:37,345 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,345 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2024-07-03 09:28:37,361 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,361 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2024-07-03 09:28:37,377 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,377 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2024-07-03 09:28:37,377 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,377 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2024-07-03 09:28:37,377 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,377 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2024-07-03 09:28:37,392 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,392 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2024-07-03 09:28:37,408 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,408 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2024-07-03 09:28:37,408 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,408 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2024-07-03 09:28:37,424 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,424 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2024-07-03 09:28:37,436 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,436 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2024-07-03 09:28:37,439 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,439 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2024-07-03 09:28:37,447 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,447 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2024-07-03 09:28:37,455 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,455 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2024-07-03 09:28:37,471 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,471 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2024-07-03 09:28:37,471 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,471 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2024-07-03 09:28:37,486 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,486 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2024-07-03 09:28:37,486 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,486 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2024-07-03 09:28:37,499 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,499 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2024-07-03 09:28:37,506 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,506 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2024-07-03 09:28:37,513 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,513 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2024-07-03 09:28:37,518 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,518 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2024-07-03 09:28:37,522 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,522 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2024-07-03 09:28:37,522 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,534 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2024-07-03 09:28:37,534 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,534 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2024-07-03 09:28:37,534 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,534 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2024-07-03 09:28:37,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,550 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2024-07-03 09:28:37,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:28:37,550 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2024-07-03 09:28:37,769 [INFO] CADModel:165 - CPN selected for project level
+2024-07-03 09:28:37,769 [INFO] CADModel:114 - Register for checkConnection events
+2024-07-03 09:28:37,769 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:37,769 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-07-03 09:28:38,080 [INFO] CADModel:165 - CPN selected for project level
+2024-07-03 09:28:38,080 [INFO] CADModel:114 - Register for checkConnection events
+2024-07-03 09:28:38,080 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,080 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-07-03 09:28:38,086 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,388 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,406 [INFO] DbMcusAds:53 - JSON generation date=Thu May 16 14:52:00 IST 2024 (1715851320852)
+2024-07-03 09:28:38,406 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,498 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-07-03 09:28:38,721 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,721 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,721 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,721 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-07-03 09:28:38,721 [FATAL] Updater:308 - Updater called before beeing initialized
+2024-07-03 09:28:38,833 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2024-07-03 09:28:38,836 [INFO] Updater:1056 - Updater Version found : 6.11.1
+2024-07-03 09:28:38,874 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753
+2024-07-03 09:28:39,077 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2024-07-03 09:28:40,492 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Jul 03, 2024 9:28:40 AM java.util.prefs.WindowsPreferences <init>
+2024-07-03 09:28:40,501 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0xffffffff80000002. Windows RegCreateKeyEx(...) returned error code 5.
+2024-07-03 09:28:40,501 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-07-03 09:28:41,226 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-03 09:28:41,242 [INFO] MainUpdater:290 - Updater Check For Update Now.
+2024-07-03 09:28:41,242 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.111
+2024-07-03 09:28:41,242 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-07-03 09:28:41,257 [INFO] UserAuth:415 - Internet connection configuration mode: 1
+2024-07-03 09:28:42,089 [WARN] MainUpdater:1194 - Updater busy. Cannot search thirdparties
+2024-07-03 09:28:43,780 [INFO] ThirdPartyUpdaterWithRetryManager:96 - Updater plugin is busy. [1/15]
+2024-07-03 09:28:43,811 [INFO] JxBrowserEngine:152 - Initiate JxBrowser Engine with user profile folder
+2024-07-03 09:28:44,842 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-07-03 09:28:45,760 [INFO] WebApp:161 - Instantiating new browser for Auth
+2024-07-03 09:28:47,704 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0
+2024-07-03 09:28:47,742 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2024-07-03 09:28:47,779 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.1
+2024-07-03 09:28:47,835 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.0
+2024-07-03 09:28:47,864 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.23.2
+2024-07-03 09:28:48,165 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2024-07-03 09:28:48,235 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.4.3.2
+2024-07-03 09:28:48,335 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2024-07-03 09:28:48,471 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2024-07-03 09:28:48,576 [INFO] WebApp:779 - Register for checkConnection events
+2024-07-03 09:28:48,576 [INFO] WebApp:414 - Apply proxy settings
+2024-07-03 09:28:48,576 [INFO] WebApp:499 - Chromium requires no authentication
+2024-07-03 09:28:48,602 [INFO] WebApp:442 - Direct internet connection detected
+2024-07-03 09:28:48,703 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2024-07-03 09:28:48,734 [WARN] PackLoader:240 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.3.0
+2024-07-03 09:28:48,872 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.1.0
+2024-07-03 09:28:48,970 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2024-07-03 09:28:49,057 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-07-03 09:28:49,057 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-07-03 09:28:49,063 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-07-03 09:28:49,065 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-07-03 09:28:49,067 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-07-03 09:28:49,077 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2024-07-03 09:28:49,183 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.5.0.0
+2024-07-03 09:28:49,211 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfMQTT.1.19.0
+2024-07-03 09:28:49,279 [WARN] PackLoader:240 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2024-07-03 09:28:49,346 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2024-07-03 09:28:49,383 [INFO] WebApp:192 - Starting web application
+2024-07-03 09:28:49,383 [INFO] WebApp:544 - Web application path used C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\db\plugins\mcufinder\reactClient1\index.html
+2024-07-03 09:28:49,533 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TCPP.4.1.0
+2024-07-03 09:28:49,605 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.3.0
+2024-07-03 09:28:50,002 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2024-07-03 09:28:50,357 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SAFEA1.1.2.2
+2024-07-03 09:28:50,601 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2024-07-03 09:28:50,706 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfMQTT.1.18.0
+2024-07-03 09:28:50,750 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2024-07-03 09:28:50,849 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.5.1.0
+2024-07-03 09:28:51,133 [WARN] PackLoader:240 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2024-07-03 09:28:51,968 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.4.0
+2024-07-03 09:28:52,100 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.6.0.0
+2024-07-03 09:28:52,435 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2024-07-03 09:28:52,551 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.2.0
+2024-07-03 09:28:52,785 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.6.6
+2024-07-03 09:28:53,083 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2024-07-03 09:28:53,325 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.1.0
+2024-07-03 09:28:53,416 [WARN] PackLoader:240 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.8.0
+2024-07-03 09:28:53,524 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.9.0.0
+2024-07-03 09:28:53,643 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.1
+2024-07-03 09:28:53,834 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.8.1.0
+2024-07-03 09:28:54,019 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-07-03 09:28:54,019 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2024-07-03 09:28:54,019 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-07-03 09:28:54,019 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-07-03 09:28:54,025 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-07-03 09:28:54,139 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2024-07-03 09:28:54,311 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,311 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,319 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2024-07-03 09:28:54,319 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,319 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,319 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,327 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,327 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-07-03 09:28:54,500 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2024-07-03 09:28:54,977 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2024-07-03 09:28:55,119 [WARN] PackLoader:240 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.5.1
+2024-07-03 09:28:55,231 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.3.1
+2024-07-03 09:28:55,282 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.0.0
+2024-07-03 09:28:55,316 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.2
+2024-07-03 09:28:55,580 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.10.0.0
+2024-07-03 09:28:56,706 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.1.0
+2024-07-03 09:28:56,802 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.24.0
+2024-07-03 09:28:56,943 [WARN] PackLoader:240 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2024-07-03 09:28:56,986 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.1
+2024-07-03 09:28:57,118 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7RS.1.0.0
+2024-07-03 09:28:57,236 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.0
+2024-07-03 09:28:57,534 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.1
+2024-07-03 09:28:57,789 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.2.0
+2024-07-03 09:28:57,816 [INFO] ThirdParty:978 - Integrity check success = true
+2024-07-03 09:28:57,816 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2024-07-03 09:28:57,816 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2024-07-03 09:34:28,739 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-07-03 09:34:28,780 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-03 09:34:30,942 [INFO] ApiDb:581 - Connected to CubeFinder SQLite database (C:\Users\shrey\.stmcufinder\plugins\mcufinder\mcu\cube-finder-db.db)
+2024-07-03 09:34:31,104 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2024-07-03 09:34:31,104 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.39
+2024-07-03 09:34:31,105 [INFO] ApiDb:670 - CubeFinder database generation date=2024-06-20 (1718880634)
+2024-07-03 09:34:31,105 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V5.0.0, FP-SNS-MOTENVWB1_V1.4.0, FP-SNS-SMARTAG2_V1.2.0, STM32Cube_FW_C0_V1.2.0, STM32Cube_FW_F4_V1.28.0, STM32Cube_FW_F7_V1.17.2, STM32Cube_FW_G0_V1.6.2, STM32Cube_FW_G4_V1.6.0, STM32Cube_FW_H5_V1.3.0, STM32Cube_FW_H7RS_V1.1.0, STM32Cube_FW_H7_V1.11.2, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.1, STM32Cube_FW_U0_V1.1.0, STM32Cube_FW_U5_V1.6.0, STM32Cube_FW_WB0_V1.0.0, STM32Cube_FW_WBA_V1.4.0, STM32Cube_FW_WB_V1.20.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.4.0, X-CUBE-ALS_V1.0.2, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7RS_V1.0.0, X-CUBE-AZRTOS-H7_V3.2.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V3.1.0, X-CUBE-EEPRMA1_V5.1.0, X-CUBE-FREERTOS_V1.2.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V10.0.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.1, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.4.1]
+2024-07-03 09:34:31,370 [INFO] DbBoardsSqlite:226 - include board P-NUCLEO-WB55-NUCLEO as a kit item of type 'Nucleo-64'
+2024-07-03 09:34:31,371 [INFO] DbBoardsSqlite:226 - include board P-NUCLEO-WB55-USBDONGLE as a kit item of type 'Nucleo USB Dongle'
+2024-07-03 09:34:31,373 [INFO] DbBoardsSqlite:226 - include board STEVAL-IDP005V1 as a kit item of type 'Evaluation Board'
+2024-07-03 09:34:31,373 [INFO] DbBoardsSqlite:226 - include board STEVAL-IDP005V2 as a kit item of type 'Evaluation Board'
+2024-07-03 09:34:32,068 [INFO] ApiDb:240 - Found 483 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H533RE, NUCLEO-H563ZI, NUCLEO-H7S3L8, NUCLEO-U031R8, NUCLEO-U083RC, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, NUCLEO-WBA55CG, STEVAL-PROTEUS1, STEVAL-SMARTAG2, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H523CCT6, STM32H523CCU6, STM32H523CET6, STM32H523CEU6, STM32H523HEY6TR, STM32H523RCT6, STM32H523RET6, STM32H523VCI6, STM32H523VCT6, STM32H523VEI6, STM32H523VET6, STM32H523ZCJ6, STM32H523ZCT6, STM32H523ZEJ6, STM32H523ZET6, STM32H533CET6, STM32H533CEU6, STM32H533HEY6TR, STM32H533RET6, STM32H533VEI6, STM32H533VET6, STM32H533ZEJ6, STM32H533ZET6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32H7R3A8I6, STM32H7R3I8K6, STM32H7R3I8T6, STM32H7R3L8H6, STM32H7R3L8H6H, STM32H7R3R8V6, STM32H7R3V8H6, STM32H7R3V8T6, STM32H7R3V8Y6, STM32H7R3Z8J6, STM32H7R3Z8T6, STM32H7R7A8I6, STM32H7R7I8K6, STM32H7R7I8T6, STM32H7R7L8H6, STM32H7R7L8H6H, STM32H7R7Z8J6, STM32H7S3A8I6, STM32H7S3I8K6, STM32H7S3I8T6, STM32H7S3L8H6, STM32H7S3L8H6H, STM32H7S3R8V6, STM32H7S3V8H6, STM32H7S3V8T6, STM32H7S3V8Y6, STM32H7S3Z8J6, STM32H7S3Z8T6, STM32H7S78-DK, STM32H7S7A8I6, STM32H7S7I8K6, STM32H7S7I8T6, STM32H7S7L8H6, STM32H7S7L8H6H, STM32H7S7Z8J6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U031C6T6, STM32U031C6U6, STM32U031C8T6, STM32U031C8U6, STM32U031F4P6, STM32U031F6P6, STM32U031F8P6, STM32U031G6Y6TR, STM32U031G8Y6TR, STM32U031K4U6, STM32U031K6U6, STM32U031K8U6, STM32U031R6I6, STM32U031R6T6, STM32U031R8I6, STM32U031R8T6, STM32U073C8T6, STM32U073C8U6, STM32U073CBT6, STM32U073CBU6, STM32U073CCT6, STM32U073CCU6, STM32U073H8Y6TR, STM32U073HBY6TR, STM32U073HCY6TR, STM32U073K8U6, STM32U073KBU6, STM32U073KCU6, STM32U073M8I6, STM32U073M8T6, STM32U073MBI6, STM32U073MBT6, STM32U073MCI6, STM32U073MCT6, STM32U073R8I6, STM32U073R8T6, STM32U073RBI6, STM32U073RBT6, STM32U073RCI6, STM32U073RCT6, STM32U083C-DK, STM32U083CCT6, STM32U083CCU6, STM32U083HCY6TR, STM32U083KCU6, STM32U083MCI6, STM32U083MCT6, STM32U083RCI6, STM32U083RCT6, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QII3Q , STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32U5F7VIT6, STM32U5F7VIT6Q, STM32U5F7VJT6, STM32U5F7VJT6Q, STM32U5F9BJY6QTR, STM32U5F9NJH6Q, STM32U5F9VIT6Q, STM32U5F9VJT6Q, STM32U5F9ZIJ6QTR, STM32U5F9ZIT6Q, STM32U5F9ZJJ6QTR, STM32U5F9ZJT6Q, STM32U5G7VJT6, STM32U5G7VJT6Q, STM32U5G9BJY6QTR, STM32U5G9J-DK1, STM32U5G9J-DK2, STM32U5G9NJH6Q, STM32U5G9VJT6Q, STM32U5G9ZJJ6QTR, STM32U5G9ZJT6Q, STM32WB1MMCH6, STM32WBA50KEU6, STM32WBA50KEU6TR, STM32WBA50KGU6, STM32WBA50KGU6TR, STM32WBA52CEU6, STM32WBA52CEU6TR, STM32WBA52CEU7, STM32WBA52CEU7TR, STM32WBA52CGU6, STM32WBA52CGU6TR, STM32WBA52CGU6U, STM32WBA52CGU7, STM32WBA52CGU7TR, STM32WBA52KEU6, STM32WBA52KEU6TR, STM32WBA52KGU6, STM32WBA52KGU6TR, STM32WBA54CEU6, STM32WBA54CEU6TR, STM32WBA54CEU7, STM32WBA54CEU7TR, STM32WBA54CGU6, STM32WBA54CGU6TR, STM32WBA54CGU7, STM32WBA54CGU7TR, STM32WBA54KEU6, STM32WBA54KEU6TR, STM32WBA54KEU7, STM32WBA54KEU7TR, STM32WBA54KGU6, STM32WBA54KGU6TR, STM32WBA54KGU7, STM32WBA54KGU7TR, STM32WBA55CEU6, STM32WBA55CEU6TR, STM32WBA55CEU7, STM32WBA55CEU7TR, STM32WBA55CGU6, STM32WBA55CGU6TR, STM32WBA55CGU6U, STM32WBA55CGU7, STM32WBA55CGU7TR, STM32WBA55G-DK1, STM32WBA55HEF6, STM32WBA55HEF7, STM32WBA55HGF6, STM32WBA55HGF7, STM32WBA55UEI6, STM32WBA55UEI6TR, STM32WBA55UEI7, STM32WBA55UEI7TR, STM32WBA55UGI6, STM32WBA55UGI6TR, STM32WBA55UGI7, STM32WBA55UGI7TR, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2024-07-03 09:34:32,073 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2024-07-03 09:34:32,073 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.39
+2024-07-03 09:34:32,073 [INFO] ApiDb:670 - CubeFinder database generation date=2024-06-20 (1718880634)
+2024-07-03 09:34:32,073 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.0.2, FP-SNS-MOTENV1_V5.0.0, FP-SNS-MOTENVWB1_V1.4.0, FP-SNS-SMARTAG2_V1.2.0, STM32Cube_FW_C0_V1.2.0, STM32Cube_FW_F4_V1.28.0, STM32Cube_FW_F7_V1.17.2, STM32Cube_FW_G0_V1.6.2, STM32Cube_FW_G4_V1.6.0, STM32Cube_FW_H5_V1.3.0, STM32Cube_FW_H7RS_V1.1.0, STM32Cube_FW_H7_V1.11.2, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L5_V1.5.1, STM32Cube_FW_U0_V1.1.0, STM32Cube_FW_U5_V1.6.0, STM32Cube_FW_WB0_V1.0.0, STM32Cube_FW_WBA_V1.4.0, STM32Cube_FW_WB_V1.20.0, STM32Cube_FW_WL_V1.3.0, X-CUBE-ALGOBUILD_V1.4.0, X-CUBE-ALS_V1.0.2, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7RS_V1.0.0, X-CUBE-AZRTOS-H7_V3.2.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V1.1.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.0.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V3.1.0, X-CUBE-EEPRMA1_V5.1.0, X-CUBE-FREERTOS_V1.2.0, X-CUBE-GNSS1_V6.0.0, X-CUBE-MEMS1_V10.0.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V1.0.1, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.4.1]
+2024-07-03 09:34:34,038 [INFO] ApiDb:240 - Found 483 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H533RE, NUCLEO-H563ZI, NUCLEO-H7S3L8, NUCLEO-U031R8, NUCLEO-U083RC, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, NUCLEO-WBA55CG, STEVAL-PROTEUS1, STEVAL-SMARTAG2, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H523CCT6, STM32H523CCU6, STM32H523CET6, STM32H523CEU6, STM32H523HEY6TR, STM32H523RCT6, STM32H523RET6, STM32H523VCI6, STM32H523VCT6, STM32H523VEI6, STM32H523VET6, STM32H523ZCJ6, STM32H523ZCT6, STM32H523ZEJ6, STM32H523ZET6, STM32H533CET6, STM32H533CEU6, STM32H533HEY6TR, STM32H533RET6, STM32H533VEI6, STM32H533VET6, STM32H533ZEJ6, STM32H533ZET6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32H7R3A8I6, STM32H7R3I8K6, STM32H7R3I8T6, STM32H7R3L8H6, STM32H7R3L8H6H, STM32H7R3R8V6, STM32H7R3V8H6, STM32H7R3V8T6, STM32H7R3V8Y6, STM32H7R3Z8J6, STM32H7R3Z8T6, STM32H7R7A8I6, STM32H7R7I8K6, STM32H7R7I8T6, STM32H7R7L8H6, STM32H7R7L8H6H, STM32H7R7Z8J6, STM32H7S3A8I6, STM32H7S3I8K6, STM32H7S3I8T6, STM32H7S3L8H6, STM32H7S3L8H6H, STM32H7S3R8V6, STM32H7S3V8H6, STM32H7S3V8T6, STM32H7S3V8Y6, STM32H7S3Z8J6, STM32H7S3Z8T6, STM32H7S78-DK, STM32H7S7A8I6, STM32H7S7I8K6, STM32H7S7I8T6, STM32H7S7L8H6, STM32H7S7L8H6H, STM32H7S7Z8J6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U031C6T6, STM32U031C6U6, STM32U031C8T6, STM32U031C8U6, STM32U031F4P6, STM32U031F6P6, STM32U031F8P6, STM32U031G6Y6TR, STM32U031G8Y6TR, STM32U031K4U6, STM32U031K6U6, STM32U031K8U6, STM32U031R6I6, STM32U031R6T6, STM32U031R8I6, STM32U031R8T6, STM32U073C8T6, STM32U073C8U6, STM32U073CBT6, STM32U073CBU6, STM32U073CCT6, STM32U073CCU6, STM32U073H8Y6TR, STM32U073HBY6TR, STM32U073HCY6TR, STM32U073K8U6, STM32U073KBU6, STM32U073KCU6, STM32U073M8I6, STM32U073M8T6, STM32U073MBI6, STM32U073MBT6, STM32U073MCI6, STM32U073MCT6, STM32U073R8I6, STM32U073R8T6, STM32U073RBI6, STM32U073RBT6, STM32U073RCI6, STM32U073RCT6, STM32U083C-DK, STM32U083CCT6, STM32U083CCU6, STM32U083HCY6TR, STM32U083KCU6, STM32U083MCI6, STM32U083MCT6, STM32U083RCI6, STM32U083RCT6, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QII3Q , STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32U5F7VIT6, STM32U5F7VIT6Q, STM32U5F7VJT6, STM32U5F7VJT6Q, STM32U5F9BJY6QTR, STM32U5F9NJH6Q, STM32U5F9VIT6Q, STM32U5F9VJT6Q, STM32U5F9ZIJ6QTR, STM32U5F9ZIT6Q, STM32U5F9ZJJ6QTR, STM32U5F9ZJT6Q, STM32U5G7VJT6, STM32U5G7VJT6Q, STM32U5G9BJY6QTR, STM32U5G9J-DK1, STM32U5G9J-DK2, STM32U5G9NJH6Q, STM32U5G9VJT6Q, STM32U5G9ZJJ6QTR, STM32U5G9ZJT6Q, STM32WB1MMCH6, STM32WBA50KEU6, STM32WBA50KEU6TR, STM32WBA50KGU6, STM32WBA50KGU6TR, STM32WBA52CEU6, STM32WBA52CEU6TR, STM32WBA52CEU7, STM32WBA52CEU7TR, STM32WBA52CGU6, STM32WBA52CGU6TR, STM32WBA52CGU6U, STM32WBA52CGU7, STM32WBA52CGU7TR, STM32WBA52KEU6, STM32WBA52KEU6TR, STM32WBA52KGU6, STM32WBA52KGU6TR, STM32WBA54CEU6, STM32WBA54CEU6TR, STM32WBA54CEU7, STM32WBA54CEU7TR, STM32WBA54CGU6, STM32WBA54CGU6TR, STM32WBA54CGU7, STM32WBA54CGU7TR, STM32WBA54KEU6, STM32WBA54KEU6TR, STM32WBA54KEU7, STM32WBA54KEU7TR, STM32WBA54KGU6, STM32WBA54KGU6TR, STM32WBA54KGU7, STM32WBA54KGU7TR, STM32WBA55CEU6, STM32WBA55CEU6TR, STM32WBA55CEU7, STM32WBA55CEU7TR, STM32WBA55CGU6, STM32WBA55CGU6TR, STM32WBA55CGU6U, STM32WBA55CGU7, STM32WBA55CGU7TR, STM32WBA55G-DK1, STM32WBA55HEF6, STM32WBA55HEF7, STM32WBA55HGF6, STM32WBA55HGF7, STM32WBA55UEI6, STM32WBA55UEI6TR, STM32WBA55UEI7, STM32WBA55UEI7TR, STM32WBA55UGI6, STM32WBA55UGI6TR, STM32WBA55UGI7, STM32WBA55UGI7TR, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2024-07-03 09:34:34,043 [INFO] DbMcus:218 - Found 4203 MCUs, 4203 are supported
+2024-07-03 09:34:34,057 [INFO] ApiDb:423 - Load user favorites file C:\Users\shrey/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2024-07-03 09:34:34,058 [INFO] ApiDb:427 - User favorites MCUs=[STM32F303CCT6]
+2024-07-03 09:34:34,058 [INFO] DbMcus:224 - Set 1 / 1 favorites MCUs
+2024-07-03 09:34:34,758 [INFO] BoardInfo:889 - No configuration file found for board P-NUCLEO-WB55
+2024-07-03 09:34:34,758 [INFO] DbBoards:161 - Kit is not supported: P-NUCLEO-WB55
+2024-07-03 09:34:34,763 [INFO] BoardInfo:889 - No configuration file found for board STEVAL-BFA001V1B
+2024-07-03 09:34:34,766 [INFO] DbBoards:161 - Kit is not supported: STEVAL-BFA001V1B
+2024-07-03 09:34:34,768 [INFO] BoardInfo:889 - No configuration file found for board STEVAL-BFA001V2B
+2024-07-03 09:34:34,769 [INFO] DbBoards:161 - Kit is not supported: STEVAL-BFA001V2B
+2024-07-03 09:34:34,941 [INFO] DbBoards:168 - Found 195 boards, 192 are supported
+2024-07-03 09:34:34,942 [INFO] DbBoards:169 - Found 195 boards, 8 of them is supported for  Bsp
+2024-07-03 09:34:34,948 [INFO] ApiDb:423 - Load user favorites file C:\Users\shrey/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2024-07-03 09:34:34,949 [INFO] ApiDb:427 - User favorites Boards=[]
+2024-07-03 09:34:34,949 [INFO] DbBoards:198 - Set 0 / 0 favorites Boards
+2024-07-03 09:34:34,950 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2024-07-03 09:34:34,962 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2024-07-03 09:34:34,968 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2024-07-03 09:34:37,058 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2024-07-03 09:34:37,101 [INFO] DetailPanel:341 - Set advertising image to C:/Users/shrey/STM32Cube/Repository/\en.prom-stm32h7rs-mcu-finder.jpg
+2024-07-03 09:34:44,337 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2024-07-03 09:34:44,342 [INFO] ApiDb:448 - Save user favorites file C:\Users\shrey/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2024-07-03 09:34:44,343 [INFO] ApiDb:452 - User favorites MCUs=[STM32F303CCT6]
+2024-07-03 09:34:49,628 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-03 09:34:49,776 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2024-07-03 09:34:49,776 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2024-07-03 09:34:49,777 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2024-07-03 09:34:51,419 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2024-07-03 09:34:51,420 [INFO] DetailPanel:341 - Set advertising image to C:/Users/shrey/STM32Cube/Repository/\en.prom-stm32h7rs-mcu-finder.jpg
+2024-07-03 09:35:43,607 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-03 09:35:43,608 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-03 09:35:43,650 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-07-03 09:35:43,650 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.111
+2024-07-03 09:35:43,658 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-07-03 09:35:43,658 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-07-03 09:35:43,664 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-07-03 09:35:43,669 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-07-03 09:35:43,686 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 243826008 Bytes (477102080)
+2024-07-03 09:35:43,688 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-07-03 09:35:43,689 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.111
+2024-07-03 09:35:43,689 [INFO] OpenFileManager:312 - Change cursor
+2024-07-03 09:35:43,790 [INFO] Mcu:2021 - Initializing MCU STM32F303C(B-C)Tx STM32F303CCTx STM32F303CCT6
+2024-07-03 09:35:48,849 [INFO] Context:663 - Trying to add GPIOservice into a context  which must be forbidden
+2024-07-03 09:35:50,252 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-07-03 09:35:50,252 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-07-03 09:35:50,252 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-07-03 09:35:50,252 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-07-03 09:35:50,253 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,273 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,274 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,275 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,275 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,275 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,275 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-07-03 09:35:50,641 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-07-03 09:35:51,653 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-07-03 09:35:51,726 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-07-03 09:35:51,729 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2024-07-03 09:35:51,730 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2024-07-03 09:35:55,317 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 300296512 Bytes (629145600)
+2024-07-03 09:36:16,009 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-07-03 09:36:16,009 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-07-03 09:36:16,009 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-07-03 09:36:16,009 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.6
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.1
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.23.2
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-07-03 09:36:16,010 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.18.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-07-03 09:36:16,011 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.3.1
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-07-03 09:36:16,012 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-07-03 09:36:16,013 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.1
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.2.0
+2024-07-03 09:36:16,014 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-07-03 09:36:16,014 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-07-03 09:36:17,106 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-07-03 09:36:17,108 [INFO] PinOutPanel:1561 - setPackage(STM32F303CCTx,LQFP48)
+2024-07-03 09:36:18,744 [INFO] UtilMem:75 - Before build in PCC Used Memory: 338952904 Bytes (629145600)
+2024-07-03 09:36:20,241 [INFO] UtilMem:75 - After build in PCC Used Memory: 451150536 Bytes (629145600)
+2024-07-03 09:36:20,485 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-07-03 09:36:20,549 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,550 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,551 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,551 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,551 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,551 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,553 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,554 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,555 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,557 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,559 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,559 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,559 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,560 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,560 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,560 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,560 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,561 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,561 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,562 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,563 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,563 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,563 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,564 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,564 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,564 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,565 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,565 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,565 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,566 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,566 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,567 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,567 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,568 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,568 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,569 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,570 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,571 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,572 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,572 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-07-03 09:36:20,977 [INFO] CADModel:165 - CPN selected for project levelSTM32F303CCT6
+2024-07-03 09:36:20,977 [INFO] CADModel:114 - Register for checkConnection events
+2024-07-03 09:36:21,020 [INFO] OpenFileManager:343 - Restore cursor
+2024-07-03 09:36:23,903 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 312157008 Bytes (629145600)
+2024-07-03 09:36:24,025 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 331557712 Bytes (629145600)
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 09:36:25,058 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 09:36:25,059 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 09:36:25,061 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 09:36:25,594 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 09:36:26,604 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 09:36:26,808 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 09:36:27,553 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 09:36:28,277 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 09:36:28,343 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 09:36:28,753 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 09:36:28,855 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 09:36:29,001 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 09:36:29,092 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 09:36:29,226 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 09:36:29,259 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 09:36:29,464 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 09:36:29,485 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 09:36:29,571 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 09:36:29,744 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 09:36:29,757 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 09:36:29,888 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 09:36:29,922 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 09:36:30,062 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 09:36:30,086 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 09:36:30,211 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 09:36:30,240 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 09:36:30,678 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 09:36:30,732 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 09:36:30,878 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 09:36:30,900 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 09:36:31,137 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 09:36:31,154 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 09:36:31,335 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 09:36:31,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 09:36:31,517 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 09:36:31,554 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 09:36:31,879 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 09:36:31,908 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 09:36:32,070 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 09:36:32,105 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 09:36:32,440 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 09:36:32,458 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 09:36:32,603 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 09:36:32,629 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 09:36:32,922 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 09:36:33,043 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 09:36:33,319 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 09:36:33,337 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 09:36:33,675 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 09:36:36,407 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 2122mS.
+2024-07-03 09:36:36,422 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 09:36:36,683 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 09:36:36,719 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-07-03 09:36:36,755 [INFO] ApiDbMcu:508 - Load IP Config File for TOUCHSENSING
+2024-07-03 09:36:36,785 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-07-03 09:36:40,342 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-07-03 09:36:51,708 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 15286mS.
+2024-07-03 09:36:51,711 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 09:36:51,719 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 09:36:54,600 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2024-07-03 09:36:54,605 [INFO] ApiDb:448 - Save user favorites file C:\Users\shrey/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2024-07-03 09:36:54,606 [INFO] ApiDb:452 - User favorites MCUs=[STM32F303CCT6]
+2024-07-03 09:44:49,123 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 282319928 Bytes (629145600)
+2024-07-03 09:44:51,762 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 391369784 Bytes (629145600)
+2024-07-03 09:44:52,230 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 09:44:52,230 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 09:44:52,230 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 09:44:52,230 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 09:44:52,230 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 09:44:52,231 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 09:44:52,232 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 09:44:52,611 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 09:44:53,276 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 09:44:53,445 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 09:44:53,657 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 09:44:54,039 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 09:44:54,226 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 09:44:54,270 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 09:44:54,424 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 09:44:54,486 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 09:44:54,688 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 09:44:54,706 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 09:44:54,822 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 09:44:54,878 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 09:44:55,064 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 09:44:55,163 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 09:44:55,356 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 09:44:55,395 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 09:44:55,589 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 09:44:56,194 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 340mS.
+2024-07-03 09:44:56,205 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 09:44:56,298 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 09:44:59,219 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 3014mS.
+2024-07-03 09:44:59,220 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 09:44:59,227 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 09:46:31,389 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 296222168 Bytes (741343232)
+2024-07-03 09:46:33,498 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 281586000 Bytes (741343232)
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 09:46:33,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 09:46:33,768 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 09:46:33,897 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 09:46:34,090 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 09:46:34,133 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 09:46:34,321 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 09:46:34,526 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 09:46:34,555 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 09:46:34,690 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 09:46:34,707 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 09:46:34,808 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 09:46:34,830 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 09:46:34,944 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 09:46:34,967 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 09:46:35,055 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 09:46:35,062 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 09:46:35,074 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 09:46:35,218 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 09:46:35,223 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 09:46:35,286 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 09:46:35,290 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 09:46:35,351 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 09:46:35,358 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 09:46:35,424 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 09:46:35,452 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 09:46:35,627 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 09:46:35,672 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 09:46:35,821 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 09:46:35,837 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 09:46:35,989 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 09:46:36,006 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 09:46:36,136 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 09:46:36,155 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 09:46:36,303 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 09:46:36,354 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 09:46:36,520 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 09:46:36,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 09:46:36,612 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 09:46:36,657 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 09:46:36,825 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 09:46:36,831 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 09:46:36,919 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 09:46:36,958 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 09:46:37,164 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 09:46:37,229 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 09:46:37,426 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 09:46:37,460 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 09:46:37,644 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 09:46:38,157 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 266mS.
+2024-07-03 09:46:38,171 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 09:46:38,281 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 09:46:39,752 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1580mS.
+2024-07-03 09:46:39,753 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 09:46:39,756 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 10:30:14,568 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 298657696 Bytes (914358272)
+2024-07-03 10:30:14,960 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 10:30:14,960 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 10:30:14,961 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 10:30:14,961 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 10:30:14,961 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 10:30:14,961 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 10:30:14,961 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 10:30:14,962 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 10:30:15,102 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 10:30:15,572 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 10:30:15,615 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 10:30:15,785 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 10:30:15,999 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:30:16,013 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:30:16,167 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:30:16,172 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:30:16,241 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:30:16,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:30:16,314 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:30:16,319 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:30:16,382 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:30:16,385 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:30:16,397 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:30:16,483 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:30:16,488 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:30:16,565 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:30:16,571 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:30:16,664 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:30:16,669 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:30:16,719 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:30:16,737 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 10:30:16,847 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 10:30:16,866 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 10:30:16,966 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 10:30:16,982 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 10:30:17,045 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 10:30:17,050 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 10:30:17,136 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 10:30:17,156 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 10:30:17,262 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 10:30:17,289 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 10:30:17,544 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 10:30:17,573 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 10:30:17,673 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 10:30:17,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 10:30:17,853 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 10:30:17,861 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 10:30:18,021 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 10:30:18,051 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 10:30:18,199 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 10:30:18,257 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 10:30:18,481 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 10:30:18,532 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 10:30:18,721 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 10:30:19,698 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 684mS.
+2024-07-03 10:30:19,704 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 10:30:19,771 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 10:30:22,033 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2329mS.
+2024-07-03 10:30:22,034 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 10:30:22,041 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 10:43:46,893 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:50,136 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:53,807 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:53,900 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:56,380 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:56,479 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:58,303 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:43:58,384 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:44:02,258 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 263332344 Bytes (859832320)
+2024-07-03 10:44:04,154 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 305769696 Bytes (859832320)
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 10:44:04,378 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 10:44:04,379 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 10:44:04,379 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 10:44:04,483 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 10:44:04,639 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 10:44:04,683 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 10:44:04,845 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 10:44:04,964 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:44:04,970 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:44:05,052 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:44:05,056 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:44:05,121 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:44:05,125 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:44:05,181 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:44:05,183 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:44:05,247 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:44:05,255 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:44:05,264 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:44:05,344 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:44:05,351 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:44:05,402 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:44:05,407 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:44:05,454 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:44:05,465 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:44:05,513 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:44:05,535 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 10:44:05,631 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 10:44:05,637 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 10:44:05,709 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 10:44:05,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 10:44:05,774 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 10:44:05,781 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 10:44:05,840 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 10:44:05,847 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 10:44:05,898 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 10:44:05,923 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 10:44:06,068 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 10:44:06,085 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 10:44:06,135 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 10:44:06,163 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 10:44:06,242 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 10:44:06,246 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 10:44:06,305 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 10:44:06,330 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 10:44:06,436 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 10:44:06,488 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 10:44:06,618 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 10:44:06,636 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 10:44:06,761 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 10:44:07,357 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 398mS.
+2024-07-03 10:44:07,367 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 10:44:07,484 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 10:44:09,038 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1670mS.
+2024-07-03 10:44:09,039 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 10:44:09,060 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 10:49:57,173 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-03 10:50:00,678 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 294732840 Bytes (859832320)
+2024-07-03 10:50:02,856 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 292242808 Bytes (859832320)
+2024-07-03 10:50:03,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 10:50:03,086 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 10:50:03,087 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 10:50:03,087 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 10:50:03,087 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 10:50:03,087 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 10:50:03,087 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 10:50:03,088 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 10:50:03,180 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 10:50:03,272 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 10:50:03,338 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 10:50:03,434 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 10:50:03,540 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:50:03,547 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:50:03,629 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:50:03,632 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:50:03,678 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:50:03,681 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:50:03,728 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:50:03,731 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:50:03,778 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:50:03,781 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 10:50:03,789 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 10:50:03,868 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 10:50:03,872 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 10:50:03,919 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 10:50:03,923 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 10:50:03,970 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 10:50:03,974 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 10:50:04,019 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 10:50:04,035 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 10:50:04,131 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 10:50:04,136 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 10:50:04,201 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 10:50:04,206 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 10:50:04,256 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 10:50:04,264 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 10:50:04,324 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 10:50:04,330 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 10:50:04,448 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 10:50:04,499 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 10:50:04,606 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 10:50:04,635 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 10:50:04,691 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 10:50:04,720 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 10:50:04,880 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 10:50:04,883 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 10:50:04,937 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 10:50:04,963 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 10:50:05,080 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 10:50:05,131 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 10:50:05,233 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 10:50:05,252 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 10:50:05,369 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 10:50:05,723 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 156mS.
+2024-07-03 10:50:05,730 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 10:50:05,813 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 10:50:07,014 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1284mS.
+2024-07-03 10:50:07,015 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 10:50:07,020 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 12:14:07,388 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 814103616 Bytes (1001390080)
+2024-07-03 12:14:13,861 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 314690200 Bytes (1001390080)
+2024-07-03 12:14:14,117 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 12:14:14,117 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 12:14:14,118 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 12:14:14,118 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 12:14:14,118 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 12:14:14,119 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 12:14:14,119 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 12:14:14,120 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 12:14:14,330 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 12:14:14,571 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 12:14:14,614 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 12:14:14,733 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 12:14:14,875 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 12:14:14,884 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 12:14:15,005 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 12:14:15,014 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 12:14:15,085 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 12:14:15,092 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 12:14:15,162 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 12:14:15,167 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 12:14:15,236 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 12:14:15,243 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 12:14:15,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 12:14:15,331 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 12:14:15,336 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 12:14:15,388 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 12:14:15,396 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 12:14:15,449 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 12:14:15,453 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 12:14:15,512 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 12:14:15,533 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 12:14:15,652 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 12:14:15,678 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 12:14:15,779 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 12:14:15,800 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 12:14:15,903 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 12:14:15,932 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 12:14:16,063 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 12:14:16,079 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 12:14:16,178 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 12:14:16,207 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 12:14:16,389 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 12:14:16,412 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 12:14:16,487 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 12:14:16,525 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 12:14:16,673 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 12:14:16,685 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 12:14:16,782 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 12:14:16,816 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 12:14:16,982 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 12:14:17,062 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 12:14:17,214 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 12:14:17,248 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 12:14:17,413 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 12:14:18,106 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 486mS.
+2024-07-03 12:14:18,115 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 12:14:18,248 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 12:14:20,276 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2161mS.
+2024-07-03 12:14:20,277 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 12:14:20,282 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 12:43:23,246 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 577325456 Bytes (1010827264)
+2024-07-03 12:43:25,955 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 632807576 Bytes (1010827264)
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 12:43:26,199 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 12:43:26,200 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 12:43:26,309 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 12:43:26,438 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 12:43:26,470 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 12:43:26,596 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 12:43:26,708 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 12:43:26,716 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 12:43:26,815 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 12:43:26,818 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 12:43:26,946 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 12:43:26,952 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 12:43:27,014 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 12:43:27,017 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 12:43:27,080 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 12:43:27,083 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 12:43:27,095 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 12:43:27,186 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 12:43:27,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 12:43:27,302 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 12:43:27,312 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 12:43:27,381 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 12:43:27,388 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 12:43:27,455 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 12:43:27,486 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 12:43:27,664 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 12:43:27,698 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 12:43:27,784 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 12:43:27,796 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 12:43:27,870 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 12:43:27,887 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 12:43:28,018 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 12:43:28,037 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 12:43:28,106 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 12:43:28,155 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 12:43:28,381 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 12:43:28,404 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 12:43:28,481 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 12:43:28,530 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 12:43:28,718 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 12:43:28,722 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 12:43:28,818 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 12:43:28,850 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 12:43:29,018 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 12:43:29,091 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 12:43:29,287 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 12:43:29,313 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 12:43:29,487 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 12:43:30,250 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 480mS.
+2024-07-03 12:43:30,260 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 12:43:30,397 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 12:43:31,995 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1735mS.
+2024-07-03 12:43:31,996 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 12:43:32,002 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 13:40:39,409 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 655866832 Bytes (1010827264)
+2024-07-03 13:40:39,584 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 13:40:39,584 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 13:40:39,584 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 13:40:39,584 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 13:40:39,584 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 13:40:39,585 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 13:40:39,585 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 13:40:39,586 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 13:40:39,692 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 13:40:39,827 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 13:40:39,866 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 13:40:39,969 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 13:40:40,108 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 13:40:40,115 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 13:40:40,204 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 13:40:40,210 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 13:40:40,315 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 13:40:40,319 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 13:40:40,387 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 13:40:40,393 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 13:40:40,452 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 13:40:40,455 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 13:40:40,466 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 13:40:40,586 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 13:40:40,595 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 13:40:40,646 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 13:40:40,651 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 13:40:40,703 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 13:40:40,712 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 13:40:40,763 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 13:40:40,785 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 13:40:40,913 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 13:40:40,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 13:40:41,031 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 13:40:41,036 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 13:40:41,117 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 13:40:41,136 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 13:40:41,280 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 13:40:41,297 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 13:40:41,399 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 13:40:41,429 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 13:40:41,618 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 13:40:41,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 13:40:41,700 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 13:40:41,732 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 13:40:41,844 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 13:40:41,848 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 13:40:41,921 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 13:40:41,954 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 13:40:42,099 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 13:40:42,153 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 13:40:42,272 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 13:40:42,295 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 13:40:42,426 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 13:40:43,004 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 353mS.
+2024-07-03 13:40:43,012 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 13:40:43,098 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 13:40:44,221 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1209mS.
+2024-07-03 13:40:44,233 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 13:40:44,237 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 16:58:25,758 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 884245512 Bytes (1055916032)
+2024-07-03 16:58:28,544 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 343447328 Bytes (1055916032)
+2024-07-03 16:58:28,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-03 16:58:28,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-03 16:58:28,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-03 16:58:28,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-03 16:58:28,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-03 16:58:28,772 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-03 16:58:28,772 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2024-07-03 16:58:28,777 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-03 16:58:28,909 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp_save
+2024-07-03 16:58:29,088 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\license.tmp
+2024-07-03 16:58:29,125 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp_save
+2024-07-03 16:58:29,259 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\gpio.tmp
+2024-07-03 16:58:29,424 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 16:58:29,430 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 16:58:29,539 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 16:58:29,544 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 16:58:29,623 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 16:58:29,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 16:58:29,710 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 16:58:29,714 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 16:58:29,790 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 16:58:29,793 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-03 16:58:29,810 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp_save
+2024-07-03 16:58:29,889 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_HalInit.tmp
+2024-07-03 16:58:29,893 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp_save
+2024-07-03 16:58:29,945 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_vars.tmp
+2024-07-03 16:58:29,957 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp_save
+2024-07-03 16:58:30,014 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_ext_vars.tmp
+2024-07-03 16:58:30,028 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp_save
+2024-07-03 16:58:30,086 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\fatfs_inc.tmp
+2024-07-03 16:58:30,107 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h_save
+2024-07-03 16:58:30,220 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\ffconf.h
+2024-07-03 16:58:30,240 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c_save
+2024-07-03 16:58:30,331 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.c
+2024-07-03 16:58:30,346 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h_save
+2024-07-03 16:58:30,428 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\Target\user_diskio.h
+2024-07-03 16:58:30,445 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c_save
+2024-07-03 16:58:30,539 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.c
+2024-07-03 16:58:30,557 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h_save
+2024-07-03 16:58:30,643 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\FATFS\App\fatfs.h
+2024-07-03 16:58:30,678 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c_save
+2024-07-03 16:58:30,862 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_it.c
+2024-07-03 16:58:30,893 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h_save
+2024-07-03 16:58:30,972 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_it.h
+2024-07-03 16:58:31,004 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c_save
+2024-07-03 16:58:31,122 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\stm32f3xx_hal_msp.c
+2024-07-03 16:58:31,125 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp_save
+2024-07-03 16:58:31,191 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\MXTmpFiles\system.tmp
+2024-07-03 16:58:31,214 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-07-03 16:58:31,331 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\stm32f3xx_hal_conf.h
+2024-07-03 16:58:31,397 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h_save
+2024-07-03 16:58:31,528 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Inc\main.h
+2024-07-03 16:58:31,559 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c_save
+2024-07-03 16:58:31,695 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\015_SD_Card\Core\Src\main.c
+2024-07-03 16:58:32,230 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 367mS.
+2024-07-03 16:58:32,240 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-03 16:58:32,310 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-07-03 16:58:33,711 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1471mS.
+2024-07-03 16:58:33,712 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-03 16:58:33,717 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-07-03 18:26:46,760 [INFO] WebApp:354 - JxBrowser engine has been closed 

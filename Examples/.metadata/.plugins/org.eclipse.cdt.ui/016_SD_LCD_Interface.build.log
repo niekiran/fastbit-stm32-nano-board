@@ -1,0 +1,10 @@
+11:53:08 **** Incremental Build of configuration Debug for project 016_SD_LCD_Interface ****
+make -j4 all 
+arm-none-eabi-size  016_SD_LCD_Interface.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57132	    144	  12128	  69404	  10f1c	016_SD_LCD_Interface.elf
+Finished building: default.size.stdout
+ 
+
+11:53:09 Build Finished. 0 errors, 0 warnings. (took 1s.167ms)
+

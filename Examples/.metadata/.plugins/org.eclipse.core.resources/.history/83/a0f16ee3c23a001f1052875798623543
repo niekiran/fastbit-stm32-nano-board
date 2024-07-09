@@ -1,0 +1,105 @@
+/*
+ * bitmap.c
+ *
+ *  Created on: Jul 5, 2024
+ *      Author: Shreyas Acharya, BHARATI SOFTWARE
+ */
+
+#include "bitmap.h"
+#include "fatfs.h"
+#include "GC9A01A.h"
+
+/**
+  * @brief  Display an image from a BMP file on the GC9A01A LCD display.
+  * @param  fname: Pointer to the filename of the BMP image to display
+  * @retval  0 if successful, -1 if file open error, -2 if header read error,
+  *         -3 if BMP signature error, -4 if dimensions mismatch, -5 if format error,
+  *         -6 if seek error, -7 if pixel data read error, -8 if file close error
+  */
+int display_image_file(const char* fname) {
+	int16_t x, y;
+	char buff[64];
+	uint16_t z=25;
+	FIL file;
+	FRESULT res;
+	FATFS fs;
+
+	unsigned int bytesRead;
+	uint8_t header[34];
+	uint8_t imageRow[(BSP_LCD_ACTIVE_WIDTH * 3 + 3) & ~3];
+
+	// Mount the file system
+	f_mount(&fs, "", 0);
+
+	// Open the BMP file
+	res = f_open(&file, fname, FA_READ);
+	if (res != FR_OK) {
+		return -1;
+	}
+
+	// Read the BMP header
+	res = f_read(&file, header, sizeof(header), &bytesRead);
+	if (res != FR_OK || bytesRead != sizeof(header)) {
+		f_close(&file);
+		return -2;
+	}
+
+	// Check BMP signature
+	if ((header[0] != 0x42) || (header[1] != 0x4D)) {
+		f_close(&file);
+		return -3;
+	}
+
+	// Extract BMP information
+	uint32_t imageOffset = header[10] | (header[11] << 8) | (header[12] << 16) | (header[13] << 24);
+	uint32_t imageWidth = header[18] | (header[19] << 8) | (header[20] << 16) | (header[21] << 24);
+	uint32_t imageHeight = header[22] | (header[23] << 8) | (header[24] << 16) | (header[25] << 24);
+	uint16_t imagePlanes = header[26] | (header[27] << 8);
+	uint16_t imageBitsPerPixel = header[28] | (header[29] << 8);
+	uint32_t imageCompression = header[30] | (header[31] << 8) | (header[32] << 16) | (header[33] << 24);
+
+	// Check BMP dimensions and format
+	if ((imageWidth != BSP_LCD_ACTIVE_WIDTH) || (imageHeight != BSP_LCD_ACTIVE_HEIGHT)) {
+		f_close(&file);
+		return -4;
+	}
+	if ((imagePlanes != 1) || (imageBitsPerPixel != 24) || (imageCompression != 0)) {
+		f_close(&file);
+		return -5;
+	}
+
+	// Seek to the pixel data
+	res = f_lseek(&file, imageOffset);
+	if (res != FR_OK) {
+		f_close(&file);
+		return -6;
+	}
+
+	// Read and display the pixel data
+	for (uint32_t y = 0; y < imageHeight; y++) {
+		uint32_t rowIdx = 0;
+		res = f_read(&file, imageRow, sizeof(imageRow), &bytesRead);
+		if (res != FR_OK) {
+			f_close(&file);
+			return -7;
+		}
+
+		for (uint32_t x = 0; x < imageWidth; x++) {
+			uint8_t r = imageRow[rowIdx++];
+			uint8_t g = imageRow[rowIdx++];
+			uint8_t b = imageRow[rowIdx++];
+
+
+			uint16_t color565 = GC9A01A_COLOR565(r, g, b);
+			gc9a01a_draw_pixel(x, imageHeight - y - 1, color565);
+		}
+	}
+
+	// Close the BMP file
+	res = f_close(&file);
+	if (res != FR_OK) {
+		 return -8;
+	}
+
+	return 0;
+}

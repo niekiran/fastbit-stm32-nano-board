@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;013_MPU6050_3D_Model/MPU6050_3D&apos; to &apos;processing&apos;" description="Rename resource &apos;MPU6050_3D&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MPU6050_3D" name="processing" stamp="1718183009357" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;013_MPU6050_3D_Model/processing/MPU6050_3D.pde&apos; to &apos;MPU6050_3D_model.pde&apos;" description="Rename resource &apos;MPU6050_3D.pde&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="processing/MPU6050_3D.pde" name="MPU6050_3D_model.pde" stamp="1718183037656" updateReferences="true"/>
+</session>

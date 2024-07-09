@@ -1,0 +1,10 @@
+../Core/Src/mpu6050.c:45:6:MPU6050_Init	8	static
+../Core/Src/mpu6050.c:57:6:PowerManagement_Config	24	static
+../Core/Src/mpu6050.c:76:6:Data_Rate_Config	24	static
+../Core/Src/mpu6050.c:94:6:Gyro_Config	24	static
+../Core/Src/mpu6050.c:112:6:Accelerometer_Config	24	static
+../Core/Src/mpu6050.c:131:6:MPU6050_Read_Accel	40	static
+../Core/Src/mpu6050.c:152:6:MPU6050_Read_Gyro	40	static
+../Core/Src/mpu6050.c:173:6:MPU6050_Read_Temp	40	static
+../Core/Src/mpu6050.c:189:6:MPU6050_Read_All	112	static
+../Core/Src/mpu6050.c:252:8:Kalman_getAngle	104	static

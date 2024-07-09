@@ -1,0 +1,15 @@
+/*
+ * cordinates.h
+ *
+ *  Created on: Jul 4, 2024
+ *      Author: Shreyas Acharya, BHARATI SOFTWARE
+ */
+
+#ifndef INC_CORDINATES_H_
+#define INC_CORDINATES_H_
+#include "font.h"
+
+void printmsg(const char* msg);
+void tp_cordinates(void);
+
+#endif /* INC_CORDINATES_H_ */

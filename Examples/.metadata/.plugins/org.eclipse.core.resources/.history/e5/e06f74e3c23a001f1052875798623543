@@ -1,0 +1,13 @@
+/*
+ * bitmap.h
+ *
+ *  Created on: Jul 5, 2024
+ *      Author: Shreyas Acharya, BHARATI SOFTWARE
+ */
+
+#ifndef INC_BITMAP_H_
+#define INC_BITMAP_H_
+
+int display_image_file(const char* fname);
+
+#endif /* INC_BITMAP_H_ */

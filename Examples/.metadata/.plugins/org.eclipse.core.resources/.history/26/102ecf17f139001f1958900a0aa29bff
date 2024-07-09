@@ -1,0 +1,38 @@
+/*
+ * cordinates.c
+ *
+ *  Created on: Jul 4, 2024
+ *      Author: Shreyas Acharya, BHARATI SOFTWARE
+ */
+
+#include "cordinates.h"
+#include "CST816S.h"
+#include "GC9A01A.h"
+#include "font.h"
+#include <string.h>
+#include <stdio.h>
+
+void printmsg(uint16_t x, uint16_t y, const char* msg){
+	gc9a01a_write_string(x, y, msg , Font_11x18, WHITE, NAVY);
+}
+
+void tp_cordinates(void) {
+
+	char msg[10];
+	struct touch_data data;
+	while(1) {
+		if(CST816S_data_available()) {
+			memcpy(&data, CST816S_get_data(), sizeof(struct touch_data));
+			UNUSED(data);
+
+			snprintf(msg, sizeof(msg), "X: %d", data.x);
+			printmsg(30, 160, (const char*)msg);
+
+			snprintf(msg, sizeof(msg), "Y: %d", data.y);
+			printmsg(150, 160, (const char*)msg);
+
+			HAL_Delay(300);
+
+		}
+	}
+}

@@ -1,0 +1,10 @@
+16:08:55 **** Build of configuration Debug for project 007_MPU6050_Angle_Read ****
+make -j4 all 
+arm-none-eabi-size  007_MPU6050_Angle_Read.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37992	    488	   2008	  40488	   9e28	007_MPU6050_Angle_Read.elf
+Finished building: default.size.stdout
+ 
+
+16:08:55 Build Finished. 0 errors, 0 warnings. (took 694ms)
+

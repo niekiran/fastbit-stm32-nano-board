@@ -1,0 +1,48 @@
+/*
+ * CST816S.h
+ *
+ *  Created on: Jun 29, 2024
+ *      Author: Shreyas Acharya,BHARATI SOFTWARE
+ */
+
+#ifndef INC_CST816S_H_
+#define INC_CST816S_H_
+
+#include "main.h"
+
+// Gesture definitions
+enum GESTURE {
+    NONE = 0x00,
+    SWIPE_UP = 0x01,
+    SWIPE_DOWN = 0x02,
+    SWIPE_LEFT = 0x03,
+    SWIPE_RIGHT = 0x04,
+    SINGLE_CLICK = 0x05,
+    DOUBLE_CLICK = 0x0B,
+    LONG_PRESS = 0x0C
+};
+
+struct touch_data {
+    uint8_t gestureID;       // Gesture ID
+    uint8_t points;          // Number of touch points
+    uint8_t event;           // Event (0 = Down, 1 = Up, 2 = Contact)
+    int x;                   // X coordinate
+    int y;                   // Y coordinate
+    uint8_t version;         // Version information
+    uint8_t versionInfo[3];  // Additional version information
+};
+
+// Function prototypes
+void CST816S_read_touch(void);
+void CST816S_handleISR(void);
+void CST816S_init(void);
+const char* CST816S_gesture();
+void CST816S_i2c_write(uint8_t addr, uint8_t reg_addr, const uint8_t *reg_data, size_t length);
+void CST816S_i2c_read(uint16_t addr, uint8_t reg_addr, uint8_t *reg_data, size_t length);
+struct touch_data* CST816S_get_data(void);
+uint8_t CST816S_data_available(void);
+
+#define TP_RESET_PIN_LOW     HAL_GPIO_WritePin(TP_RESET_GPIO_Port, TP_RESET_Pin, GPIO_PIN_RESET)
+#define TP_RESET_PIN_HIGH    HAL_GPIO_WritePin(TP_RESET_GPIO_Port, TP_RESET_Pin, GPIO_PIN_SET)
+
+#endif /* INC_CST816S_H_ */

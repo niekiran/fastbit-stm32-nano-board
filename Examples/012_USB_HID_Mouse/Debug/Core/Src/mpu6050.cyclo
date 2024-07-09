@@ -1,0 +1,13 @@
+../Core/Src/mpu6050.c:37:6:KalmanFilter_Init	1
+../Core/Src/mpu6050.c:51:8:KalmanFilter_Update	1
+../Core/Src/mpu6050.c:68:6:MPU6050_Init	1
+../Core/Src/mpu6050.c:80:6:PowerManagement_Config	2
+../Core/Src/mpu6050.c:99:6:Data_Rate_Config	2
+../Core/Src/mpu6050.c:117:6:Gyro_Config	2
+../Core/Src/mpu6050.c:135:6:Accelerometer_Config	2
+../Core/Src/mpu6050.c:153:6:MPU6050_Read_Accel	1
+../Core/Src/mpu6050.c:174:6:MPU6050_Read_Gyro	1
+../Core/Src/mpu6050.c:195:6:MPU6050_Read_Temp	1
+../Core/Src/mpu6050.c:211:6:MPU6050_Read_All	2
+../Core/Src/mpu6050.c:249:6:filter_gyro_data	2
+../Core/Src/mpu6050.c:271:6:read_gyro_data	1

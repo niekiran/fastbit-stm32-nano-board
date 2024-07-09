@@ -1,0 +1,78 @@
+2024-05-14 09:56:54,466 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:56:54,507 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:56:54,547 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:56:54,575 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:05,577 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:05,578 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:05,616 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:05,651 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:52,842 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 09:57:52,857 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-14 09:58:05,075 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 10:05:44,819 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 763030584 Bytes (1073741824)
+2024-05-14 10:05:44,941 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:44,942 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:44,942 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:45,188 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.UnknownHostException: stmicroelectronics.d3.sc.omtrdc.net
+2024-05-14 10:05:45,189 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.UnknownHostException: stmicroelectronics.d3.sc.omtrdc.net
+2024-05-14 10:05:45,189 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.UnknownHostException: stmicroelectronics.d3.sc.omtrdc.net
+2024-05-14 10:05:45,189 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.UnknownHostException: stmicroelectronics.d3.sc.omtrdc.net
+2024-05-14 10:05:45,190 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.UnknownHostException: stmicroelectronics.d3.sc.omtrdc.net
+2024-05-14 10:05:48,447 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 851034496 Bytes (1073741824)
+2024-05-14 10:05:48,486 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:48,488 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:48,489 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-05-14 10:05:48,658 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2024-05-14 10:05:48,658 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-14 10:05:48,658 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-14 10:05:48,658 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-14 10:05:48,658 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2024-05-14 10:05:48,659 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-14 10:05:48,660 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2024-05-14 10:05:48,688 [WARN] IP:2120 - lpm_enable not found: check if there is a RefParameter without a condition.
+2024-05-14 10:05:48,844 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\license.tmp_save
+2024-05-14 10:05:49,159 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\license.tmp
+2024-05-14 10:05:49,231 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\gpio.tmp_save
+2024-05-14 10:05:49,433 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\gpio.tmp
+2024-05-14 10:05:49,490 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_vars.tmp_save
+2024-05-14 10:05:49,693 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_vars.tmp
+2024-05-14 10:05:49,696 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_inc.tmp_save
+2024-05-14 10:05:49,815 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_inc.tmp
+2024-05-14 10:05:49,829 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_HalInit.tmp_save
+2024-05-14 10:05:50,076 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_HalInit.tmp
+2024-05-14 10:05:50,083 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_Msp.tmp_save
+2024-05-14 10:05:50,223 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\usb_Msp.tmp
+2024-05-14 10:05:50,271 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-14 10:05:50,273 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-14 10:05:50,322 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usb_device.c_save
+2024-05-14 10:05:50,477 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usb_device.c
+2024-05-14 10:05:50,495 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usb_device.h_save
+2024-05-14 10:05:50,644 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usb_device.h
+2024-05-14 10:05:50,655 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\Target\usbd_conf.h_save
+2024-05-14 10:05:50,775 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\Target\usbd_conf.h
+2024-05-14 10:05:50,808 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\Target\usbd_conf.c_save
+2024-05-14 10:05:50,970 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\Target\usbd_conf.c
+2024-05-14 10:05:51,006 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usbd_desc.h_save
+2024-05-14 10:05:51,113 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usbd_desc.h
+2024-05-14 10:05:51,155 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usbd_desc.c_save
+2024-05-14 10:05:51,296 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\USB_DEVICE\App\usbd_desc.c
+2024-05-14 10:05:51,377 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\stm32f3xx_it.c_save
+2024-05-14 10:05:51,663 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\stm32f3xx_it.c
+2024-05-14 10:05:51,674 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\stm32f3xx_it.h_save
+2024-05-14 10:05:51,789 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\stm32f3xx_it.h
+2024-05-14 10:05:51,841 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\stm32f3xx_hal_msp.c_save
+2024-05-14 10:05:52,053 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\stm32f3xx_hal_msp.c
+2024-05-14 10:05:52,058 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\system.tmp_save
+2024-05-14 10:05:52,156 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\MXTmpFiles\system.tmp
+2024-05-14 10:05:52,182 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\stm32f3xx_hal_conf.h_save
+2024-05-14 10:05:52,392 [INFO] CodeEngine:335 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\stm32f3xx_hal_conf.h
+2024-05-14 10:05:52,489 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\main.h_save
+2024-05-14 10:05:52,665 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Inc\main.h
+2024-05-14 10:05:52,711 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\main.c_save
+2024-05-14 10:05:52,899 [INFO] CodeEngine:279 - Generated code: C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\012_USB_HID_Mouse\Core\Src\main.c
+2024-05-14 10:05:53,536 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 351mS.
+2024-05-14 10:05:53,543 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-14 10:05:53,637 [INFO] ConfigFileManager:1503 - The Die is : DIE422
+2024-05-14 10:05:55,336 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1793mS.
+2024-05-14 10:05:55,337 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-05-14 10:05:55,341 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

@@ -1,0 +1,7 @@
+﻿**012_USB_HID_Mouse**
+
+Simple Mouse Emulator based on nano board, MPU6050 accelerometer placed on board is used.
+MCU USB is configured in FS-Mode as a HID-Class Device sending Mouse report each 5 ms.
+Report is based on data from accelerometer transmitted via I2C and state of GPIO pins used as Mouse Left and Right Buttons.
+Changing yaw angle of board makes cursor move horizontally (negative - left, positive - right).
+Changing pitch angle of board makes cursor move vertically (negative - down, positive - up).

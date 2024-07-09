@@ -1,0 +1,4 @@
+../Core/Src/stm32f3xx_hal_msp.c:65:6:HAL_MspInit	1
+../Core/Src/stm32f3xx_hal_msp.c:88:6:HAL_TIM_PWM_MspInit	2
+../Core/Src/stm32f3xx_hal_msp.c:104:6:HAL_TIM_MspPostInit	2
+../Core/Src/stm32f3xx_hal_msp.c:138:6:HAL_TIM_PWM_MspDeInit	2

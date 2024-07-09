@@ -1,0 +1,5 @@
+../Core/Src/uart.c:25:6:display_menu	24	static
+../Core/Src/uart.c:40:6:display_invalid_command	16	static
+../Core/Src/uart.c:51:6:display_invalid_argument	16	static
+../Core/Src/uart.c:62:6:process_command_queue	32	static
+../Core/Src/uart.c:84:6:execute_command	32	static

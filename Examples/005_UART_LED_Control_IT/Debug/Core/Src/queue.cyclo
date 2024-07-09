@@ -1,0 +1,7 @@
+../Core/Src/queue.c:15:15:createQueue	1
+../Core/Src/queue.c:24:5:isFull	1
+../Core/Src/queue.c:29:5:isEmpty	1
+../Core/Src/queue.c:34:6:enqueue	2
+../Core/Src/queue.c:44:25:dequeue	2
+../Core/Src/queue.c:58:25:front	2
+../Core/Src/queue.c:70:25:rear	2
