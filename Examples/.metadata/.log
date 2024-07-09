@@ -3734,3 +3734,73 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\shrey\S
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-09 11:06:49.432
 !MESSAGE Indexed 'Nano_LCD_TP' (33 sources, 129 headers) in 6.74 sec: 11,412 declarations; 57,988 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.21%)
+!SESSION 2024-07-09 14:16:30.633 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-07-09 14:16:33.551
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-09 14:16:42.690
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-09 14:16:42.746
+!MESSAGE Log4j2 initialized with config file C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-09 14:17:12.954
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-09 15:59:15.744
+!MESSAGE Indexed '015_Nano_LCD_TP' (30 sources, 96 headers) in 15.1 sec: 6,596 declarations; 39,427 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0043%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-07-09 16:18:08.995
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+load C:\\Users\\shrey\\STM32CubeIDE\\fastbit-stm32-nano-board\\Examples\\015_Nano_LCD_TP\\Debug\\015_Nano_LCD_TP.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load C:\\Users\\shrey\\STM32CubeIDE\\fastbit-stm32-nano-board\\Examples\\015_Nano_LCD_TP\\Debug\\015_Nano_LCD_TP.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load C:\\Users\\shrey\\STM32CubeIDE\\fastbit-stm32-nano-board\\Examples\\015_Nano_LCD_TP\\Debug\\015_Nano_LCD_TP.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2024-07-09 16:18:09.002
+!MESSAGE Failed to execute MI command:
+load C:\\Users\\shrey\\STM32CubeIDE\\fastbit-stm32-nano-board\\Examples\\015_Nano_LCD_TP\\Debug\\015_Nano_LCD_TP.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2024-07-09 16:18:09.002
+!MESSAGE Failed to execute MI command:
+load C:\\Users\\shrey\\STM32CubeIDE\\fastbit-stm32-nano-board\\Examples\\015_Nano_LCD_TP\\Debug\\015_Nano_LCD_TP.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 0
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)

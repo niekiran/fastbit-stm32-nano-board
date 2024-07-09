@@ -1,0 +1,8 @@
+../Core/Src/main.c:69:13:display_vibgyor_sequence	1
+../Core/Src/main.c:88:5:main	1
+../Core/Src/main.c:139:6:SystemClock_Config	4
+../Core/Src/main.c:187:13:MX_I2C1_Init	4
+../Core/Src/main.c:235:13:MX_GPIO_Init	1
+../Core/Src/main.c:295:13:bsp_lcd_print	1
+../Core/Src/main.c:303:13:display_gesture	2
+../Core/Src/main.c:326:6:Error_Handler	1

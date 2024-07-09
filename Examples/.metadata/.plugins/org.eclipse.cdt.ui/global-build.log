@@ -1,64 +1,21 @@
-11:28:35 **** Incremental Build of configuration Debug for project Nano_LCD_TP ****
+16:34:53 **** Incremental Build of configuration Debug for project 015_Nano_LCD_TP ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/GC9A01A.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/GC9A01A.d" -MT"Core/Src/GC9A01A.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GC9A01A.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Nano_LCD_TP.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\nano-board-lcd\Examples\Nano_LCD_TP\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nano_LCD_TP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Nano_LCD_TP.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "015_Nano_LCD_TP.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples\015_Nano_LCD_TP\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="015_Nano_LCD_TP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 015_Nano_LCD_TP.elf
  
-arm-none-eabi-size  Nano_LCD_TP.elf 
-arm-none-eabi-objdump -h -S Nano_LCD_TP.elf  > "Nano_LCD_TP.list"
+arm-none-eabi-size  015_Nano_LCD_TP.elf 
+arm-none-eabi-objdump -h -S 015_Nano_LCD_TP.elf  > "015_Nano_LCD_TP.list"
    text	   data	    bss	    dec	    hex	filename
- 144728	    152	   3224	 148104	  24288	Nano_LCD_TP.elf
+ 142312	    112	   3032	 145456	  23830	015_Nano_LCD_TP.elf
 Finished building: default.size.stdout
  
-Finished building: Nano_LCD_TP.list
+Finished building: 015_Nano_LCD_TP.list
  
-11:28:41 **** Incremental Build of configuration Debug for project Nano_LCD_TP ****
+16:35:00 **** Incremental Build of configuration Debug for project 015_Nano_LCD_TP ****
 make -j4 all 
-arm-none-eabi-size  Nano_LCD_TP.elf 
+arm-none-eabi-size  015_Nano_LCD_TP.elf 
    text	   data	    bss	    dec	    hex	filename
- 144728	    152	   3224	 148104	  24288	Nano_LCD_TP.elf
-Finished building: default.size.stdout
- 
-11:41:55 **** Incremental Build of configuration Debug for project 016_SD_LCD_Interface ****
-make -j4 all 
-arm-none-eabi-gcc -o "016_SD_LCD_Interface.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\016_SD_LCD_Interface\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="016_SD_LCD_Interface.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 016_SD_LCD_Interface.elf
- 
-arm-none-eabi-size  016_SD_LCD_Interface.elf 
-arm-none-eabi-objdump -h -S 016_SD_LCD_Interface.elf  > "016_SD_LCD_Interface.list"
-   text	   data	    bss	    dec	    hex	filename
-  57132	    144	  12128	  69404	  10f1c	016_SD_LCD_Interface.elf
-Finished building: default.size.stdout
- 
-Finished building: 016_SD_LCD_Interface.list
- 
-11:44:36 **** Incremental Build of configuration Debug for project 016_SD_LCD_Interface ****
-make -j4 all 
-arm-none-eabi-size  016_SD_LCD_Interface.elf 
-   text	   data	    bss	    dec	    hex	filename
-  57132	    144	  12128	  69404	  10f1c	016_SD_LCD_Interface.elf
-Finished building: default.size.stdout
- 
-11:44:58 **** Incremental Build of configuration Debug for project Nano_LCD_TP ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/GC9A01A.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/GC9A01A.d" -MT"Core/Src/GC9A01A.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/GC9A01A.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Nano_LCD_TP.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\nano-board-lcd\Examples\Nano_LCD_TP\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Nano_LCD_TP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Nano_LCD_TP.elf
- 
-arm-none-eabi-size  Nano_LCD_TP.elf 
-arm-none-eabi-objdump -h -S Nano_LCD_TP.elf  > "Nano_LCD_TP.list"
-   text	   data	    bss	    dec	    hex	filename
- 144732	    152	   3224	 148108	  2428c	Nano_LCD_TP.elf
-Finished building: default.size.stdout
- 
-Finished building: Nano_LCD_TP.list
- 
-11:53:08 **** Incremental Build of configuration Debug for project 016_SD_LCD_Interface ****
-make -j4 all 
-arm-none-eabi-size  016_SD_LCD_Interface.elf 
-   text	   data	    bss	    dec	    hex	filename
-  57132	    144	  12128	  69404	  10f1c	016_SD_LCD_Interface.elf
+ 142312	    112	   3032	 145456	  23830	015_Nano_LCD_TP.elf
 Finished building: default.size.stdout
  
