@@ -1,0 +1,10 @@
+10:39:25 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
+make -j4 all 
+arm-none-eabi-size  007_Tilt_LED_Controller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21924	    120	   2008	  24052	   5df4	007_Tilt_LED_Controller.elf
+Finished building: default.size.stdout
+ 
+
+10:39:25 Build Finished. 0 errors, 0 warnings. (took 253ms)
+
