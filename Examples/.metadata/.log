@@ -3860,3 +3860,24 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\shrey\S
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-10 10:33:54.345
 !MESSAGE Indexed '007_Tilt_LED_Controller' (21 sources, 82 headers) in 10.2 sec: 4,912 declarations; 26,325 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0064%)
+!SESSION 2024-07-11 09:34:03.265 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-11 09:34:10.014
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-11 09:34:10.033
+!MESSAGE Log4j2 initialized with config file C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-11 09:34:32.717
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-07-11 09:34:37.950
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-07-11 09:34:38.327
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39

@@ -38,7 +38,7 @@ void led_off(int press_count) {
   default:
     /* Reset button press count and turn off all LEDs */
     press_count = 0;
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, GPIO_PIN_RESET);
     break;
   }
 }

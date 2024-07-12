@@ -102,6 +102,7 @@ int main(void)
   display_vibgyor_sequence();
   HAL_Delay(1000);
   gc9a01a_lcd_fill_image(image);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
