@@ -1,48 +1,7 @@
-10:37:31 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/led.d" -MT"Core/Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/led.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/mpu6050.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/mpu6050.d" -MT"Core/Src/mpu6050.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/mpu6050.o"
-arm-none-eabi-gcc "../Core/Src/stm32f3xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_hal_msp.d" -MT"Core/Src/stm32f3xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f3xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f3xx_it.d" -MT"Core/Src/stm32f3xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f3xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f3xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f3xx.d" -MT"Core/Src/system_stm32f3xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f3xx.o"
-arm-none-eabi-gcc -o "007_Tilt_LED_Controller.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples\007_Tilt_LED_Controller\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_Tilt_LED_Controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 007_Tilt_LED_Controller.elf
- 
-arm-none-eabi-size  007_Tilt_LED_Controller.elf 
-arm-none-eabi-objdump -h -S 007_Tilt_LED_Controller.elf  > "007_Tilt_LED_Controller.list"
-   text	   data	    bss	    dec	    hex	filename
-  21924	    120	   2008	  24052	   5df4	007_Tilt_LED_Controller.elf
-Finished building: default.size.stdout
- 
-Finished building: 007_Tilt_LED_Controller.list
- 
-10:37:52 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
-make -j4 all 
-arm-none-eabi-gcc -o "007_Tilt_LED_Controller.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\shrey\STM32CubeIDE\fastbit-stm32-nano-board\Examples\007_Tilt_LED_Controller\STM32F303CCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_Tilt_LED_Controller.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 007_Tilt_LED_Controller.elf
- 
-arm-none-eabi-size  007_Tilt_LED_Controller.elf 
-arm-none-eabi-objdump -h -S 007_Tilt_LED_Controller.elf  > "007_Tilt_LED_Controller.list"
-   text	   data	    bss	    dec	    hex	filename
-  21924	    120	   2008	  24052	   5df4	007_Tilt_LED_Controller.elf
-Finished building: default.size.stdout
- 
-Finished building: 007_Tilt_LED_Controller.list
- 
-10:38:41 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
+15:33:23 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
 make -j4 all 
 arm-none-eabi-size  007_Tilt_LED_Controller.elf 
    text	   data	    bss	    dec	    hex	filename
-  21924	    120	   2008	  24052	   5df4	007_Tilt_LED_Controller.elf
-Finished building: default.size.stdout
- 
-10:39:25 **** Incremental Build of configuration Debug for project 007_Tilt_LED_Controller ****
-make -j4 all 
-arm-none-eabi-size  007_Tilt_LED_Controller.elf 
-   text	   data	    bss	    dec	    hex	filename
-  21924	    120	   2008	  24052	   5df4	007_Tilt_LED_Controller.elf
+  21908	    120	   2008	  24036	   5de4	007_Tilt_LED_Controller.elf
 Finished building: default.size.stdout
  

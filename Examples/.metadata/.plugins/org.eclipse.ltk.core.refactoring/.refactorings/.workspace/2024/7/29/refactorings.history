@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;007_Tilt_LED_Controller/Core/Inc/mpu6050.c&apos;" deleteContents="false" description="Delete resource &apos;007_Tilt_LED_Controller/Core/Inc/mpu6050.c&apos;" element1="/007_Tilt_LED_Controller/Core/Inc/mpu6050.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1721469459711"/>&#x0A;<refactoring comment="Delete resource &apos;014_MPU6050_Air_Mouse&apos;" deleteContents="false" description="Delete resource &apos;014_MPU6050_Air_Mouse&apos;" element1="/014_MPU6050_Air_Mouse" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1721470657440"/>
+</session>
