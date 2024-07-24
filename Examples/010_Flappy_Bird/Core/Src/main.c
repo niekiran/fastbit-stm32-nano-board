@@ -81,15 +81,23 @@ GamteState game_state ;
 Player player;
 Obstacle obstacle;
 
-static void Player_ctor(Player* player, int player_x, int player_y) {
+static void Player_ctor(Player* player, int player_x, int player_w, int player_y, int player_h) {
 	player->x = player_x;
+	player->w = player_w;
 	player->y = player_y;
+	player->h = player_h;
 	player->score = 0;
 }
 
-static void Obstacle_ctor(Obstacle* obstacle, int obstacle_x, int obstacle_y) {
+static void Obstacle_ctor(Obstacle* obstacle, int obstacle_x, int obstacle_w, int obstacle_y, int obstacle_g,
+                            int obstacle_s) {
 	obstacle->x = obstacle_x;
+	obstacle->w = obstacle_w;
 	obstacle->y = obstacle_y;
+	obstacle->h = 0;
+	obstacle->g = obstacle_g;
+	obstacle->speed  = obstacle_s;
+	obstacle->passed = false;
 }
 /* USER CODE END 0 */
 
@@ -126,8 +134,8 @@ int main(void)
   MX_SPI1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  Player_ctor(&player, 70, 30);
-  Obstacle_ctor(&obstacle, 240, 30);
+  Player_ctor(&player, 70, 30, 100, 30);
+  Obstacle_ctor(&obstacle, 240, 30, 30, 80, 5);
   mpu6050_Init();
   nano_lcd_Init();
 
@@ -398,12 +406,14 @@ void tick() {
 		case GAME_START: {
 			is_Collide(&obstacle, &player);
 			if(collision_detected == true) {
+				set_gameover_background(hlcd);
 				game_state = GAME_OVER;
 			} else {
+				obstacle.speed = get_obstacle_speed(player.score);
+				obstacle.x -= obstacle.speed;
 				move_player(hlcd, player.y);
 
-				obstacle.x -= 5;
-				if(obstacle.x != 0) {
+				if(obstacle.x >= 0) {
 					move_obstacle(hlcd,obstacle.x);
 				}else{
 					bsp_lcd_fill_rect(hlcd, BACKGROUND , 0, 40, 0, 240);
@@ -419,9 +429,8 @@ void tick() {
 			game_over_mssg(hlcd);
 			GPIO_PinState pinState = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
 			if (pinState == GPIO_PIN_SET) {
-
-				Player_ctor(&player, 70, 30);
-				Obstacle_ctor(&obstacle, 240, 30);
+				Player_ctor(&player, 70, 30, 100, 30);
+				Obstacle_ctor(&obstacle, 240, 30, 30, 80, 5);
 				flappy_game_set_back_ground(hlcd);
 				game_state = GAME_PRESTART;
 			}
@@ -438,21 +447,25 @@ void tick() {
   */
 void is_Collide(Obstacle *obstacle, Player *player) {
 	int player_left = player->x;
-	int player_right = player->x + PLAYER_WIDTH -5;
+	int player_right = player->x + player->w  -5;
 	int player_top = player->y;
-	int player_bottom = player->y + PLAYER_HEIGHT-5;
+	int player_bottom = player->y + player->h-5;
 
 	int obstacle_left = obstacle->x;
-	int obstacle_right = obstacle->x + OBSTACLE_WIDTH;
+	int obstacle_right = obstacle->x + obstacle->w;
 
-	int top_obstacle_height = generate_obstacle_height(obstacle->x);
-	int obstacle_bottom = OBSTACLE_ySTART_POINT + top_obstacle_height -5;
+	obstacle->h = generate_obstacle_height(obstacle->x);
+	int obstacle_bottom = OBSTACLE_ySTART_POINT + obstacle->h -5;
 
 	if (player_right  >= obstacle_left && player_left <= obstacle_right ){
-		if( (player_top  < obstacle_bottom) || (player_bottom > (obstacle_bottom + OBSTACLE_GAP +10))) {
+		if( (player_top  < obstacle_bottom) || (player_bottom > (obstacle_bottom + obstacle->g +10))) {
 			collision_detected = true;
+		} else if (!obstacle->passed) {  // Only update score if the obstacle hasn't been passed
+				player->score += 1;
+				obstacle->passed = true;  // Mark the obstacle as passed
 		}
-		player->score += 1;
+	} else {
+		obstacle->passed = false;   // Reset the flag when the player is not near the obstacle
 	}
 }
 

@@ -23,7 +23,7 @@ void bsp_lcd_set_background(bsp_lcd_t *hlcd) {
   * @retval None
   */
 void fill_player_trace(bsp_lcd_t *hlcd){
-	bsp_lcd_fill_rect(hlcd, BACKGROUND , PLAYER_xSTART, PLAYER_WIDTH, 30, 180);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND , player.x, player.w, 30, 180);
 }
 
 /**
@@ -63,8 +63,8 @@ void fill_countdown_trace(bsp_lcd_t *hlcd) {
   * @param  hlcd: Pointer to LCD handle.
   * @retval None
   */
-void fill_gameover_trace(bsp_lcd_t *hlcd) {
-	bsp_lcd_fill_rect(hlcd, BACKGROUND , 0, 240, 96, 4);
+void set_gameover_background(bsp_lcd_t *hlcd) {
+	bsp_lcd_fill_rect(hlcd, BACKGROUND , 0, 240, 30, 180);
 }
 
 /**

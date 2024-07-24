@@ -18,5 +18,6 @@ void bsp_lcd_set_obstacle(bsp_lcd_t *hlcd);
 int generate_obstacle_height(int x_start);
 void move_obstacle(bsp_lcd_t *hlcd, int x);
 void score_card_background(bsp_lcd_t *hlcd);
+uint8_t get_obstacle_speed(int score);
 
 #endif /* INC_OBSTACLE_H_ */

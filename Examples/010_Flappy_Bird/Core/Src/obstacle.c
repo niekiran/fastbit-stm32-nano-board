@@ -33,25 +33,37 @@ int generate_obstacle_height(int x_start) {
 void display_obstacle(bsp_lcd_t *hlcd, int x_start) {
 	score_card_background(hlcd);
 	
-	int top_obstacle_height = generate_obstacle_height(x_start);
-	int bottom_obstacle_ystart = top_obstacle_height + OBSTACLE_ySTART_POINT + OBSTACLE_GAP;
+	obstacle.h = generate_obstacle_height(x_start);
+	int bottom_obstacle_ystart = obstacle.h + obstacle.y + obstacle.g;
 	int bottom_obstacle_height = OBSTACLE_yEND_POINT - bottom_obstacle_ystart;
 
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,OBSTACLE_WIDTH,OBSTACLE_ySTART_POINT,top_obstacle_height);
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,30,bottom_obstacle_ystart,bottom_obstacle_height);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,3, obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,3,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
 
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,20,OBSTACLE_ySTART_POINT,top_obstacle_height-2);
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,20,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,obstacle.w,( obstacle.h+obstacle.y-2),2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start,obstacle.w,bottom_obstacle_ystart,2);
 
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,15,OBSTACLE_ySTART_POINT,top_obstacle_height-2);
-	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,15,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,2,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+3,2,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
 
-	bsp_lcd_fill_rect(hlcd, WHITE,x_start+7,10,OBSTACLE_ySTART_POINT,top_obstacle_height-2);
-	bsp_lcd_fill_rect(hlcd, WHITE,x_start+7,10,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,2,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+5,2,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+
+	bsp_lcd_fill_rect(hlcd, WHITE, x_start+7,10,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, WHITE, x_start+7,10,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+17,3,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_3,x_start+17,3,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+20,3,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_2,x_start+20,3,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
+
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start+23,7,obstacle.y, obstacle.h-2);
+	bsp_lcd_fill_rect(hlcd, OBSTACLE_SHADE_1,x_start+23,7,(bottom_obstacle_ystart+2),(bottom_obstacle_height-2));
 
 	/* filling traces of obstacle */
-	bsp_lcd_fill_rect(hlcd, BACKGROUND ,(x_start+30), OBSTACLE_WIDTH, OBSTACLE_ySTART_POINT, top_obstacle_height);
-	bsp_lcd_fill_rect(hlcd, BACKGROUND,(x_start+30),30,bottom_obstacle_ystart,bottom_obstacle_height);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND,(x_start+30), obstacle.speed, obstacle.y,  obstacle.h);
+	bsp_lcd_fill_rect(hlcd, BACKGROUND,(x_start+30), obstacle.speed, bottom_obstacle_ystart, bottom_obstacle_height);
 }
 
 /**
@@ -71,9 +83,19 @@ void move_obstacle(bsp_lcd_t *hlcd, int x) {
   * @retval None
   */
 void score_card_background(bsp_lcd_t *hlcd) {
-	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_3, 0, 96,0,25);
-	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_3, 144, 96,0,25);
-	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_2, 0, 240,25,3);
+	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_3, 0, 96,0,26);
+	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_3, 144, 96,0,26);
+	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_2, 0, 240,26,2);
 	bsp_lcd_fill_rect(hlcd, SCORE_BOARD_SHADE_1, 0, 240,28,2);
 }
 
+/**
+  * @brief  Calculates the speed of obstacles based on the player's score.
+  * @param  score: The player's score.
+  * @retval uint8_t: The calculated obstacle speed.
+  */
+uint8_t get_obstacle_speed(int score) {
+  int base_speed = 5;
+  float speed_increment = 1.6;
+  return base_speed * speed_increment;
+}

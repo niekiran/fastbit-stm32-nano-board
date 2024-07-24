@@ -55,16 +55,14 @@ static void lcd_flush(bsp_lcd_t *hlcd);
 static uint32_t bytes_to_pixels(uint32_t nbytes, uint8_t pixel_format);
 static uint32_t pixels_to_bytes(uint32_t pixels, uint8_t pixel_format);
 static uint32_t copy_to_draw_buffer2( bsp_lcd_t *hlcd,uint16_t nbytes,uint16_t *image_data);
-static void GC9A01A_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t color, uint16_t bgcolor) ;
-static void GC9A01A_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
+static void gc9a01a_write_char(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t color, uint16_t bgcolor) ;
+static void gc9a01a_set_address_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
 
-//void GC4901A_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t* data);
 
 static void gc9a01a_write_cmd(uint8_t cmd) {
 	LCD_CSX_LOW();
 	LCD_DCX_LOW(); //DCX = 0 , for command
 	HAL_SPI_Transmit(&hspi1, &cmd, 1, HAL_MAX_DELAY);
-	//HAL_SPI_Transmit_DMA(&hspi1, &cmd, 1);
 	LCD_DCX_HIGH();
 	LCD_CSX_HIGH();
 }
@@ -73,24 +71,11 @@ static void gc9a01a_write_cmd(uint8_t cmd) {
 static void gc9a01a_write_data(uint8_t *buffer, uint32_t len) {
 	LCD_CSX_LOW();
 	HAL_SPI_Transmit(&hspi1, buffer, len, HAL_MAX_DELAY);
-	//HAL_SPI_Transmit_DMA(&hspi1, buffer, len);
 	LCD_CSX_HIGH();
 }
 
 void gc9a01a_set_orientation(uint8_t orientation)
 {
-//	uint8_t param;
-//
-//	if(orientation == LANDSCAPE){
-//		param = MADCTL_MV | MADCTL_MY | MADCTL_BGR; /*Memory Access Control <Landscape setting>*/
-//	}else if(orientation == PORTRAIT){
-//		param = MADCTL_MY| MADCTL_MX| MADCTL_BGR;  /* Memory Access Control <portrait setting> */
-//	}
-//
-//	gc9a01a_write_cmd(GC9A01A_MADCTL);    // Memory Access Control command
-//	gc9a01a_write_data(&param, 1);
-//
-	//////////////////////////////////////////////////////
 	uint8_t params[4];
 	if(orientation == LANDSCAPE) {
 		gc9a01a_write_cmd(GC9A01A_RASET);
@@ -127,8 +112,6 @@ void gc9a01a_set_orientation(uint8_t orientation)
 	}
 	gc9a01a_write_cmd(GC9A01A_MADCTL);
 	gc9a01a_write_data(params,1);
-
-	//////////////////////////////////////////////////////
 }
 
 void gc9a01a_send_cmd_mem_write(void)
@@ -137,7 +120,7 @@ void gc9a01a_send_cmd_mem_write(void)
 }
 
 
- void gc9a01a_set_display_area(lcd_area_t *area)
+void gc9a01a_set_display_area(lcd_area_t *area)
 {
 	uint8_t params[4];
 
@@ -155,7 +138,6 @@ void gc9a01a_send_cmd_mem_write(void)
 	params[3] = LOW_16(area->y2);
 	gc9a01a_write_cmd(GC9A01A_RASET);
 	gc9a01a_write_data(params, 4);
-
 }
 
 
@@ -240,7 +222,6 @@ void gc9a01a_config() {
 	gc9a01a_write_cmd(GC9A01A_SLPOUT);								///< Sleep Out
 	HAL_Delay(100);
 	gc9a01a_write_cmd(GC9A01A_DISPON);								///< Display ON
-
 }
 
 
@@ -750,7 +731,7 @@ static uint32_t copy_to_draw_buffer2( bsp_lcd_t *hlcd,uint16_t nbytes,uint16_t *
 }
 
 
-static void GC9A01A_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
+static void gc9a01a_set_address_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
 	// column address set
 	gc9a01a_write_cmd(0x2A); // CASET
 	{
@@ -768,10 +749,11 @@ static void GC9A01A_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint
 	// write to RAM
 	gc9a01a_write_cmd(0x2C); // RAMWR
 }
-static void GC9A01A_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t color, uint16_t bgcolor) {
+
+static void gc9a01a_write_char(uint16_t x, uint16_t y, char ch, FontDef font, uint16_t color, uint16_t bgcolor) {
 	uint32_t i, b, j;
 
-	GC9A01A_SetAddressWindow(x, y, x+font.width-1, y+font.height-1);
+	gc9a01a_set_address_window(x, y, x+font.width-1, y+font.height-1);
 
 	for(i = 0; i < font.height; i++) {
 		b = font.data[(ch - 32) * font.height + i];
@@ -787,7 +769,7 @@ static void GC9A01A_WriteChar(uint16_t x, uint16_t y, char ch, FontDef font, uin
 	}
 }
 
-void GC9A01A_WriteString(uint16_t x, uint16_t y, const char* str, FontDef font, uint16_t color, uint16_t bgcolor) {
+void gc9a01a_write_string(uint16_t x, uint16_t y, const char* str, FontDef font, uint16_t color, uint16_t bgcolor) {
 	LCD_CSX_LOW();
 
 	while(*str) {
@@ -804,7 +786,7 @@ void GC9A01A_WriteString(uint16_t x, uint16_t y, const char* str, FontDef font, 
 				continue;
 			}
 		}
-		GC9A01A_WriteChar(x, y, *str, font, color, bgcolor);
+		gc9a01a_write_char(x, y, *str, font, color, bgcolor);
 		x += font.width;
 		str++;
 	}
@@ -812,7 +794,6 @@ void GC9A01A_WriteString(uint16_t x, uint16_t y, const char* str, FontDef font, 
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 void bsp_lcd_send_cmd_mem_write(void)
 {
