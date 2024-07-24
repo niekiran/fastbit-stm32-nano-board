@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -53,13 +53,20 @@ extern int countdown_complete;
 /* USER CODE BEGIN EM */
 typedef struct player {
 	int x;
+	int w;
 	int y;
+	int h;
   int score;
 }Player;
 
 typedef struct obstacle {
   int x;
+  int w;
 	int y;
+	int h;
+	int g;
+	int speed;
+	bool passed;
 }Obstacle;
 
 typedef enum {
@@ -114,19 +121,19 @@ void Error_Handler(void);
 #define OBSTACLE_SHADE_2        RGB888(120,178,1)
 #define OBSTACLE_SHADE_3        RGB888(152,225,0)
 #define OBSTACLE_SHADE_4        RGB888(216,255,135)
-#define OBSTACLE565							0xE71C
+#define SCORE_BOARD							0xE71C
 
-#define OBSTACLE_WIDTH  				30
-#define OBSTACLE_HEIGHT					40
-#define OBSTACLE_GAP						80
+//#define OBSTACLE_WIDTH  				30
+//#define OBSTACLE_HEIGHT					40
+//#define OBSTACLE_GAP						80
 #define OBSTACLE_ySTART_POINT		30
 #define OBSTACLE_yEND_POINT			210
 
-#define PLAYER_xSTART						70
+//#define PLAYER_xSTART						70
 #define PLAYER_ySTART_POINT			30
 #define PLAYER_yEND_POINT				180
-#define PLAYER_WIDTH    				30
-#define PLAYER_HEIGHT   				30
+//#define PLAYER_WIDTH    				30
+//#define PLAYER_HEIGHT   				30
 
 #define GRAVITY_PULL						2
 

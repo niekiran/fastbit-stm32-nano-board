@@ -68,33 +68,33 @@
 
 
 // Color definitions
-#define GC9A01A_BLACK 				0x0000       ///<   0,   0,   0
-#define GC9A01A_NAVY 				0x000F       ///<   0,   0, 123
-#define GC9A01A_DARKGREEN 			0x03E0  	//<   0, 125,   0
-#define GC9A01A_DARKCYAN 			0x03EF   	 ///<   0, 125, 123
+#define GC9A01A_BLACK 				0x0000      ///<   0,   0,   0
+#define GC9A01A_NAVY 					0x000F      ///<   0,   0, 123
+#define GC9A01A_DARKGREEN 		0x03E0  		///<   0, 125,   0
+#define GC9A01A_DARKCYAN 			0x03EF   	 	///<   0, 125, 123
 #define GC9A01A_MAROON 				0x7800      ///< 123,   0,   0
 #define GC9A01A_PURPLE 				0x780F      ///< 123,   0, 123
-#define GC9A01A_OLIVE 				0x7BE0       ///< 123, 125,   0
-#define GC9A01A_LIGHTGREY 			0xC618   	///< 198, 195, 198
-#define GC9A01A_DARKGREY 			0x7BEF   	 ///< 123, 125, 123
-#define GC9A01A_BLUE 				0x001F        ///<   0,   0, 255
-#define GC9A01A_GREEN 				0x07E0       ///<   0, 255,   0
-#define GC9A01A_CYAN 				0x07FF        ///<   0, 255, 255
-#define GC9A01A_RED 				0xF800         ///< 255,   0,   0
-#define GC9A01A_MAGENTA 			0xF81F     ///< 255,   0, 255
+#define GC9A01A_OLIVE 				0x7BE0      ///< 123, 125,   0
+#define GC9A01A_LIGHTGREY 		0xC618   		///< 198, 195, 198
+#define GC9A01A_DARKGREY 			0x7BEF   	 	///< 123, 125, 123
+#define GC9A01A_BLUE 					0x001F      ///<   0,   0, 255
+#define GC9A01A_GREEN 				0x07E0      ///<   0, 255,   0
+#define GC9A01A_CYAN 					0x07FF      ///<   0, 255, 255
+#define GC9A01A_RED 					0xF800      ///< 255,   0,   0
+#define GC9A01A_MAGENTA 			0xF81F      ///< 255,   0, 255
 #define GC9A01A_YELLOW 				0xFFE0      ///< 255, 255,   0
-#define GC9A01A_WHITE 				0xFFFF       ///< 255, 255, 255
+#define GC9A01A_WHITE 				0xFFFF      ///< 255, 255, 255
 #define GC9A01A_ORANGE 				0xFD20      ///< 255, 165,   0
-#define GC9A01A_GREENYELLOW 		0xAFE5 			///< 173, 255,  41
-#define GC9A01A_PINK 				0xFC18      	  ///< 255, 130, 198
+#define GC9A01A_GREENYELLOW 	0xAFE5 			///< 173, 255,  41
+#define GC9A01A_PINK 					0xFC18      ///< 255, 130, 198
 
 
 #define MADCTL_MY 	0x80  ///< Bottom to top
 #define MADCTL_MX 	0x40  ///< Right to left
 #define MADCTL_MV 	0x20  ///< Reverse Mode
 #define MADCTL_ML 	0x10  ///< LCD refresh Bottom to top
-#define MADCTL_RGB 	0x00 ///< Red-Green-Blue pixel order
-#define MADCTL_BGR 	0x08 ///< Blue-Green-Red pixel order
+#define MADCTL_RGB 	0x00 	///< Red-Green-Blue pixel order
+#define MADCTL_BGR 	0x08 	///< Blue-Green-Red pixel order
 #define MADCTL_MH 	0x04  ///< LCD refresh right to left
 
 
@@ -174,7 +174,7 @@ void bsp_lcd_send_cmd_mem_write(void);
 void bsp_lcd_write(uint8_t *buffer, uint32_t nbytes);
 
 /********************************************************************************/
-void GC9A01A_WriteString(uint16_t x, uint16_t y, const char* str, FontDef font, uint16_t color, uint16_t bgcolor);
+void gc9a01a_write_string(uint16_t x, uint16_t y, const char* str, FontDef font, uint16_t color, uint16_t bgcolor);
 void bsp_lcd_fill_image(bsp_lcd_t *hlcd, uint16_t *image_data, uint16_t x_start, uint16_t x_width,uint16_t y_start,uint16_t y_height);
 /********************************************************************************/
 #endif /* SRC_GC9A01A_H_ */
