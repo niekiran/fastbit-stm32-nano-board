@@ -20,8 +20,8 @@ void game_init_mssg(bsp_lcd_t *hlcd) {
 	const char* game_init_message2 = "TO START ";
 
 	display_game_title(hlcd);
-	GC9A01A_WriteString(15, 140, (const char*)game_init_message1, Font_11x18, BLACK, BACKGROUND565);
-	GC9A01A_WriteString(55, 170, (const char*)game_init_message2, Font_16x26, WHITE, BACKGROUND565);
+	gc9a01a_write_string(15, 140, (const char*)game_init_message1, Font_11x18, BLACK, BACKGROUND565);
+	gc9a01a_write_string(55, 170, (const char*)game_init_message2, Font_16x26, WHITE, BACKGROUND565);
 }
 
 /**
@@ -33,9 +33,8 @@ void game_over_mssg(bsp_lcd_t *hlcd) {
 	const char* game_over_message = "GAME OVER";
 	const char* restart_message = "PRESS USER-BUTTON TO RESTART";
 
-	GC9A01A_WriteString(48, 70, (const char*)game_over_message, Font_16x26, BLACK, BACKGROUND565);
-	fill_gameover_trace(hlcd);
-	GC9A01A_WriteString(22, 100, (const char*)restart_message, Font_7x10, RED565, BACKGROUND565);
+	gc9a01a_write_string(48, 70, (const char*)game_over_message, Font_16x26, BLACK, BACKGROUND565);
+	gc9a01a_write_string(22, 100, (const char*)restart_message, Font_7x10, RED565, BACKGROUND565);
 }
 
 /**
@@ -48,11 +47,11 @@ void render_gamestart_countdown(bsp_lcd_t *hlcd) {
 	countdown_complete = false;
 	prestart_time++;
 	if (prestart_time < 50) {
-		GC9A01A_WriteString(116, 107, (const char*)"3", Font_16x26, BLACK, BACKGROUND565);
+		gc9a01a_write_string(116, 107, (const char*)"3", Font_16x26, BLACK, BACKGROUND565);
 	} else if(prestart_time > 50 && prestart_time < 100) {
-		GC9A01A_WriteString(116, 107, (const char*)"2", Font_16x26, BLACK, BACKGROUND565);
+		gc9a01a_write_string(116, 107, (const char*)"2", Font_16x26, BLACK, BACKGROUND565);
 	} else if(prestart_time > 100 && prestart_time < 150) {
-		GC9A01A_WriteString(116, 107, (const char*)"1", Font_16x26, BLACK, BACKGROUND565);
+		gc9a01a_write_string(116, 107, (const char*)"1", Font_16x26, BLACK, BACKGROUND565);
 	} else if(prestart_time > 150) {
 		prestart_time = 0;
 		fill_countdown_trace(hlcd);
@@ -68,16 +67,16 @@ void render_gamestart_countdown(bsp_lcd_t *hlcd) {
 void player_show_score(Player *player) {
 	char score_str[100]="000";
 
-	if(( player->score/12)<10){
-		sprintf(score_str, "00%d", player->score/12);
-		GC9A01A_WriteString(96, 0, score_str, Font_16x26, BLACK, OBSTACLE565);
-	} else if( player->score/12<100){
-		sprintf(score_str, "0%d", player->score/12);
-		GC9A01A_WriteString(96, 0, score_str, Font_16x26, BLACK, OBSTACLE565);
-	} else if( player->score/12<1000){
-		sprintf(score_str, "%d", player->score/12);
-		GC9A01A_WriteString(96, 0, score_str, Font_16x26, BLACK, OBSTACLE565);
+	if(( player->score)<10){
+		sprintf(score_str, "00%d", player->score);
+		gc9a01a_write_string(96, 0, score_str, Font_16x26, BLACK, SCORE_BOARD);
+	} else if( player->score<100){
+		sprintf(score_str, "0%d", player->score);
+		gc9a01a_write_string(96, 0, score_str, Font_16x26, BLACK, SCORE_BOARD);
+	} else if( player->score<1000){
+		sprintf(score_str, "%d", player->score);
+		gc9a01a_write_string(96, 0, score_str, Font_16x26, BLACK, SCORE_BOARD);
 	} else {
-		GC9A01A_WriteString(96, 0, "WIN", Font_16x26, BLACK, OBSTACLE565);
+		gc9a01a_write_string(96, 0, "WIN", Font_16x26, BLACK, SCORE_BOARD);
 	}
 }

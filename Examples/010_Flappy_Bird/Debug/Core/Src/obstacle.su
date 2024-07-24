@@ -1,4 +1,5 @@
 ../Core/Src/obstacle.c:18:5:generate_obstacle_height	16	static
-../Core/Src/obstacle.c:33:6:display_obstacle	40	static
-../Core/Src/obstacle.c:63:6:move_obstacle	16	static
-../Core/Src/obstacle.c:73:6:score_card_background	24	static
+../Core/Src/obstacle.c:33:6:display_obstacle	32	static
+../Core/Src/obstacle.c:75:6:move_obstacle	16	static
+../Core/Src/obstacle.c:85:6:score_card_background	24	static
+../Core/Src/obstacle.c:97:9:get_obstacle_speed	24	static

@@ -3,6 +3,6 @@
 ../Core/Src/main.c:173:13:MX_I2C1_Init	8	static
 ../Core/Src/main.c:221:13:MX_GPIO_Init	40	static
 ../Core/Src/main.c:281:13:display_vibgyor_sequence	32	static
-../Core/Src/main.c:300:13:bsp_lcd_print	32	static
-../Core/Src/main.c:308:13:display_gesture	24	static
-../Core/Src/main.c:331:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:299:13:bsp_lcd_print	32	static
+../Core/Src/main.c:307:13:display_gesture	24	static
+../Core/Src/main.c:326:6:Error_Handler	4	static,ignoring_inline_asm

@@ -1,0 +1,6 @@
+../Core/Src/text_mssg.c:24:6:game_init_mssg	1
+../Core/Src/text_mssg.c:40:6:game_over_mssg	1
+../Core/Src/text_mssg.c:57:6:render_gamestart_countdown	7
+../Core/Src/text_mssg.c:79:6:player_show_score	4
+../Core/Src/text_mssg.c:100:9:start_btn_state	6
+../Core/Src/text_mssg.c:117:9:restart_btn_state	6

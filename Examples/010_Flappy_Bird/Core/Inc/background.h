@@ -19,7 +19,7 @@ void fill_player_trace(bsp_lcd_t *hlcd);
 void display_bush(bsp_lcd_t *hlcd);
 void flappy_game_set_back_ground(bsp_lcd_t *hlcd);
 void fill_countdown_trace(bsp_lcd_t *hlcd);
-void fill_gameover_trace(bsp_lcd_t *hlcd);
+void set_gameover_background(bsp_lcd_t *hlcd);
 void display_game_title(bsp_lcd_t *hlcd);
 
 static const uint16_t bush[1800] = {

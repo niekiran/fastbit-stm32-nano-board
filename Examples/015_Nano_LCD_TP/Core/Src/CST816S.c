@@ -129,13 +129,13 @@ uint8_t CST816S_data_available(void) {
 const char* CST816S_gesture() {
   switch (data.gestureID) {
   case NONE:
-    return "NONE        ";
+    return "    NONE    ";
   case SWIPE_DOWN:
-    return "SWIPE DOWN  ";
+    return " SWIPE DOWN ";
   case SWIPE_UP:
-    return "SWIPE UP    ";
+    return "  SWIPE UP  ";
   case SWIPE_LEFT:
-    return "SWIPE LEFT  ";
+    return " SWIPE LEFT ";
   case SWIPE_RIGHT:
     return "SWIPE RIGHT ";
   case SINGLE_CLICK:
@@ -143,9 +143,9 @@ const char* CST816S_gesture() {
   case DOUBLE_CLICK:
     return "DOUBLE CLICK";
   case LONG_PRESS:
-    return "LONG PRESS  ";
+    return " LONG PRESS ";
   default:
-    return "UNKNOWN     ";
+    return "  UNKNOWN   ";
   }
 }
 

@@ -1,8 +1,8 @@
-﻿**010_Flappy_Bird**
+# 010_Flappy_Bird
 
-The project is an implementation of the classic Flappy Bird game on a microcontroller platform using STM32CubeIDE. It involves controlling a bird sprite to navigate through obstacles displayed on an LCD screen.
+This project implements the classic Flappy Bird game on an STM32 Nano board. The player controls a bird sprite to navigate through obstacles displayed on a Nano LCD display using an MPU6050 accelerometer.*
 
-**Gameplay**
+## Gameplay
 
 1. Start the game: Press the user button to start the game.
 2. Control the bird: Tilt the microcontroller to control the bird's flight. Tilting the device upwards makes the bird flap its wings and ascend, while tilting downwards allows it to descend.
@@ -10,4 +10,4 @@ The project is an implementation of the classic Flappy Bird game on a microcontr
 4. Scoring: Each successful passage through a gap increases the score by 1.
 5. Game over: If the bird collides with an obstacle or the ground, the game ends. Press the user button to restart the game.
 
-Note: We have utilized the GC4901A LCD TFT display for the Flappy Bird microcontroller game.
+Note: We have utilized the GC4901A LCD TFT(SPI) display for the Flappy Bird game.

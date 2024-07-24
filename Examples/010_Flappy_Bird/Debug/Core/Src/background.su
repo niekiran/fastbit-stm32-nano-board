@@ -3,5 +3,5 @@
 ../Core/Src/background.c:34:6:display_bush	24	static
 ../Core/Src/background.c:46:6:flappy_game_set_back_ground	16	static
 ../Core/Src/background.c:56:6:fill_countdown_trace	24	static
-../Core/Src/background.c:66:6:fill_gameover_trace	24	static
+../Core/Src/background.c:66:6:set_gameover_background	24	static
 ../Core/Src/background.c:75:6:display_game_title	24	static
