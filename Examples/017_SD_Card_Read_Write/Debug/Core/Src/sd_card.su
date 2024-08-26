@@ -1,0 +1,6 @@
+../Core/Src/sd_card.c:25:9:check_sd_card_status	16	static
+../Core/Src/sd_card.c:41:6:set_filename	16	static
+../Core/Src/sd_card.c:51:6:write_to_sd_card	4168	static
+../Core/Src/sd_card.c:89:6:read_sd_card_file	4184	static
+../Core/Src/sd_card.c:126:6:store_received_data	16	static
+../Core/Src/sd_card.c:137:6:display_stored_data	8	static

@@ -1,0 +1,4 @@
+../Core/Src/btn_handler.c:19:9:handle_user_btn	24	static
+../Core/Src/btn_handler.c:59:9:read_btn_state	16	static
+../Core/Src/btn_handler.c:69:7:getDayofweek	56	static
+../Core/Src/btn_handler.c:81:6:process_button_press	64	static
