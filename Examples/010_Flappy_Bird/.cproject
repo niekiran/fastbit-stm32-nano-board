@@ -50,8 +50,8 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F3xx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\010_Flappy_Bird\GC4901A&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\010_Flappy_Bird\Core\Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\Users\shrey\STM32CubeIDE\nano-board-lcd-sw\Examples\010_Flappy_Bird\GC9A01A&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.219747537" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

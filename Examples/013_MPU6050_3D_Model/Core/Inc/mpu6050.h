@@ -73,10 +73,6 @@ typedef struct {
 } Kalman_t;
 
 void MPU6050_Init();
-void PowerManagement_Config();
-void Data_Rate_Config();
-void Gyro_Config();
-void Accelerometer_Config();
 void MPU6050_Read_Accel(MPU6050_t *DataStruct);
 void MPU6050_Read_Gyro(MPU6050_t *DataStruct);
 void MPU6050_Read_Temp(MPU6050_t *DataStruct);

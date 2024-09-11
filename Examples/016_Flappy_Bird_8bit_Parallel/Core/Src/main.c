@@ -125,7 +125,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Player_ctor(&player, 70, 30, 100, 30);
   Obstacle_ctor(&obstacle, 240, 30, 30, 80, 5);
-  mpu6050_Init();
+  mpu6050_init();
   bsp_lcd_init();
   CST816S_init();
   flappy_game_set_back_ground();

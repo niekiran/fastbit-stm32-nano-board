@@ -48,12 +48,12 @@ uint8_t handle_mouse_button(uint8_t btn_value) {
 }
 
 
- /**
-   * @brief  Read button state.
-   * @param  GPIOx: GPIO port.
-   * @param  GPIO_Pin: GPIO pin.
-   * @retval Button state
-   */
+/**
+  * @brief  Read button state.
+  * @param  GPIOx: GPIO port.
+  * @param  GPIO_Pin: GPIO pin.
+  * @retval Button state
+  */
 uint8_t read_btn_state(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   return HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);

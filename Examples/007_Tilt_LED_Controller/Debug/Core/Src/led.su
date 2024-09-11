@@ -1,1 +1,1 @@
-../Core/Src/led.c:18:6:led_on	8	static
+../Core/Src/led.c:16:6:led_indicate	24	static

@@ -85,7 +85,8 @@ extern Obstacle obstacle;
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+extern double degreex, degreey;
+extern I2C_HandleTypeDef hi2c1;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -123,17 +124,10 @@ void Error_Handler(void);
 #define OBSTACLE_SHADE_4        RGB888(216,255,135)
 #define SCORE_BOARD							0xE71C
 
-//#define OBSTACLE_WIDTH  				30
-//#define OBSTACLE_HEIGHT					40
-//#define OBSTACLE_GAP						80
 #define OBSTACLE_ySTART_POINT		30
 #define OBSTACLE_yEND_POINT			210
-
-//#define PLAYER_xSTART						70
 #define PLAYER_ySTART_POINT			30
 #define PLAYER_yEND_POINT				180
-//#define PLAYER_WIDTH    				30
-//#define PLAYER_HEIGHT   				30
 
 #define GRAVITY_PULL						2
 

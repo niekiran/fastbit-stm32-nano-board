@@ -25,6 +25,10 @@
 uint8_t temp_data;
 extern I2C_HandleTypeDef hi2c1;
 uint32_t timer;
+static void init_delay(uint32_t delay);
+static void power_management_config();
+static void gyro_config();
+static void accelerometer_config();
 
 /**
   * @brief Initializes the Kalman filter parameters.
@@ -66,10 +70,19 @@ double KalmanFilter_Update(KalmanFilter *kf, double measurement) {
   * @retval None
   */
 void MPU6050_Init() {
-  PowerManagement_Config();
-//  Data_Rate_Config();
-  Gyro_Config();
-  Accelerometer_Config();
+  init_delay(100);
+  power_management_config();
+  gyro_config();
+  accelerometer_config();
+}
+
+/**
+ * @brief Applies a delay for initialization purposes.
+ * @param delay The delay time in milliseconds.
+ * @retval None
+ */
+static void init_delay(uint32_t delay) {
+  HAL_Delay(delay);
 }
 
 /**
@@ -77,7 +90,7 @@ void MPU6050_Init() {
   * @param None
   * @retval None
   */
-void PowerManagement_Config()
+static void power_management_config()
 {
   /* Set the value to be written to the power management register */
   temp_data = 0x00;
@@ -92,29 +105,11 @@ void PowerManagement_Config()
 }
 
 /**
-  * @brief Configures the Data rate settings of the MPU6050 sensor.
-  * @param None
-  * @retval None
-  */
-void Data_Rate_Config()
-{
-  /* Set the value to be written to the accelerometer configuration register */
-  temp_data = 0x07;
-
-  /* Write the value to the accelerometer configuration register via I2C communication */
-  if ( (HAL_I2C_Mem_Write(&hi2c1, (MPU6050_ADDR << 1) + 0, SMPLRT_DIV_REG, 1, &temp_data, 1, HAL_MAX_DELAY) == HAL_OK) ) {
-    printf("Configuring data rate of 1KHz...\n");
-  } else {
-    printf("Failed to configure data rate of 1KHz...\n");
-  }
-}
-
-/**
   * @brief Configures the gyroscope settings of the MPU6050 sensor.
   * @param None
   * @retval None
   */
-void Gyro_Config()
+static void gyro_config()
 {
   /* Set the value to be written to the gyroscope configuration register */
   temp_data = FS_GYRO_2000;
@@ -132,7 +127,7 @@ void Gyro_Config()
   * @param None
   * @retval None
   */
-void Accelerometer_Config()
+static void accelerometer_config()
 {
   /* Set the value to be written to the accelerometer configuration register */
   temp_data = FS_ACC_16G;

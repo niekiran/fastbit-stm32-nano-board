@@ -7,8 +7,9 @@
 
 #ifndef INC_LED_H_
 #define INC_LED_H_
+#include "mpu6050.h"
 
 /* Function prototypes */
-void led_on();
+void led_indicate();
 
 #endif /* INC_LED_H_ */
