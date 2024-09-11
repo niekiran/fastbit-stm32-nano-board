@@ -17,5 +17,7 @@ The program reads the pitch (y-axis) and roll (x-axis) orientation data from the
 - **Roll Control**:
   - If the roll value is non-zero (indicating a tilt to the left or right), LED 1 (red) turns on.
 
-  ![007_Tilt_LED_Controller](007_Tilt_LED_Controller.gif)
+<img src="007_Tilt_LED_Controller.gif" alt="007_Tilt_LED_Controller" width="450">
+
+
 
