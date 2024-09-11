@@ -7,19 +7,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         00002f38  08000188  08000188  00001188  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000188  080030c0  080030c0  000040c0  2**2
+  2 .rodata       000001a8  080030c0  080030c0  000040c0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  08003248  08003248  00005060  2**0
+  3 .ARM.extab    00000000  08003268  08003268  00005060  2**0
                   CONTENTS
-  4 .ARM          00000008  08003248  08003248  00004248  2**2
+  4 .ARM          00000008  08003268  08003268  00004268  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  08003250  08003250  00005060  2**0
+  5 .preinit_array 00000000  08003270  08003270  00005060  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  08003250  08003250  00004250  2**2
+  6 .init_array   00000004  08003270  08003270  00004270  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  7 .fini_array   00000004  08003254  08003254  00004254  2**2
+  7 .fini_array   00000004  08003274  08003274  00004274  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  8 .data         00000060  20000000  08003258  00005000  2**2
+  8 .data         00000060  20000000  08003278  00005000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   9 .ccmram       00000000  10000000  10000000  00005060  2**0
                   CONTENTS
@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  0001ce7e  00000000  00000000  0001031d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00009f9c  00000000  00000000  0002d19b  2**0
+ 18 .debug_line   00009f9a  00000000  00000000  0002d19b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000ac609  00000000  00000000  00037137  2**0
+ 19 .debug_str    000ac609  00000000  00000000  00037135  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  000e3740  2**0
+ 20 .comment      00000043  00000000  00000000  000e373e  2**0
                   CONTENTS, READONLY
  21 .debug_frame  00001af0  00000000  00000000  000e3784  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -106,9 +106,8 @@ void decimal_to_binary(int decimal, uint8_t *binary)
  80001e4:	617b      	str	r3, [r7, #20]
 
   /* Convert decimal to binary */
-  while (decimal > 0)
+  while (decimal > 0) {
  80001e6:	e014      	b.n	8000212 <decimal_to_binary+0x3a>
-  {
     binary[i] = decimal % 2 + '0';
  80001e8:	687b      	ldr	r3, [r7, #4]
  80001ea:	2b00      	cmp	r3, #0
@@ -132,7 +131,7 @@ void decimal_to_binary(int decimal, uint8_t *binary)
  800020c:	697b      	ldr	r3, [r7, #20]
  800020e:	3301      	adds	r3, #1
  8000210:	617b      	str	r3, [r7, #20]
-  while (decimal > 0)
+  while (decimal > 0) {
  8000212:	687b      	ldr	r3, [r7, #4]
  8000214:	2b00      	cmp	r3, #0
  8000216:	dce7      	bgt.n	80001e8 <decimal_to_binary+0x10>
@@ -154,9 +153,8 @@ void decimal_to_binary(int decimal, uint8_t *binary)
  800022c:	4603      	mov	r3, r0
  800022e:	3b01      	subs	r3, #1
  8000230:	60fb      	str	r3, [r7, #12]
-  while (left < right)
+  while (left < right) {
  8000232:	e017      	b.n	8000264 <decimal_to_binary+0x8c>
-  {
     char temp = binary[left];
  8000234:	693b      	ldr	r3, [r7, #16]
  8000236:	683a      	ldr	r2, [r7, #0]
@@ -186,7 +184,7 @@ void decimal_to_binary(int decimal, uint8_t *binary)
  800025e:	68fb      	ldr	r3, [r7, #12]
  8000260:	3b01      	subs	r3, #1
  8000262:	60fb      	str	r3, [r7, #12]
-  while (left < right)
+  while (left < right) {
  8000264:	693a      	ldr	r2, [r7, #16]
  8000266:	68fb      	ldr	r3, [r7, #12]
  8000268:	429a      	cmp	r2, r3
@@ -202,6 +200,10 @@ void decimal_to_binary(int decimal, uint8_t *binary)
 
 08000278 <process_decimal_input>:
 
+/**
+ * @brief Processes decimal input from UART and converts it to binary.
+ * @param huart: Pointer to the UART handle.
+ */
 void process_decimal_input(UART_HandleTypeDef *huart) {
  8000278:	b580      	push	{r7, lr}
  800027a:	b09e      	sub	sp, #120	@ 0x78
@@ -210,7 +212,7 @@ void process_decimal_input(UART_HandleTypeDef *huart) {
   uint8_t rdata; // Received character
   uint8_t buf[MAX_BUF_SIZE]; // Buffer to store received characters
   uint8_t binary[MAX_BINARY_SIZE]; // Buffer to store binary representation
-  const char *menu = "Enter a decimal number:\r\n";
+  const char *menu = "Enter a decimal number to be converted to binary:";
  8000280:	4b29      	ldr	r3, [pc, #164]	@ (8000328 <process_decimal_input+0xb0>)
  8000282:	677b      	str	r3, [r7, #116]	@ 0x74
   size_t len = strlen(menu);
@@ -291,7 +293,7 @@ void process_decimal_input(UART_HandleTypeDef *huart) {
  8000324:	bd80      	pop	{r7, pc}
  8000326:	bf00      	nop
  8000328:	080030c0 	.word	0x080030c0
- 800032c:	080030dc 	.word	0x080030dc
+ 800032c:	080030f4 	.word	0x080030f4
 
 08000330 <main>:
 /**
@@ -1038,7 +1040,7 @@ LoopForever:
   ldr r1, =_edata
  800065c:	20000060 	.word	0x20000060
   ldr r2, =_sidata
- 8000660:	08003258 	.word	0x08003258
+ 8000660:	08003278 	.word	0x08003278
   ldr r2, =_sbss
  8000664:	20000060 	.word	0x20000060
   ldr r4, =_ebss
@@ -4283,7 +4285,7 @@ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, ui
  8001f5c:	bd80      	pop	{r7, pc}
  8001f5e:	bf00      	nop
  8001f60:	40021000 	.word	0x40021000
- 8001f64:	0800310c 	.word	0x0800310c
+ 8001f64:	0800312c 	.word	0x0800312c
  8001f68:	20000004 	.word	0x20000004
  8001f6c:	20000008 	.word	0x20000008
 
@@ -4427,8 +4429,8 @@ uint32_t HAL_RCC_GetSysClockFreq(void)
  800202e:	bf00      	nop
  8002030:	40021000 	.word	0x40021000
  8002034:	007a1200 	.word	0x007a1200
- 8002038:	08003124 	.word	0x08003124
- 800203c:	08003134 	.word	0x08003134
+ 8002038:	08003144 	.word	0x08003144
+ 800203c:	08003154 	.word	0x08003154
  8002040:	003d0900 	.word	0x003d0900
 
 08002044 <HAL_RCC_GetHCLKFreq>:
@@ -4488,7 +4490,7 @@ uint32_t HAL_RCC_GetPCLK1Freq(void)
  8002094:	46bd      	mov	sp, r7
  8002096:	bd80      	pop	{r7, pc}
  8002098:	40021000 	.word	0x40021000
- 800209c:	0800311c 	.word	0x0800311c
+ 800209c:	0800313c 	.word	0x0800313c
 
 080020a0 <HAL_RCC_GetPCLK2Freq>:
   * @note   Each time PCLK2 changes, this function must be called to update the
@@ -4527,7 +4529,7 @@ uint32_t HAL_RCC_GetPCLK2Freq(void)
  80020d8:	46bd      	mov	sp, r7
  80020da:	bd80      	pop	{r7, pc}
  80020dc:	40021000 	.word	0x40021000
- 80020e0:	0800311c 	.word	0x0800311c
+ 80020e0:	0800313c 	.word	0x0800313c
 
 080020e4 <HAL_RCCEx_PeriphCLKConfig>:
   *         When the TIMx clock source is PLL clock, so the TIMx clock is PLL clock x 2.
@@ -7058,7 +7060,7 @@ static void UART_EndRxTransfer(UART_HandleTypeDef *huart)
  8003024:	d1f6      	bne.n	8003014 <_strtol_l.constprop.0+0xd8>
  8003026:	f8c8 1000 	str.w	r1, [r8]
  800302a:	e794      	b.n	8002f56 <_strtol_l.constprop.0+0x1a>
- 800302c:	08003145 	.word	0x08003145
+ 800302c:	08003165 	.word	0x08003165
 
 08003030 <strtol>:
  8003030:	4613      	mov	r3, r2
@@ -7112,10 +7114,10 @@ static void UART_EndRxTransfer(UART_HandleTypeDef *huart)
  8003092:	4798      	blx	r3
  8003094:	3601      	adds	r6, #1
  8003096:	e7f2      	b.n	800307e <__libc_init_array+0x1e>
- 8003098:	08003250 	.word	0x08003250
- 800309c:	08003250 	.word	0x08003250
- 80030a0:	08003250 	.word	0x08003250
- 80030a4:	08003254 	.word	0x08003254
+ 8003098:	08003270 	.word	0x08003270
+ 800309c:	08003270 	.word	0x08003270
+ 80030a0:	08003270 	.word	0x08003270
+ 80030a4:	08003274 	.word	0x08003274
 
 080030a8 <_init>:
  80030a8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}

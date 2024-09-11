@@ -90,8 +90,8 @@ void process_button_press(RTC_HandleTypeDef *hrtc) {
           RTC_TimeRead.Minutes,RTC_TimeRead.Seconds,\
          (RTC_TimeRead.TimeFormat == RTC_HOURFORMAT12_AM) ? "PM" : "AM");
   printmsg("Current Date is : %02d-%2d-%2d  <%s> \r\n",\
-          RTC_DateRead.Month,\
           RTC_DateRead.Date,\
+          RTC_DateRead.Month,\
           2000 + RTC_DateRead.Year,
           getDayofweek(RTC_DateRead.WeekDay));
 }

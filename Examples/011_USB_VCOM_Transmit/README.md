@@ -1,20 +1,33 @@
 # *011_USB_VCOM_Transmit*
 
-***The USB_Vcom project displays RTC (Real-Time Clock) time using an STM32 nano board. It communicates the time over USB using the CDC (Communication Device Class) interface.***
+The USB_VCOM project displays the current RTC (Real-Time Clock) time using the STM32 Nano board. The time is transmitted over USB through a virtual COM port using the CDC (Communication Device Class) interface.
 
-## Description
 
-* The main functionality of this project is to read the current RTC time and date and display it through a virtual COM port.
-* The user button on the STM32 board is used to trigger this display.
-* When the button is pressed, the code handles the button press and sends the current RTC time and date information to the USB virtual COM port.
+## Features
 
-## Edit RTC Time, Date, and Day
+- Transmits current RTC time and date over a USB virtual COM port.
+- Uses the STM32 onboard user button to trigger the transmission.
+- Data can be viewed through any terminal emulator (e.g., PuTTY, Tera Term).
 
-Open main.c and locate the MX_RTC_Init function.
+## How It Works
 
-```bash
+- The user button on the STM32 board is used to trigger the transmission of the current RTC time and date.
+- Upon button press, the code reads the RTC and sends the data to the USB virtual COM port.
+- The data can be viewed on a PC using any terminal emulator to monitor the USB COM port.
+
+![1display_RTC](media/1display_RTC.png)
+
+* Example: When the button is pressed, the RTC time and date are transmitted to the terminal emulator.
+
+![2display_RTC](media/2display_RTC.png)
+
+## Configuration
+
+You can modify the initial RTC time and date settings by editing the `MX_RTC_Init` function in the `main.c` file.
+
+```c
 hrtc.Instance = RTC;
-hrtc.Init.HourFormat = RTC_HOURFORMAT_12;// Set hourforamt
+hrtc.Init.HourFormat = RTC_HOURFORMAT_12;
 hrtc.Init.AsynchPrediv = 127;
 hrtc.Init.SynchPrediv = 255;
 hrtc.Init.OutPut = RTC_OUTPUT_DISABLE;
@@ -25,26 +38,24 @@ if (HAL_RTC_Init(&hrtc) != HAL_OK)
   Error_Handler();
 }
 
-sTime.Hours = 0x5;                      // Set hour
-sTime.Minutes = 0x30;                    // Set minutes 
-sTime.Seconds = 0x0;                     // Set seconds to 0
-sTime.TimeFormat = RTC_HOURFORMAT12_PM;  // Set 12-hour format with PM
-sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;  
-sTime.StoreOperation = RTC_STOREOPERATION_RESET;  
+sTime.Hours = 15;                       // Set hour
+sTime.Minutes = 45;                     // Set minutes
+sTime.Seconds = 24;                     // Set seconds
+sTime.TimeFormat = RTC_HOURFORMAT12_PM;
+sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+sTime.StoreOperation = RTC_STOREOPERATION_RESET;
 
-if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
 {
   Error_Handler(); 
 }
 
 // Set the RTC date
-sDate.WeekDay = RTC_WEEKDAY_WEDNESDAY;   // Set day 
-sDate.Month = RTC_MONTH_JULY;            // Set month 
-sDate.Date = 0x3;                        // Set date 
-sDate.Year = 0x24;                       // Set year to 2024 (24 in BCD)
-if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+sDate.WeekDay = RTC_WEEKDAY_WEDNESDAY;   // Set weekday
+sDate.Month = RTC_MONTH_SEPTEMBER;       // Set month
+sDate.Date = 11;                         // Set date
+sDate.Year = 24;                         // Set year to 2024
+if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
 {
   Error_Handler();  
 }
-```
-

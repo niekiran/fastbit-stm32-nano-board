@@ -45,7 +45,7 @@
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-const char *menu = "Enter a number to be converted to binary:";
+const char *menu = "Enter a decimal number to be converted to binary:";
 uint8_t len;
 uint8_t rdata;
 

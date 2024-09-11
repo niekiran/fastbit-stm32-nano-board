@@ -1,2 +1,2 @@
 ../Core/Src/decimal_to_binary.c:16:6:decimal_to_binary	3
-../Core/Src/decimal_to_binary.c:42:6:process_decimal_input	2
+../Core/Src/decimal_to_binary.c:44:6:process_decimal_input	2
