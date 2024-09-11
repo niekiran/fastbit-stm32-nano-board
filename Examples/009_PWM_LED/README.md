@@ -16,5 +16,4 @@ The LED fade pattern follows this sequence:
 
 This pattern repeats continuously, creating a smooth and sequential fading effect across the LEDs.
 
-
-![009_PWM_LED](009_PWM_LED.gif)
+<img src="009_PWM_LED.gif" alt="009_PWM_LED" width="550">
