@@ -13,5 +13,5 @@ The project includes the `led_on()` function (located in the `led.c` file), whic
   - Each button press (detected via an interrupt) turns off one LED in sequence: **Red -> Green -> Blue**.
   - After all LEDs are off, the next button press turns them all back **ON**.
 
-![003_UserButton_IT](003_UserButton_IT.gif)
+<img src="003_UserButton_IT.gif" alt="003_UserButton_IT" width="550">
 
