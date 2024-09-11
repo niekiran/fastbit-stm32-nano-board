@@ -59,5 +59,4 @@ The touch panel can detect and display the following gestures on the LCD:
 - DOUBLE CLICK
 - LONG PRESS
 
-
-![015_NanoLCD_TP](015_NanoLCD_TP.gif)
+<img src="015_NanoLCD_TP.gif" alt="015_NanoLCD_TP" width="550">
