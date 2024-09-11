@@ -11,5 +11,4 @@ The project demonstrates how to toggle LEDs connected to GPIO pins of an STM32 m
 - **LED Toggle Functionality**: The project includes a dedicated function, `led_toggle()`, implemented in `led_toggle.c`, which handles the toggling of the LEDs.
 - **LED Toggle Function Description**: The `led_toggle()` function toggles three LEDs (blue, green, and red) connected to the microcontrollers GPIO pins. The LEDs toggle sequentially, creating a cycling pattern.
 
-
-![001_LED_Toggle](001_LED_Toggle.gif)
+<img src="001_LED_Toggle.gif" alt="001_LED_Toggle" width="550">
