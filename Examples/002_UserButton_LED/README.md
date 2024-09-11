@@ -14,4 +14,4 @@ The project includes a function `user_button_led()` (defined in the `user_button
   - If the button is **pressed**, the LED turns **ON**.
   - If the button is **released**, the LED turns **OFF**.
 
-![002_UserButton_LED](002_UserButton_LED.gif)
+<img src="002_UserButton_LED.gif" alt="002_UserButton_LED" width="550">
