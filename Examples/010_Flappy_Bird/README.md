@@ -17,7 +17,8 @@ This project is an implementation of the classic **Flappy Bird** game on an STM3
 1] **Starting the Game**:
    * Press the **UserButton** to start a new game.
 
-   ![010_Flappy](media/010_Flappy.jpg)
+   <img src="media\010_Flappy.JPG" alt="010_Flappy" width="300">
+
 
 2] **Controlling the Bird**:
    - **Tilt the Microcontroller Upwards**: The bird ascends by flapping its wings.
@@ -32,7 +33,7 @@ This project is an implementation of the classic **Flappy Bird** game on an STM3
 
 5] **Game Over**:
    - The game ends if the bird collides with an obstacle or the ground.
-   - 3] **Press the **UserButton** to restart the game.
+   - Press the **UserButton** to restart the game.
 
 ## How to Run
 1] **Flash the STM32 Nano board with the provided code.**
