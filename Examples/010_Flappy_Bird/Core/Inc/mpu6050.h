@@ -41,8 +41,7 @@
 #define GYR_FS_SENSITIVITY_3 16.4     // Sensitivity for FS_GYRO_2000
 
 
-void mpu6050_Init();
-
+void mpu6050_init();
 void mpu6050_read();
 
 #endif /* INC_MPU6050_H_ */

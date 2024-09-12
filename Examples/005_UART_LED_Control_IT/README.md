@@ -1,25 +1,69 @@
-﻿**005_UART_LED_Control_IT**
+﻿# 005_UART_LED_Control_IT
 
-This embedded system program is designed to control LEDs via UART commands. 
+This program to controls the three LEDs (Red, Green, and Blue) on the STM32 Nano board via UART commands.
 
-**Overview:**
+## Overview
 
-The program uses UART (Universal Asynchronous Receiver-Transmitter) communication to receive commands from an external device or terminal. Commands are parsed and processed to control LEDs connected to GPIO pins of the microcontroller.
+The program leverages UART (Universal Asynchronous Receiver-Transmitter) communication to receive commands from an external device or terminal. Based on the received commands, the program controls the LEDs connected to the GPIO pins of the microcontroller.
 
-**Functionality:**
+## Functionality
 
-The program transmits a menu of valid commands via UART. Users can interact with the program through a terminal emulator (e.g., Teraterm) or another device connected to the microcontroller's UART interface.
+The program sends a menu of valid commands through the UART interface. Users can interact with the system using a terminal emulator (e.g., Teraterm) or any other device connected to the microcontroller's UART interface.
 
-**Send Commands:** Commands are sent in the following format:
+  ![menu_mssg](media/menu_mssg.png)
 
-- **LEDON [1/2/3]:** Turn on the corresponding LED: red, green, or blue.
-- **LEDOFF [1/2/3]:** Turn off the corresponding LED: red, green, or blue.
-- **LEDTOGGLE [1/2/3] [delay]:** Toggle the corresponding LED: red, green, or blue with a specified delay in milliseconds.
+## Available Commands
 
-**Feedback Messages:**
+- **`LEDON [1/2/3]`**: Turns on the respective LED.
+  - `LEDON 1`: Turns on the Red LED
+  - `LEDON 2`: Turns on the Green LED
+  - `LEDON 3`: Turns on the Blue LED
 
-1. If an invalid command is entered, the UART transmits "Invalid Command".
-2. If an invalid LED number (not 1, 2, or 3) is provided, the UART transmits "Invalid Argument".
+- **`LEDOFF [1/2/3]`**: Turns off the respective LED.
+  - `LEDOFF 1`: Turns off the Red LED
+  - `LEDOFF 2`: Turns off the Green LED
+  - `LEDOFF 3`: Turns off the Blue LED
 
-Note: Ensure that the baud rate and other UART settings match the configuration specified in the code (38400 baud, 8 data bits, no parity, 1 stop bit).
+- **`LEDTOGGLE [1/2/3] [delay]`**: Toggles the specified LED with a delay between each toggle.
+  - `LEDTOGGLE 1 [delay]`: Toggles the Red LED
+  - `LEDTOGGLE 2 [delay]`: Toggles the Green LED
+  - `LEDTOGGLE 3 [delay]`: Toggles the Blue LED
+  - **delay**: Time interval (in milliseconds) for toggling the LED on and off.
+
+## Example Usage
+
+- To turn on the Red LED:
+  ```plaintext
+  LEDON 1
+
+- To turn off the Green LED:
+  ```plaintext
+  LEDOFF 2
+
+- To toggle the Blue LED every 500 milliseconds:
+  ```plaintext
+  LEDTOGGLE 3 500
+
+### Feedback Messages
+
+The program will respond with the following feedback messages based on the received commands:
+
+1. **"Invalid Command"**: If an unrecognized command is received.
+2. **"Invalid Argument"**: If an incorrect LED number (other than 1, 2, or 3) is provided.
+
+## UART Settings
+
+Ensure that your UART communication settings match the following configuration:
+- **Baud rate**: 38400
+- **Data bits**: 8
+- **Parity**: None
+- **Stop bits**: 1
+
+The communication must be set up accordingly in the terminal or any other external device for proper operation.
+
+## Additional Notes
+
+- Make sure the STM32 Nano board is correctly powered and connected to the UART interface for successful communication.
+- Commands are case-sensitive; ensure proper formatting when sending instructions.
+
 

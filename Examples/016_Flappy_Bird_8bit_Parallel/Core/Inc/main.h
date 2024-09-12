@@ -150,6 +150,7 @@ void Error_Handler(void);
 #define GRAVITY_PULL						2
 
 extern I2C_HandleTypeDef hi2c1;
+extern double degreex, degreey;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

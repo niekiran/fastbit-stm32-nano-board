@@ -136,7 +136,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Player_ctor(&player, 70, 30, 100, 30);
   Obstacle_ctor(&obstacle, 240, 30, 30, 80, 5);
-  mpu6050_Init();
+  mpu6050_init();
   nano_lcd_Init();
 
   double prev_degreey = degreey; // Initialize previous angle variable
@@ -153,7 +153,6 @@ int main(void)
   	mpu6050_read();
 
 		if(HAL_GetTick() - current_time >= 5) {
-
 			current_time = HAL_GetTick();
 
 			angle_delta = degreey - prev_degreey;

@@ -483,14 +483,14 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000442:	f000 f8e7 	bl	8000614 <MX_GPIO_Init>
-  HAL_Delay(500);
- 8000446:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
- 800044a:	f000 fab3 	bl	80009b4 <HAL_Delay>
   MX_USB_DEVICE_Init();
- 800044e:	f008 f829 	bl	80084a4 <MX_USB_DEVICE_Init>
+ 8000446:	f008 f82d 	bl	80084a4 <MX_USB_DEVICE_Init>
   MX_RTC_Init();
- 8000452:	f000 f885 	bl	8000560 <MX_RTC_Init>
+ 800044a:	f000 f889 	bl	8000560 <MX_RTC_Init>
   /* USER CODE BEGIN 2 */
+  HAL_Delay(500);
+ 800044e:	f44f 70fa 	mov.w	r0, #500	@ 0x1f4
+ 8000452:	f000 faaf 	bl	80009b4 <HAL_Delay>
   printmsg("RTC calendar:\r\n");
  8000456:	480f      	ldr	r0, [pc, #60]	@ (8000494 <main+0x60>)
  8000458:	f7ff ffca 	bl	80003f0 <printmsg>
@@ -697,9 +697,9 @@ static void MX_RTC_Init(void)
  8000578:	4b24      	ldr	r3, [pc, #144]	@ (800060c <MX_RTC_Init+0xac>)
  800057a:	4a25      	ldr	r2, [pc, #148]	@ (8000610 <MX_RTC_Init+0xb0>)
  800057c:	601a      	str	r2, [r3, #0]
-  hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
+  hrtc.Init.HourFormat = RTC_HOURFORMAT_12;
  800057e:	4b23      	ldr	r3, [pc, #140]	@ (800060c <MX_RTC_Init+0xac>)
- 8000580:	2200      	movs	r2, #0
+ 8000580:	2240      	movs	r2, #64	@ 0x40
  8000582:	605a      	str	r2, [r3, #4]
   hrtc.Init.AsynchPrediv = 127;
  8000584:	4b21      	ldr	r3, [pc, #132]	@ (800060c <MX_RTC_Init+0xac>)
@@ -735,13 +735,13 @@ static void MX_RTC_Init(void)
 
   /** Initialize RTC and set the Time and Date
   */
-  sTime.Hours = 0x0;
- 80005b2:	2300      	movs	r3, #0
+  sTime.Hours = 15;
+ 80005b2:	230f      	movs	r3, #15
  80005b4:	713b      	strb	r3, [r7, #4]
-  sTime.Minutes = 0x0;
- 80005b6:	2300      	movs	r3, #0
+  sTime.Minutes = 45;
+ 80005b6:	232d      	movs	r3, #45	@ 0x2d
  80005b8:	717b      	strb	r3, [r7, #5]
-  sTime.Seconds = 0x0;
+  sTime.Seconds = 0;
  80005ba:	2300      	movs	r3, #0
  80005bc:	71bb      	strb	r3, [r7, #6]
   sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
@@ -750,9 +750,9 @@ static void MX_RTC_Init(void)
   sTime.StoreOperation = RTC_STOREOPERATION_RESET;
  80005c2:	2300      	movs	r3, #0
  80005c4:	617b      	str	r3, [r7, #20]
-  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
  80005c6:	1d3b      	adds	r3, r7, #4
- 80005c8:	2201      	movs	r2, #1
+ 80005c8:	2200      	movs	r2, #0
  80005ca:	4619      	mov	r1, r3
  80005cc:	480f      	ldr	r0, [pc, #60]	@ (800060c <MX_RTC_Init+0xac>)
  80005ce:	f003 fdf4 	bl	80041ba <HAL_RTC_SetTime>
@@ -763,22 +763,22 @@ static void MX_RTC_Init(void)
     Error_Handler();
  80005d8:	f000 f884 	bl	80006e4 <Error_Handler>
   }
-  sDate.WeekDay = RTC_WEEKDAY_MONDAY;
- 80005dc:	2301      	movs	r3, #1
+  sDate.WeekDay = RTC_WEEKDAY_WEDNESDAY;
+ 80005dc:	2303      	movs	r3, #3
  80005de:	703b      	strb	r3, [r7, #0]
-  sDate.Month = RTC_MONTH_JANUARY;
- 80005e0:	2301      	movs	r3, #1
+  sDate.Month = RTC_MONTH_SEPTEMBER;
+ 80005e0:	2309      	movs	r3, #9
  80005e2:	707b      	strb	r3, [r7, #1]
-  sDate.Date = 0x1;
- 80005e4:	2301      	movs	r3, #1
+  sDate.Date = 11;
+ 80005e4:	230b      	movs	r3, #11
  80005e6:	70bb      	strb	r3, [r7, #2]
-  sDate.Year = 0x0;
- 80005e8:	2300      	movs	r3, #0
+  sDate.Year = 24;
+ 80005e8:	2318      	movs	r3, #24
  80005ea:	70fb      	strb	r3, [r7, #3]
 
-  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
  80005ec:	463b      	mov	r3, r7
- 80005ee:	2201      	movs	r2, #1
+ 80005ee:	2200      	movs	r2, #0
  80005f0:	4619      	mov	r1, r3
  80005f2:	4806      	ldr	r0, [pc, #24]	@ (800060c <MX_RTC_Init+0xac>)
  80005f4:	f003 fed9 	bl	80043aa <HAL_RTC_SetDate>

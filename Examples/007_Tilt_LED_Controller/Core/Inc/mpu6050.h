@@ -42,7 +42,6 @@
 
 
 void mpu6050_init();
-
 void mpu6050_read();
 
 #endif /* INC_MPU6050_H_ */

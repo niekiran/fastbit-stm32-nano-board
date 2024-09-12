@@ -1,5 +1,6 @@
-../Core/Src/mpu6050.c:27:6:mpu6050_Init	8	static
-../Core/Src/mpu6050.c:38:6:PowerManagement_Config	24	static
-../Core/Src/mpu6050.c:57:6:Gyro_Config	24	static
-../Core/Src/mpu6050.c:75:6:Accelerometer_Config	24	static
-../Core/Src/mpu6050.c:95:6:mpu6050_read	152	static
+../Core/Src/mpu6050.c:26:6:mpu6050_init	8	static
+../Core/Src/mpu6050.c:38:13:init_delay	16	static
+../Core/Src/mpu6050.c:46:13:power_management_config	24	static
+../Core/Src/mpu6050.c:65:13:gyro_config	24	static
+../Core/Src/mpu6050.c:83:13:accelerometer_config	24	static
+../Core/Src/mpu6050.c:103:6:mpu6050_read	152	static

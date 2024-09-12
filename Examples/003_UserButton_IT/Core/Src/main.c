@@ -198,10 +198,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     if ((current_time - last_interrupt_time) >= 100) {
       /* Update the last interrupt time */
       last_interrupt_time = current_time;
-
       button_press_count++;
-
       led_off(button_press_count);
+
+      /* Once all LEDs are off, reset the cycle */
+      if(button_press_count > 3) {
+        button_press_count = 0; // Reset the count
+        led_on();
+      }
     }
   }
 }

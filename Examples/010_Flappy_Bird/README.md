@@ -1,13 +1,47 @@
 # 010_Flappy_Bird
 
-This project implements the classic Flappy Bird game on an STM32 Nano board. The player controls a bird sprite to navigate through obstacles displayed on a Nano LCD display using an MPU6050 accelerometer.*
+## Project Overview
+This project is an implementation of the classic **Flappy Bird** game on an STM32 Nano board, utilizing the **onboard MPU6050 accelerometer** for player control. The game is displayed on a SPI based 1.28" TFT LCD. The player must control a bird sprite to navigate through obstacles by tilting the microcontroller.
 
-## Gameplay
+## Features
+- **Platform**: STM32 Nano board.
+- **Input**: Onboard MPU6050 accelerometer to control the bird's movement.
+- **Display**: Fastbit 1.28" TFT LCD with CTP for game graphics and touch input.
+- **Gameplay**: Classic Flappy Bird mechanics, where tilting the board controls the bird's altitude.
 
-1. Start the game: Press the user button to start the game.
-2. Control the bird: Tilt the microcontroller to control the bird's flight. Tilting the device upwards makes the bird flap its wings and ascend, while tilting downwards allows it to descend.
-3. Navigate through obstacles: Guide the bird through the gaps between the obstacles by tilting the microcontroller carefully.
-4. Scoring: Each successful passage through a gap increases the score by 1.
-5. Game over: If the bird collides with an obstacle or the ground, the game ends. Press the user button to restart the game.
+## Components
+- **STM32 Nano board**: Microcontroller platform running the game logic.
+- **Fastbit 1.28" TFT LCD with CTP**: Displays the game graphics, including the bird, obstacles, and score. The capacitive touch panel is used as the start/restart button.
 
-Note: We have utilized the GC4901A LCD TFT(SPI) display for the Flappy Bird game.
+## Gameplay Instructions
+1] **Starting the Game**:
+   * Press the **UserButton** to start a new game.
+
+   <img src="media\010_Flappy.JPG" alt="010_Flappy" width="300">
+
+
+2] **Controlling the Bird**:
+   - **Tilt the Microcontroller Upwards**: The bird ascends by flapping its wings.
+   - **Tilt the Microcontroller Downwards**: The bird descends.
+
+3] **Navigating Obstacles**:
+   - Tilt the STM32 Nano board to guide the bird through gaps between the obstacles.
+   - Careful and precise tilting is required to prevent collisions.
+
+4] **Scoring**:
+   - Each successful passage through a gap increases your score by 1.
+
+5] **Game Over**:
+   - The game ends if the bird collides with an obstacle or the ground.
+   - Press the **UserButton** to restart the game.
+
+## How to Run
+1] **Flash the STM32 Nano board with the provided code.**
+
+2] **Ensure the TFT LCD is properly connected to the STM32 Nano board.**
+
+3] **Press the **UserButton** to start playing.**
+
+
+
+

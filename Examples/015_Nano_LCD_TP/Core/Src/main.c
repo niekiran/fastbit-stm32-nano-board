@@ -101,9 +101,7 @@ int main(void)
 
   display_vibgyor_sequence();
   HAL_Delay(1000);
-  //gc9a01a_lcd_fill_image(image1);
-  gc9a01a_lcd_fill_image(image2);
-  //gc9a01a_lcd_fill_image(image3);
+  gc9a01a_lcd_fill_image(image);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -280,6 +278,7 @@ static void MX_GPIO_Init(void)
   */
 static void display_vibgyor_sequence() {
   uint8_t x_start = 0;
+  //uint8_t y_start = 0;
   uint8_t x_width = 240;
   uint8_t y_height = 34;
   gc9a01a_fill_rect(x_start, x_width, y_height*0, y_height, VIOLET);
@@ -297,7 +296,7 @@ static void display_vibgyor_sequence() {
   * @retval None
   */
 static void bsp_lcd_print(const char* str) {
-  gc9a01a_write_string(24, 107, str, Font_16x26, RED, BLACK);
+  gc9a01a_write_string(34, 111, str, Font_11x18, RED, BLACK);
 }
 
 /**
@@ -305,13 +304,17 @@ static void bsp_lcd_print(const char* str) {
   * @retval None
   */
 static void display_gesture(void) {
+
   CST816S_init();
+
   struct touch_data data;
   while(1) {
     if(CST816S_data_available()) {
       memcpy(&data, CST816S_get_data(), sizeof(struct touch_data));
       UNUSED(data);
+
       bsp_lcd_print(CST816S_gesture());
+
       HAL_Delay(300);
     }
   }

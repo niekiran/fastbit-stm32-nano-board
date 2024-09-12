@@ -1,12 +1,17 @@
-﻿**002_UserButton_LED**
+﻿# 002_UseButton_LED
 
-This project contains the implementation of function to control an LED based on the state of a user button.
+This project control an LED based on the state of onboard user button on the STM32 nano board. The LED remains **ON** while the button is pressed and turns **OFF** when the button is released.
 
-**Overview**
+## Overview
 
-The ‘user_button_led ( )’ function (located in the ‘user_button_led.c’ file) ,  initializes GPIO pins for the user button and LED. It continuously reads the state of the user button to control the LED accordingly.
+The project includes a function `user_button_led()` (defined in the `user_button_led.c` file) that initializes the GPIO pins for both the user button and the LED. It continuously monitors the state of the user button and controls the LED accordingly.
 
-**Functionality**
+## Functionality
 
-- **Control LED:** the function reads the state of the user button. If the button is pressed, it turns on the LED. If the button is released, it turns off the LED.
+### `user_button_led()`
+- **LED Control**: 
+  - The function checks the state of the user button.
+  - If the button is **pressed**, the LED turns **ON**.
+  - If the button is **released**, the LED turns **OFF**.
 
+<img src="002_UserButton_LED.gif" alt="002_UserButton_LED" width="550">

@@ -5,29 +5,38 @@
  *      Author: Shreyas Acharya, BHARATI SOFTWARE
  */
 
-#include <mpu6050.h>
+#include "mpu6050.h"
 #include <main.h>
 #include <math.h>
 #include <stdio.h>
 
-extern I2C_HandleTypeDef hi2c1;
-extern double degreex, degreey;
+uint8_t temp_data = 0;
 
-uint8_t temp_data;
 /* Private function prototypes */
-void PowerManagement_Config();
-void Gyro_Config();
-void Accelerometer_Config();
+static void init_delay(uint32_t delay) ;
+static void power_management_config();
+static void gyro_config();
+static void accelerometer_config();
 
 /**
   * @brief Initializes the MPU6050 sensor by configuring power management, gyroscope, and accelerometer.
   * @param None
   * @retval None
   */
-void mpu6050_Init() {
-  PowerManagement_Config();
-  Gyro_Config();
-  Accelerometer_Config();
+void mpu6050_init() {
+	init_delay(100);
+	power_management_config();
+	gyro_config();
+	accelerometer_config();
+}
+
+/**
+ * @brief Applies a delay for initialization purposes.
+ * @param delay The delay time in milliseconds.
+ * @retval None
+ */
+static void init_delay(uint32_t delay) {
+  HAL_Delay(delay);
 }
 
 /**
@@ -35,7 +44,7 @@ void mpu6050_Init() {
   * @param None
   * @retval None
   */
-void PowerManagement_Config()
+static void power_management_config()
 {
   /* Set the value to be written to the power management register */
   temp_data = 0x00;
@@ -54,7 +63,7 @@ void PowerManagement_Config()
   * @param None
   * @retval None
   */
-void Gyro_Config()
+static void gyro_config()
 {
   /* Set the value to be written to the gyroscope configuration register */
   temp_data = FS_GYRO_500;
@@ -72,7 +81,7 @@ void Gyro_Config()
   * @param None
   * @retval None
   */
-void Accelerometer_Config()
+static void accelerometer_config()
 {
   /* Set the value to be written to the accelerometer configuration register */
   temp_data = FS_ACC_4G;

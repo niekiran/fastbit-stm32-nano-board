@@ -18,8 +18,7 @@ void decimal_to_binary(int decimal, uint8_t *binary)
   int i = 0;
 
   /* Convert decimal to binary */
-  while (decimal > 0)
-  {
+  while (decimal > 0) {
     binary[i] = decimal % 2 + '0';
     decimal /= 2;
     i++;
@@ -29,8 +28,7 @@ void decimal_to_binary(int decimal, uint8_t *binary)
   /* Reverse the binary string */
   int left = 0;
   int right = strlen((char *)binary) - 1;
-  while (left < right)
-  {
+  while (left < right) {
     char temp = binary[left];
     binary[left] = binary[right];
     binary[right] = temp;
@@ -39,11 +37,15 @@ void decimal_to_binary(int decimal, uint8_t *binary)
   }
 }
 
+/**
+ * @brief Processes decimal input from UART and converts it to binary.
+ * @param huart: Pointer to the UART handle.
+ */
 void process_decimal_input(UART_HandleTypeDef *huart) {
   uint8_t rdata; // Received character
   uint8_t buf[MAX_BUF_SIZE]; // Buffer to store received characters
   uint8_t binary[MAX_BINARY_SIZE]; // Buffer to store binary representation
-  const char *menu = "Enter a decimal number:\r\n";
+  const char *menu = "Enter a decimal number to be converted to binary:";
   size_t len = strlen(menu);
 
   HAL_UART_Receive(huart, &rdata, 1, HAL_MAX_DELAY);

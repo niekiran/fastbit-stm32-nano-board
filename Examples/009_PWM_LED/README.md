@@ -1,23 +1,19 @@
-﻿**009_PWM_LED**
+﻿# 009_PWM_LED
 
-This program generates an LED pattern using Pulse Width Modulation (PWM) on a microcontroller. PWM is utilized to control the brightness of LEDs in a sequential pattern.
+This project implements a fading LED pattern using Pulse Width Modulation (PWM) on the STM32 nano board. The brightness of each LED gradually fades in and out, one by one, in a continuous cycle.
 
-**Overview**
+## Overview
 
-The program utilizes Timer hardware on the microcontroller to generate PWM signals. Three LEDs are connected to different output channels of the Timer. The PWM duty cycle is varied to adjust the brightness of each LED.
+The program uses the microcontroller's Timer hardware to generate PWM signals for controlling the brightness of three LEDs. Each LED is connected to a different Timer output channel, and the PWM duty cycle is varied to achieve the gradual fade effect.
 
-**Functionality:**
+## LED Pattern Generation
 
-The program utilizes Timer hardware on the microcontroller to generate PWM signals. Three LEDs are connected to different output channels of the Timer. The PWM duty cycle is varied to adjust the brightness of each LED.
+The LED fade pattern follows this sequence:
 
-**LED Pattern Generation**
+- **LED 1 (Blue)** fades in gradually, then fades out.
+- **LED 2 (Red)** fades in gradually, then fades out.
+- **LED 3 (Green)** fades in gradually, then fades out.
 
-The LED pattern is generated sequentially:
+This pattern repeats continuously, creating a smooth and sequential fading effect across the LEDs.
 
-- LED 1 (Blue) turns on gradually, then fades out.
-- LED 2 (Red) turns on gradually, then fades out.
-- LED 3 (Green) turns on gradually, then fades out.
-
-This sequential pattern repeats continuously.
-
-
+<img src="009_PWM_LED.gif" alt="009_PWM_LED" width="550">
