@@ -69,8 +69,7 @@ void process_command_queue() {
     prev_cmd = command;
     /* Transmit the menu after command execution */
     display_menu(&huart1);
-  }
-  else {
+  } else if (strcmp(prev_cmd.command, "LEDTOGGLE") == 0) {
     /* if prev_commad was toggle */
     execute_command(prev_cmd);
   }
@@ -82,16 +81,15 @@ void process_command_queue() {
   * @retval None
   */
 void execute_command(struct led_command_data data) {
+
   if (strcmp(data.command, "LEDON") == 0) {
     led_on(data.argument);
   } else if (strcmp(data.command, "LEDOFF") == 0) {
     led_off(data.argument);
   } else if (strcmp(data.command, "LEDTOGGLE") == 0) {
     led_toggle(data.argument, data.delay);
-  } else {
-    if (!isEmpty(&command_queue) && !invalid_command_printed) {
-      display_invalid_command(&huart1);
-      invalid_command_printed = 1; // Set the flag
-    }
+  } else if (!invalid_command_printed) {
+    display_invalid_command(&huart1);
+    invalid_command_printed = 1; // Set the flag
   }
 }
