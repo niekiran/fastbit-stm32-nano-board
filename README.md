@@ -12,9 +12,9 @@ Free video course: [Embedded Systems Bootcamp: Learn by Building Projects](https
 
 The board comes as two **independent** choices — which **base board** you have, and which **LCD shield** is fitted:
 
-- **Fastbit STM32 Nano board v2.0**
-- **Fastbit STM32 Nano board v2.1**
-- **Fastbit STM32 Nano board v3.0**
+- **[Fastbit STM32 Nano board v2.0](https://fastbitembedded.com/products/fastbit-stm32-nano-with-1-28-tft-lcd-display?_pos=3&_sid=9a704cd97&_ss=r)**
+- **Fastbit STM32 Nano board v2.1** (product link coming soon)
+- **[Fastbit STM32 Nano board v3.0](https://fastbitembedded.com/products/fastbit-stm32-nano-v3-with-1-28-tft-lcd-display-module?_pos=12&_sid=d19e43b3d&_ss=r)**
 - **Fastbit 1.28" TFT LCD (SPI) with CTP and µ-SD card slot** shield
 - **Fastbit 1.28" TFT LCD (8-bit Parallel) with CTP and µ-SD card slot** shield
 
