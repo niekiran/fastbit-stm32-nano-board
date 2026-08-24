@@ -123,6 +123,23 @@ static double s_gyro_bias_y = 0.0;
 #define GYRO_CURVE_K        20.0
 #define GYRO_CURVE_P        1.3
 
+/* MEMS gyro zero-rate bias keeps settling for several seconds after
+ * power-up as the die self-heats, and can drift further with temperature
+ * during use. A one-shot startup calibration snapshot can leave a small
+ * but PERMANENT residual bias -- and because it's added every single
+ * report (hundreds of times a second), even a residual of a fraction of a
+ * dps eventually drags the cursor to one screen edge and holds it there,
+ * overwhelming any deliberate motion in the other direction. To fix that,
+ * continuously trim the bias estimate whenever the post-bias residual
+ * looks like "at rest" (small), rather than trusting the startup snapshot
+ * forever. Must be wider than GYRO_DEADZONE_DPS or genuine slow, deliberate
+ * motion would get mistaken for drift and cancelled out. TUNE ON HARDWARE. */
+#define GYRO_BIAS_TRACK_BAND_DPS  6.0
+/* Slow IIR coefficient: at a 2 ms report period this reaches ~63% of a
+ * correction in about 1 second (1/rate reports) -- fast enough to track
+ * drift, slow enough not to fight real, sustained rotation. TUNE ON HARDWARE. */
+#define GYRO_BIAS_TRACK_RATE      0.002
+
 /**
   * @brief Kalman filter init, identical algorithm to the one previously
   *        duplicated in mpu6050.c / bmi270.c.
@@ -210,6 +227,15 @@ void process_gyro_and_update_cursor(double raw_gz, double raw_gy, mouseHID *mous
 
   double unbiased_gz = filtered_gz - s_gyro_bias_z;
   double unbiased_gy = filtered_gy - s_gyro_bias_y;
+
+  /* Track slow bias drift instead of trusting the one-shot startup
+   * calibration forever -- see GYRO_BIAS_TRACK_BAND_DPS comment above. */
+  if (fabs(unbiased_gz) < GYRO_BIAS_TRACK_BAND_DPS) {
+    s_gyro_bias_z += GYRO_BIAS_TRACK_RATE * unbiased_gz;
+  }
+  if (fabs(unbiased_gy) < GYRO_BIAS_TRACK_BAND_DPS) {
+    s_gyro_bias_y += GYRO_BIAS_TRACK_RATE * unbiased_gy;
+  }
 
   double dz_gz = apply_deadzone(unbiased_gz, GYRO_DEADZONE_DPS);
   double dz_gy = apply_deadzone(unbiased_gy, GYRO_DEADZONE_DPS);
