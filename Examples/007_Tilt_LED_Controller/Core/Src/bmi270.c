@@ -183,6 +183,6 @@ void bmi270_read(void) {
   degreex = radianx * (180.0 / M_PI); // Roll
   degreey = radiany * (180.0 / M_PI); // Pitch
 
-  printf("Acc(g)=> X:%.2f Y:%.2f Z:%.2f   Gyro(dps)=> X:%.2f Y:%.2f Z:%.2f\n", accx, accy, accz, gyrox, gyroy, gyroz);
+  //printf("Acc(g)=> X:%.2f Y:%.2f Z:%.2f   Gyro(dps)=> X:%.2f Y:%.2f Z:%.2f\n", accx, accy, accz, gyrox, gyroy, gyroz);
   printf("Roll: %.2f degrees, Pitch: %.2f degrees\n", degreex, degreey);
 }
