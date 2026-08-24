@@ -6,4 +6,4 @@
 ../Core/Src/bmi270.c:115:16:confirm_init_ok	32	static
 ../Core/Src/bmi270.c:127:13:configure_acc_gyro	32	static
 ../Core/Src/bmi270.c:143:13:power_on_acc_gyro	32	static
-../Core/Src/bmi270.c:154:6:bmi270_read	152	static
+../Core/Src/bmi270.c:154:6:bmi270_read	128	static
