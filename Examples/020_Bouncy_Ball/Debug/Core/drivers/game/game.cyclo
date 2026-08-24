@@ -1,0 +1,12 @@
+../Core/drivers/game/game.c:34:14:game_map_gyro_to_force	3
+../Core/drivers/game/game.c:47:17:game_rand_u32	1
+../Core/drivers/game/game.c:53:17:game_rand_range	2
+../Core/drivers/game/game.c:62:17:game_rand_colour	1
+../Core/drivers/game/game.c:86:17:game_get_player_draw_x	3
+../Core/drivers/game/game.c:103:17:game_get_player_draw_y	3
+../Core/drivers/game/game.c:120:16:game_rect_overlap	5
+../Core/drivers/game/game.c:139:13:game_draw_background	1
+../Core/drivers/game/game.c:202:13:game_draw_random_paint	8
+../Core/drivers/game/game.c:255:7:game_init	5
+../Core/drivers/game/game.c:307:7:game_update	4
+../Core/drivers/game/game.c:338:7:game_render	5
