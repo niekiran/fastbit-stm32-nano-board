@@ -58,23 +58,10 @@ typedef struct {
 	float Temperature;
 } MPU6050_t;
 
-typedef struct {
-  double process_variance;
-  double measurement_variance;
-  double estimated_error;
-  double posteri_estimate;
-  double posteri_error;
-} KalmanFilter;
-
-
 void MPU6050_Init();
 void MPU6050_Read_Accel(MPU6050_t *DataStruct);
 void MPU6050_Read_Gyro(MPU6050_t *DataStruct);
 void MPU6050_Read_Temp(MPU6050_t *DataStruct);
 void MPU6050_Read_All(MPU6050_t *DataStruct);
-double KalmanFilter_Update(KalmanFilter *kf, double measurement);
-void KalmanFilter_Init(KalmanFilter *kf, double process_variance, double measurement_variance, double estimated_error);
-void filter_gyro_data(double *gyroz, double *gyroy);
-void read_gyro_data(MPU6050_t *mpu6050_data, double *gyroz, double *gyroy);
 
 #endif /* INC_MPU6050_H_ */

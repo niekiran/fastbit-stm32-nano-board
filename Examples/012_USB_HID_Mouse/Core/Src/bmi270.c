@@ -17,14 +17,6 @@
 
 #define BMI270_REG_TEMPERATURE 0x22
 
-typedef struct {
-  double process_variance;
-  double measurement_variance;
-  double estimated_error;
-  double posteri_estimate;
-  double posteri_error;
-} Bmi270KalmanFilter;
-
 /* Private function prototypes */
 static uint8_t check_chip_id(void);
 static void soft_reset(void);
@@ -33,10 +25,6 @@ static void upload_config_file(void);
 static uint8_t confirm_init_ok(void);
 static void configure_acc_gyro(void);
 static void power_on_acc_gyro(void);
-static void bmi270_kalman_filter_init(Bmi270KalmanFilter *kf, double process_variance,
-                                       double measurement_variance, double estimated_error);
-static double bmi270_kalman_filter_update(Bmi270KalmanFilter *kf, double measurement);
-static void bmi270_filter_gyro_data(double *gyroz, double *gyroy);
 
 /**
   * @brief Initializes the BMI270 sensor: reset, mandatory config-file upload,
@@ -196,67 +184,4 @@ void bmi270_read_all(BMI270_t *data_struct) {
   raw_temp = (int16_t)((temp_data[1] << 8) | temp_data[0]);
   /* Bosch datasheet: 0x8000 reads back when temperature data is not (yet) available */
   data_struct->Temperature = (raw_temp == (int16_t)0x8000) ? 0.0f : ((float)raw_temp / 512.0f) + 23.0f;
-}
-
-/**
-  * @brief Kalman filter init, identical algorithm to KalmanFilter_Init() in
-  *        mpu6050.c, kept as a private copy under a distinct name since both
-  *        files are always linked together in this project.
-  */
-static void bmi270_kalman_filter_init(Bmi270KalmanFilter *kf, double process_variance,
-                                       double measurement_variance, double estimated_error) {
-  kf->process_variance = process_variance;
-  kf->measurement_variance = measurement_variance;
-  kf->estimated_error = estimated_error;
-  kf->posteri_estimate = 0.0;
-  kf->posteri_error = 1.0;
-}
-
-/**
-  * @brief Kalman filter update, identical algorithm to KalmanFilter_Update()
-  *        in mpu6050.c.
-  */
-static double bmi270_kalman_filter_update(Bmi270KalmanFilter *kf, double measurement) {
-  double priori_estimate = kf->posteri_estimate;
-  double priori_error = kf->posteri_error + kf->process_variance;
-  double blending_factor = priori_error / (priori_error + kf->measurement_variance);
-
-  kf->posteri_estimate = priori_estimate + blending_factor * (measurement - priori_estimate);
-  kf->posteri_error = (1 - blending_factor) * priori_error;
-
-  return kf->posteri_estimate;
-}
-
-/**
-  * @brief Applies Kalman filtering to gyroscope data, matching
-  *        filter_gyro_data() in mpu6050.c.
-  */
-static void bmi270_filter_gyro_data(double *gyroz, double *gyroy) {
-  static Bmi270KalmanFilter kf_gyroz;
-  static Bmi270KalmanFilter kf_gyroy;
-  static int kf_initialized = 0;
-
-  if (!kf_initialized) {
-    bmi270_kalman_filter_init(&kf_gyroz, 1e-5, 1e-2, 1.0);
-    bmi270_kalman_filter_init(&kf_gyroy, 1e-5, 1e-2, 1.0);
-    kf_initialized = 1;
-  }
-
-  *gyroz = bmi270_kalman_filter_update(&kf_gyroz, *gyroz);
-  *gyroy = bmi270_kalman_filter_update(&kf_gyroy, *gyroy);
-}
-
-/**
-  * @brief Reads and Kalman-filters gyroscope data from the BMI270, matching
-  *        read_gyro_data() in mpu6050.c.
-  * @param bmi270_data Pointer to the BMI270 data structure.
-  * @param gyroz Pointer to store the processed gyroscope Z-axis data.
-  * @param gyroy Pointer to store the processed gyroscope Y-axis data.
-  * @retval None
-  */
-void bmi270_read_gyro_data(BMI270_t *bmi270_data, double *gyroz, double *gyroy) {
-  bmi270_read_all(bmi270_data);
-  *gyroz = bmi270_data->Gz;
-  *gyroy = bmi270_data->Gy;
-  bmi270_filter_gyro_data(gyroz, gyroy);
 }

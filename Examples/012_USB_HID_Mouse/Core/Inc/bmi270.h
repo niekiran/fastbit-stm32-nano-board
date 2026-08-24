@@ -6,14 +6,11 @@
  *
  *  Driver for the Bosch BMI270 6-axis IMU, used as the MPU6050 replacement
  *  on Fastbit STM32 Nano board v2.1. Exposes the same shape of API as this
- *  example's mpu6050.h (BMI270_t / BMI270_Init / BMI270_Read_All /
- *  bmi270_read_gyro_data) so mouse cursor motion is driven the same way
- *  regardless of which sensor is fitted.
- *
- *  Function/global names here are deliberately distinct from mpu6050.c's
- *  (bmi270_read_gyro_data vs read_gyro_data, etc.) because both files are
- *  always compiled and linked together in this project -- only main.c
- *  picks which one gets called, via IMU_MPU6050 / IMU_BMI270.
+ *  example's mpu6050.h (BMI270_t / bmi270_init / bmi270_read_all) -- both
+ *  drivers hand back raw physical-unit accel/gyro data only; smoothing,
+ *  calibration, and cursor-motion logic live one layer up in
+ *  mouse_handler.c, shared by whichever sensor is compiled in via
+ *  IMU_MPU6050 / IMU_BMI270.
  */
 
 #ifndef INC_BMI270_H_
@@ -72,6 +69,5 @@ typedef struct {
 
 void bmi270_init(void);
 void bmi270_read_all(BMI270_t *data_struct);
-void bmi270_read_gyro_data(BMI270_t *bmi270_data, double *gyroz, double *gyroy);
 
 #endif /* INC_BMI270_H_ */
