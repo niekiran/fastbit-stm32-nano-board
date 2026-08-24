@@ -10,7 +10,11 @@ Free video course: [Embedded Systems Bootcamp: Learn by Building Projects](https
 
 ## Supported boards
 
-Three board revisions exist (schematics: `fastbit_stm32_nano_sch_v2_0`, `_v2_1`, `_v3`, SPI LCD variant). All three share the same STM32F303CCT6 MCU, the same 1.28" round GC9A01A LCD + CST816S capacitive touch + microSD daughter-board, and the same LED/button pinout (PA1/PA2/PA3 LEDs, PA0 user button).
+The board comes as two **independent** choices — which **base board** you have, and which **LCD shield** is fitted — based on 4 schematics: `fastbit_stm32_nano_sch_v2_0/_v2_1/_v3(SPI_LCD)` and `fastbit_stm32_nano_sch(8BP_LCD)`.
+
+### Base board variants
+
+All three share the same STM32F303CCT6 MCU and the same LED/button pinout (PA1/PA2/PA3 LEDs, PA0 user button). They differ in IMU, USB, and debug probe:
 
 | Revision | IMU | USB | Debug probe |
 |---|---|---|---|
@@ -26,6 +30,17 @@ Examples that use the IMU select the driver at compile time via a macro in `Core
 /* #define NANO_BOARD_V2_0 */   /* MPU6050 -- v2.0 AND v3.0 boards */
 ```
 Define exactly one to match your board's actual IMU (not its revision number) — `NANO_BOARD_V2_0` covers both v2.0 and v3.0 hardware, since both carry the MPU6050. (The macro name reflects the sensor generation the driver targets, not a 1:1 mapping to every board revision; if v3.0's onboard ST-Link ever needs its own compile-time distinction — e.g. probe-specific tooling — a separate `NANO_BOARD_V3_0` macro could be added later, but no such firmware difference exists today.)
+
+### LCD shield variants
+
+The 1.28" round GC9A01A LCD daughter-board comes in two interface variants — same panel, same CST816S capacitive touch controller and microSD slot, different wiring to the MCU:
+
+| Shield | LCD interface | GPIO pins used | Example |
+|---|---|---|---|
+| **SPI** | `LCD_MOSI`/`LCD_MISO`/`LCD_SCL`/`LCD_CSX`/`LCD_DCX`/`LCD_RST`/`LCD_TE` | Handful of pins, frees up the rest of the port | `010_Flappy_Bird_SPI` |
+| **8-bit parallel** | Full 8-bit data bus `LCD_DB0`-`LCD_DB7` + `LCD_WRX`/`LCD_RDX`/`LCD_DCX`/`LCD_CSX`/`LCD_RST`/`LCD_TE` | Consumes most of a GPIO port for the data bus, in exchange for faster transfers | `016_Flappy_Bird_8bit_Parallel` |
+
+**Base board and LCD shield are orthogonal** — in principle any base board revision can be fitted with either shield. The schematics on hand confirm v2.0/v2.1/v3.0 all paired with the **SPI** shield, and the **8-bit parallel** shield paired with a v2.0-generation base board (MPU6050, Micro-USB, external ST-Link — matching `016_Flappy_Bird_8bit_Parallel`'s use of the MPU6050 driver). No schematic confirms an 8-bit-parallel pairing with v2.1 or v3.0 — check your actual board before assuming one exists.
 
 ## Examples
 
