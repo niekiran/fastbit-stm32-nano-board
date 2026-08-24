@@ -10,7 +10,13 @@ Free video course: [Embedded Systems Bootcamp: Learn by Building Projects](https
 
 ## Supported boards
 
-The board comes as two **independent** choices — which **base board** you have, and which **LCD shield** is fitted — based on 4 schematics: `fastbit_stm32_nano_sch_v2_0/_v2_1/_v3(SPI_LCD)` and `fastbit_stm32_nano_sch(8BP_LCD)`.
+The board comes as two **independent** choices — which **base board** you have, and which **LCD shield** is fitted:
+
+- **Fastbit STM32 Nano board v2.0**
+- **Fastbit STM32 Nano board v2.1**
+- **Fastbit STM32 Nano board v3.0**
+- **Fastbit 1.28" TFT LCD (SPI) with CTP and µ-SD card slot** shield
+- **Fastbit 1.28" TFT LCD (8-bit Parallel) with CTP and µ-SD card slot** shield
 
 ### Base board variants
 
@@ -33,14 +39,14 @@ Define exactly one to match your board's actual IMU (not its revision number) �
 
 ### LCD shield variants
 
-The 1.28" round GC9A01A LCD daughter-board comes in two interface variants — same panel, same CST816S capacitive touch controller and microSD slot, different wiring to the MCU:
+Two shield options — same 1.28" round GC9A01A LCD panel, same CST816S capacitive touch controller and µ-SD card slot, different wiring to the MCU:
 
 | Shield | LCD interface | GPIO pins used | Example |
 |---|---|---|---|
-| **SPI** | `LCD_MOSI`/`LCD_MISO`/`LCD_SCL`/`LCD_CSX`/`LCD_DCX`/`LCD_RST`/`LCD_TE` | Handful of pins, frees up the rest of the port | `010_Flappy_Bird_SPI` |
-| **8-bit parallel** | Full 8-bit data bus `LCD_DB0`-`LCD_DB7` + `LCD_WRX`/`LCD_RDX`/`LCD_DCX`/`LCD_CSX`/`LCD_RST`/`LCD_TE` | Consumes most of a GPIO port for the data bus, in exchange for faster transfers | `016_Flappy_Bird_8bit_Parallel` |
+| **Fastbit 1.28" TFT LCD (SPI) with CTP and µ-SD card slot** | `LCD_MOSI`/`LCD_MISO`/`LCD_SCL`/`LCD_CSX`/`LCD_DCX`/`LCD_RST`/`LCD_TE` | Handful of pins, frees up the rest of the port | `010_Flappy_Bird_SPI` |
+| **Fastbit 1.28" TFT LCD (8-bit Parallel) with CTP and µ-SD card slot** | Full 8-bit data bus `LCD_DB0`-`LCD_DB7` + `LCD_WRX`/`LCD_RDX`/`LCD_DCX`/`LCD_CSX`/`LCD_RST`/`LCD_TE` | Consumes most of a GPIO port for the data bus, in exchange for faster transfers | `016_Flappy_Bird_8bit_Parallel` |
 
-**Base board and LCD shield are orthogonal** — in principle any base board revision can be fitted with either shield. The schematics on hand confirm v2.0/v2.1/v3.0 all paired with the **SPI** shield, and the **8-bit parallel** shield paired with a v2.0-generation base board (MPU6050, Micro-USB, external ST-Link — matching `016_Flappy_Bird_8bit_Parallel`'s use of the MPU6050 driver). No schematic confirms an 8-bit-parallel pairing with v2.1 or v3.0 — check your actual board before assuming one exists.
+**Base board and LCD shield are orthogonal** — in principle any base board revision can be fitted with either shield. v2.0, v2.1, and v3.0 have all been paired with the SPI shield; the 8-bit parallel shield has been paired with a v2.0-generation base board (MPU6050, Micro-USB, external ST-Link — matching `016_Flappy_Bird_8bit_Parallel`'s use of the MPU6050 driver). An 8-bit-parallel pairing with v2.1 or v3.0 isn't confirmed — check your actual board before assuming one exists.
 
 ## Examples
 
