@@ -5,9 +5,13 @@ Resources, example projects, and firmware for the **Fastbit STM32 Nano board** â
 Product link: https://fastbitembedded.com/collections/vendors?q=FastBit%20Embedded
 Free video course: [Embedded Systems Bootcamp: Learn by Building Projects](https://courses.fastbitembedded.com/courses/mastering-embedded-systems-build-real-world-projects)
 
-![Fastbit STM32 Nano v3.0](https://fastbitembedded.com/cdn/shop/files/Logo.png?v=1781069683&width=1800)
-![Fastbit STM32 Nano v3.0](https://fastbitembedded.com/cdn/shop/files/watch.png?v=1781069683&width=1800)
-![Fastbit STM32 Nano v3.0](https://fastbitembedded.com/cdn/shop/files/Front.png?v=1781069683&width=1800)
+<table>
+<tr>
+<td><img src="https://fastbitembedded.com/cdn/shop/files/Logo.png?v=1781069683&width=600" width="260" alt="Fastbit STM32 Nano v3.0"></td>
+<td><img src="https://fastbitembedded.com/cdn/shop/files/watch.png?v=1781069683&width=600" width="260" alt="Fastbit STM32 Nano v3.0"></td>
+<td><img src="https://fastbitembedded.com/cdn/shop/files/Front.png?v=1781069683&width=600" width="260" alt="Fastbit STM32 Nano v3.0"></td>
+</tr>
+</table>
 
 ## Supported boards
 
