@@ -1,4 +1,10 @@
-../Core/Src/mouse_handler.c:16:9:handle_mouse_button	9
-../Core/Src/mouse_handler.c:57:9:read_btn_state	1
-../Core/Src/mouse_handler.c:70:6:update_btn_state	3
-../Core/Src/mouse_handler.c:92:6:move_cursor	1
+../Core/Src/mouse_handler.c:17:9:handle_mouse_button	9
+../Core/Src/mouse_handler.c:58:9:read_btn_state	1
+../Core/Src/mouse_handler.c:71:6:update_btn_state	3
+../Core/Src/mouse_handler.c:147:13:kalman_init	1
+../Core/Src/mouse_handler.c:159:15:kalman_update	1
+../Core/Src/mouse_handler.c:173:15:apply_deadzone	2
+../Core/Src/mouse_handler.c:180:15:apply_accel_curve	2
+../Core/Src/mouse_handler.c:193:15:clamp_to_int8	3
+../Core/Src/mouse_handler.c:206:6:gyro_calibrate_bias	1
+../Core/Src/mouse_handler.c:218:6:process_gyro_and_update_cursor	4

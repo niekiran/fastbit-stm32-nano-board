@@ -37,8 +37,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- ../Core/Inc/mpu6050.h ../Core/Inc/mouse_handler.h ../Core/Inc/main.h \
- ../Core/Inc/mpu6050.h
+ ../Core/Inc/bmi270.h ../Core/Inc/mouse_handler.h ../Core/Inc/main.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 ../Core/Inc/stm32f3xx_hal_conf.h:
@@ -78,7 +77,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
-../Core/Inc/mpu6050.h:
+../Core/Inc/bmi270.h:
 ../Core/Inc/mouse_handler.h:
 ../Core/Inc/main.h:
-../Core/Inc/mpu6050.h:

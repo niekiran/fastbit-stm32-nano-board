@@ -1,3 +1,5 @@
+"./Core/Src/bmi270.o"
+"./Core/Src/bmi270_config_file.o"
 "./Core/Src/main.o"
 "./Core/Src/mouse_handler.o"
 "./Core/Src/mpu6050.o"

@@ -1,0 +1,9 @@
+../Core/Src/bmi270.c:35:6:bmi270_init	3
+../Core/Src/bmi270.c:60:16:check_chip_id	1
+../Core/Src/bmi270.c:70:13:soft_reset	1
+../Core/Src/bmi270.c:81:13:disable_adv_power_save	1
+../Core/Src/bmi270.c:92:13:upload_config_file	2
+../Core/Src/bmi270.c:116:16:confirm_init_ok	1
+../Core/Src/bmi270.c:128:13:configure_acc_gyro	1
+../Core/Src/bmi270.c:144:13:power_on_acc_gyro	1
+../Core/Src/bmi270.c:156:6:bmi270_read_all	3
