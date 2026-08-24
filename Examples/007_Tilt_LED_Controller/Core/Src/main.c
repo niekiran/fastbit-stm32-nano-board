@@ -23,7 +23,12 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <math.h>
+#ifdef IMU_MPU6050
 #include "mpu6050.h"
+#endif
+#ifdef IMU_BMI270
+#include "bmi270.h"
+#endif
 #include "led.h"
 /* USER CODE END Includes */
 
@@ -93,8 +98,13 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  /* Initialize the MPU6050 sensor */
+  /* Initialize the onboard IMU sensor */
+#ifdef IMU_MPU6050
   mpu6050_init();
+#endif
+#ifdef IMU_BMI270
+  bmi270_init();
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
