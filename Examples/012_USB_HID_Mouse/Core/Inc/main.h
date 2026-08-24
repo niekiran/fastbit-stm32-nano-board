@@ -32,6 +32,24 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+/* Board / IMU sensor selection -----------------------------------------
+ * Fastbit STM32 Nano v2.0 carries an MPU6050; v2.1 replaces it with a
+ * BMI270. Define exactly one of these to match the board being built for.
+ */
+#define NANO_BOARD_V2_1
+/* #define NANO_BOARD_V2_0 */
+
+#if defined(NANO_BOARD_V2_0) && defined(NANO_BOARD_V2_1)
+#error "Define only one of NANO_BOARD_V2_0 / NANO_BOARD_V2_1"
+#endif
+
+#if defined(NANO_BOARD_V2_0)
+#define IMU_MPU6050
+#elif defined(NANO_BOARD_V2_1)
+#define IMU_BMI270
+#else
+#error "Define NANO_BOARD_V2_0 or NANO_BOARD_V2_1 to select the onboard IMU driver"
+#endif
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

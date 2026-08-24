@@ -23,7 +23,12 @@
 /* USER CODE BEGIN Includes */
 #include "usbd_hid.h"
 #include "usbd_def.h"
+#ifdef IMU_MPU6050
 #include "mpu6050.h"
+#endif
+#ifdef IMU_BMI270
+#include "bmi270.h"
+#endif
 #include "mouse_handler.h"
 #include <stdio.h>
 /* USER CODE END Includes */
@@ -48,7 +53,12 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 extern USBD_HandleTypeDef hUsbDeviceFS;
+#ifdef IMU_MPU6050
 MPU6050_t mpu6050_data;
+#endif
+#ifdef IMU_BMI270
+BMI270_t bmi270_data;
+#endif
 mouseHID mouse_hid = {0, 0, 0, 0};
 /* USER CODE END PV */
 
@@ -107,7 +117,12 @@ int main(void)
   MX_I2C1_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
+#ifdef IMU_MPU6050
   MPU6050_Init();
+#endif
+#ifdef IMU_BMI270
+  bmi270_init();
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,7 +132,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+#ifdef IMU_MPU6050
     read_gyro_data(&mpu6050_data, &gyroz, &gyroy);
+#endif
+#ifdef IMU_BMI270
+    bmi270_read_gyro_data(&bmi270_data, &gyroz, &gyroy);
+#endif
 
     r_btn = read_btn_state(RIGHT_BUTTON_GPIO_Port, RIGHT_BUTTON_Pin);
     l_btn = read_btn_state(LEFT_BUTTON_GPIO_Port, LEFT_BUTTON_Pin);
