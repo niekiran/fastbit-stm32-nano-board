@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="640" height="260" fill="#ffffff"/>
+
+  <!-- STM32 box -->
+  <rect x="20" y="30" width="220" height="160" fill="#8a9bb5" stroke="#20304a" stroke-width="2"/>
+  <text x="130" y="55" text-anchor="middle" font-size="16" font-weight="bold" fill="#0d1626">STM32F303CCT6 - U1</text>
+
+  <rect x="45" y="80" width="170" height="40" fill="#ffffff" stroke="#20304a" stroke-width="1.5"/>
+  <text x="130" y="98" text-anchor="middle" font-size="13" fill="#0d1626">USART1_TX</text>
+  <text x="130" y="114" text-anchor="middle" font-size="13" fill="#0d1626">PA9</text>
+
+  <rect x="45" y="130" width="170" height="40" fill="#ffffff" stroke="#20304a" stroke-width="1.5"/>
+  <text x="130" y="148" text-anchor="middle" font-size="13" fill="#0d1626">USART1_RX</text>
+  <text x="130" y="164" text-anchor="middle" font-size="13" fill="#0d1626">PA10</text>
+
+  <!-- CH340N box -->
+  <rect x="330" y="30" width="180" height="160" fill="#8a9bb5" stroke="#20304a" stroke-width="2"/>
+  <text x="420" y="55" text-anchor="middle" font-size="16" font-weight="bold" fill="#0d1626">CH340N - U5</text>
+
+  <rect x="355" y="80" width="130" height="40" fill="#ffffff" stroke="#20304a" stroke-width="1.5"/>
+  <text x="420" y="105" text-anchor="middle" font-size="13" fill="#0d1626">RX</text>
+
+  <rect x="355" y="130" width="130" height="40" fill="#ffffff" stroke="#20304a" stroke-width="1.5"/>
+  <text x="420" y="155" text-anchor="middle" font-size="13" fill="#0d1626">TX</text>
+
+  <!-- arrows STM32 -> CH340N (TX -> RX) -->
+  <polygon points="215,90 260,90 260,80 300,100 260,120 260,110 215,110" fill="#8a9bb5" stroke="#20304a" stroke-width="1.5"/>
+  <!-- arrows CH340N -> STM32 (TX -> RX) -->
+  <polygon points="345,140 305,140 305,130 265,150 305,170 305,160 345,160" fill="#8a9bb5" stroke="#20304a" stroke-width="1.5"/>
+
+  <!-- to PC -->
+  <text x="560" y="95" text-anchor="middle" font-size="13" fill="#0d1626">TO PC</text>
+  <polygon points="515,100 590,100 590,90 630,110 590,130 590,120 515,120" fill="#8a9bb5" stroke="#20304a" stroke-width="1.5"/>
+
+  <text x="320" y="230" text-anchor="middle" font-size="14" fill="#0d1626">Block 1: UART-USB Bridge</text>
+</svg>

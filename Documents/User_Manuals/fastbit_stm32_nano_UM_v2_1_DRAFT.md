@@ -154,9 +154,12 @@ instead of an external 32.768 kHz crystal on this board revision.
 
   **Table 3: UART1 pins**
 
-**Block 1: UART-USB Bridge** — *identical topology to the v2.0 manual's Block 1*
-  (STM32F303CCT6 USART1_TX/PA9 and USART1_RX/PA10 → CH340N RX/TX → USB to PC).
-  See "Open items" below re: reusing that diagram.
+**Block 1: UART-USB Bridge**
+
+![Block 1: UART-USB Bridge](figures/fastbit_stm32_nano_v2_1_uart_usb_bridge_block1.svg)
+
+(STM32F303CCT6 USART1_TX/PA9 and USART1_RX/PA10 → CH340N RX/TX → USB to PC — identical
+topology to the v2.0 manual's Block 1.)
 
 ## Programming Nano Board
 
@@ -172,9 +175,10 @@ instead of an external 32.768 kHz crystal on this board revision.
 2. **Using ST-Link:**
    - Connect the ST-Link to the board via the SWD interface.
 
-     **Figure 4: ST-link V2 to Nano board connection** — *identical wiring to the v2.0
-     manual's Figure 4 (SWDCLK/SWDIO/RESET/SWO/GND/3V3 on the same 6-pin header).
-     See "Open items" below re: reusing that diagram.*
+     ![Figure 4: ST-Link V2 to Nano board connection](figures/fastbit_stm32_nano_v2_1_stlink_connection.svg)
+
+     (Same SWD pinout as v2.0 — SWDCLK/SWDIO/RESET/SWO/GND/3.3V on the same 6-pin
+     header, confirmed against the v2.1 schematic's SWD PINS block.)
 
    - Power the board via USB or ST-Link, depending on the setup.
    - Open STM32CubeIDE or any other compatible IDE.
@@ -195,11 +199,9 @@ instead of an external 32.768 kHz crystal on this board revision.
    U7 BMI270, Y1 8 MHz crystal, and the CH340N USB-UART converter). I drew the pin/label
    facts above directly from the v2.1 schematic, but the photos themselves need to come
    from you.
-2. **Figures 4 and Block 1** — these are simple schematic-style box diagrams (not
-   photos), and the underlying hardware (SWD pinout, CH340N UART bridge) is identical
-   between v2.0 and v2.1. Two options: reuse the exact same diagram images from the
-   v2.0 manual as-is (if you have the source graphics), or I can redraw both as
-   plain diagrams from the pin facts above — let me know which you'd prefer.
+2. **Figure 4 and Block 1** — done: redrawn as SVG diagrams (`figures/`) from the pin
+   facts confirmed in the v2.1 schematic, since the underlying hardware is identical to
+   v2.0. If you'd rather use the original v2.0 manual's graphics verbatim, swap them in.
 3. **Template/branding** — the v2.0 and v3.0 manuals are laid out in a branded
    template (fastbitembedded.com header, logo, page footer) that I don't have the
    source file for. This draft has the full accurate content and structure to drop
