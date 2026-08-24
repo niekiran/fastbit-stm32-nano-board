@@ -8,17 +8,24 @@ Free video course: [Embedded Systems Bootcamp: Learn by Building Projects](https
 ![image](https://github.com/niekiran/fastbit-stm32-nano-board/assets/29812736/72330185-fb94-474b-ba38-152436d2fbe6)
 ![image](https://github.com/niekiran/fastbit-stm32-nano-board/assets/29812736/c93a1f82-d91c-478b-8120-2281ac1b9dcd)
 
-## Board revisions
+## Supported boards
 
-- **v2.0** carries an **MPU6050** IMU.
-- **v2.1** replaces it with a **BMI270** IMU (same I2C address/pins, no wiring change needed).
+Three board revisions exist (schematics: `fastbit_stm32_nano_sch_v2_0`, `_v2_1`, `_v3`, SPI LCD variant). All three share the same STM32F303CCT6 MCU, the same 1.28" round GC9A01A LCD + CST816S capacitive touch + microSD daughter-board, and the same LED/button pinout (PA1/PA2/PA3 LEDs, PA0 user button).
+
+| Revision | IMU | USB | Debug probe |
+|---|---|---|---|
+| **v2.0** | MPU6050 | Micro-USB + onboard CH340N USB-UART bridge | External ST-Link via SWD header |
+| **v2.1** | BMI270 | USB-C + onboard CH340N USB-UART bridge | External ST-Link via SWD header |
+| **v3.0** | MPU6050 | Micro-USB | **Onboard ST-Link/V3** (STLINK-V3MODS) — no external probe needed |
+
+**Important: the IMU does not simply track the newest revision.** v2.1 introduced the BMI270, but **v3.0 reverts to the MPU6050** — its headline feature is an onboard ST-Link/V3 debugger, not a new sensor. Check which IMU chip is actually populated on your board (`MPU6050` vs `BMI270` silkscreen) rather than assuming from the revision number.
 
 Examples that use the IMU select the driver at compile time via a macro in `Core/Inc/main.h`:
 ```c
-#define NANO_BOARD_V2_1   /* BMI270 */
-/* #define NANO_BOARD_V2_0 */   /* MPU6050 */
+#define NANO_BOARD_V2_1   /* BMI270 -- v2.1 boards only */
+/* #define NANO_BOARD_V2_0 */   /* MPU6050 -- v2.0 AND v3.0 boards */
 ```
-Define exactly one to match your board revision, then rebuild.
+Define exactly one to match your board's actual IMU (not its revision number) — `NANO_BOARD_V2_0` covers both v2.0 and v3.0 hardware, since both carry the MPU6050. (The macro name reflects the sensor generation the driver targets, not a 1:1 mapping to every board revision; if v3.0's onboard ST-Link ever needs its own compile-time distinction — e.g. probe-specific tooling — a separate `NANO_BOARD_V3_0` macro could be added later, but no such firmware difference exists today.)
 
 ## Examples
 
@@ -50,5 +57,6 @@ All example projects live under [`Examples/`](Examples/), each a standalone STM3
 ## Getting started
 
 1. Open the example project you want in STM32CubeIDE (`Examples/<project>/.project`).
-2. If the project uses the IMU, pick the `NANO_BOARD_V2_0`/`NANO_BOARD_V2_1` macro in `Core/Inc/main.h` matching your board revision.
-3. Build and flash. Each project's own `README.md` has details specific to that example (wiring notes, gameplay/usage instructions, required external services, etc.).
+2. If the project uses the IMU, pick the `NANO_BOARD_V2_0`/`NANO_BOARD_V2_1` macro in `Core/Inc/main.h` matching your board's actual IMU chip (see [Supported boards](#supported-boards) — v3.0 boards use `NANO_BOARD_V2_0`).
+3. Build and flash — v2.0/v2.1 boards need an external ST-Link probe wired to the SWD header; v3.0 has one built in.
+4. Each project's own `README.md` has details specific to that example (wiring notes, gameplay/usage instructions, required external services, etc.).
