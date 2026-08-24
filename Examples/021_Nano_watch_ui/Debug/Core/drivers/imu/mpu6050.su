@@ -1,0 +1,8 @@
+../Core/drivers/imu/mpu6050.c:63:18:mpu6050_create	24	static
+../Core/drivers/imu/mpu6050.c:78:6:mpu6050_destroy	16	static
+../Core/drivers/imu/mpu6050.c:87:7:mpu6050_init	24	static
+../Core/drivers/imu/mpu6050.c:127:7:mpu6050_calibrate	40	static
+../Core/drivers/imu/mpu6050.c:170:7:mpu6050_read_accel	32	static
+../Core/drivers/imu/mpu6050.c:205:7:mpu6050_read_gyro	32	static
+../Core/drivers/imu/mpu6050.c:237:14:mpu6050_write_reg	40	static
+../Core/drivers/imu/mpu6050.c:260:14:mpu6050_read_regs	48	static
