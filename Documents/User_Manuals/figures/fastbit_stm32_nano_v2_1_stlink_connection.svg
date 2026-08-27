@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="640" height="320" fill="#ffffff"/>
+
+  <!-- ST-Link box -->
+  <rect x="20" y="60" width="180" height="120" fill="#e8e8e8" stroke="#20304a" stroke-width="2"/>
+  <text x="110" y="45" text-anchor="middle" font-size="16" font-weight="bold" fill="#0d1626">ST-Link V2</text>
+  <text x="110" y="125" text-anchor="middle" font-size="13" fill="#0d1626">6-pin SWD</text>
+  <text x="110" y="143" text-anchor="middle" font-size="13" fill="#0d1626">connector</text>
+
+  <!-- Nano board box -->
+  <rect x="440" y="40" width="180" height="180" rx="90" fill="#e8e8e8" stroke="#20304a" stroke-width="2"/>
+  <text x="530" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#0d1626">Fastbit STM32 Nano</text>
+  <text x="530" y="120" text-anchor="middle" font-size="13" fill="#0d1626">J1 SWD header</text>
+  <text x="530" y="138" text-anchor="middle" font-size="13" fill="#0d1626">(2.54mm, 6-pin)</text>
+
+  <!-- wires -->
+  <line x1="200" y1="75" x2="440" y2="75" stroke="#8b1a1a" stroke-width="2"/>
+  <text x="320" y="68" text-anchor="middle" font-size="12" fill="#8b1a1a">RESET</text>
+
+  <line x1="200" y1="95" x2="440" y2="95" stroke="#1a6b1a" stroke-width="2"/>
+  <text x="320" y="88" text-anchor="middle" font-size="12" fill="#1a6b1a">SWDCLK</text>
+
+  <line x1="200" y1="115" x2="440" y2="115" stroke="#1a3a8b" stroke-width="2"/>
+  <text x="320" y="108" text-anchor="middle" font-size="12" fill="#1a3a8b">SWDIO</text>
+
+  <line x1="200" y1="135" x2="440" y2="135" stroke="#6b6b1a" stroke-width="2"/>
+  <text x="320" y="128" text-anchor="middle" font-size="12" fill="#6b6b1a">SWO</text>
+
+  <line x1="200" y1="155" x2="440" y2="155" stroke="#3a3a3a" stroke-width="2"/>
+  <text x="320" y="148" text-anchor="middle" font-size="12" fill="#3a3a3a">GND</text>
+
+  <line x1="200" y1="175" x2="440" y2="175" stroke="#b8860b" stroke-width="2"/>
+  <text x="320" y="192" text-anchor="middle" font-size="12" fill="#b8860b">3.3V</text>
+
+  <text x="320" y="270" text-anchor="middle" font-size="14" fill="#0d1626">Figure 4: ST-Link V2 to Nano board connection (v2.1)</text>
+  <text x="320" y="290" text-anchor="middle" font-size="11" fill="#555555">Same SWD pinout as v2.0 -- confirmed against the v2.1 schematic's SWD PINS block</text>
+</svg>

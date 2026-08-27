@@ -1,0 +1,2 @@
+../Core/drivers/game/app.c:15:7:app_init	8	static
+../Core/drivers/game/app.c:20:6:app_run	24	static

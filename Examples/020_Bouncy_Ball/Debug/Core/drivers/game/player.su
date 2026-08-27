@@ -1,0 +1,4 @@
+../Core/drivers/game/player.c:17:14:clampf	24	static
+../Core/drivers/game/player.c:28:7:player_init	24	static
+../Core/drivers/game/player.c:48:7:player_update	24	static
+../Core/drivers/game/player.c:72:7:player_bounce_in_round_world	56	static

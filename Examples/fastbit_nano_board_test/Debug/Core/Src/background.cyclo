@@ -1,0 +1,7 @@
+../Core/Src/background.c:15:6:bsp_lcd_set_background	1
+../Core/Src/background.c:23:6:fill_player_trace	5
+../Core/Src/background.c:35:6:display_bush	1
+../Core/Src/background.c:46:6:flappy_game_set_back_ground	1
+../Core/Src/background.c:55:6:fill_countdown_trace	1
+../Core/Src/background.c:64:6:set_gameover_background	1
+../Core/Src/background.c:72:6:display_game_title	1
