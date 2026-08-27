@@ -1,6 +1,8 @@
 "./Core/Src/CST816S.o"
 "./Core/Src/GC9A01A.o"
 "./Core/Src/background.o"
+"./Core/Src/bmi270.o"
+"./Core/Src/bmi270_config_file.o"
 "./Core/Src/font.o"
 "./Core/Src/main.o"
 "./Core/Src/mpu6050.o"

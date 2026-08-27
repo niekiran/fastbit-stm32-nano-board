@@ -16,8 +16,13 @@
 void led_indicate()
 {
   double roll = 0.0, pitch = 0.0;
-  /* Read sensor data from the MPU6050 */
+  /* Read sensor data from the onboard IMU */
+#ifdef IMU_MPU6050
   mpu6050_read();
+#endif
+#ifdef IMU_BMI270
+  bmi270_read();
+#endif
 
   roll  = degreex;
   pitch = degreey;

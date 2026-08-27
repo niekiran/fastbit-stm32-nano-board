@@ -7,7 +7,13 @@
 
 #ifndef INC_LED_H_
 #define INC_LED_H_
+#include "main.h"
+#ifdef IMU_MPU6050
 #include "mpu6050.h"
+#endif
+#ifdef IMU_BMI270
+#include "bmi270.h"
+#endif
 
 /* Function prototypes */
 void led_indicate();

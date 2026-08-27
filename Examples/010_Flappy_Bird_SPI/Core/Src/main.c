@@ -25,7 +25,12 @@
 #include <stdio.h>
 #include "math.h"
 #include "text_mssg.h"
+#ifdef IMU_MPU6050
 #include "mpu6050.h"
+#endif
+#ifdef IMU_BMI270
+#include "bmi270.h"
+#endif
 #include "player.h"
 #include "background.h"
 #include "obstacle.h"
@@ -132,7 +137,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Player_ctor(&player, 70, 30, 100, 30);
 	Obstacle_ctor(&obstacle, 240, 30, 30, 80, 5);
+#ifdef IMU_MPU6050
 	mpu6050_init();
+#endif
+#ifdef IMU_BMI270
+	bmi270_init();
+#endif
 	bsp_lcd_init();
 	CST816S_init();
 	flappy_game_set_back_ground();
@@ -148,7 +158,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+#ifdef IMU_MPU6050
 	 	mpu6050_read();
+#endif
+#ifdef IMU_BMI270
+	 	bmi270_read();
+#endif
 
     if(HAL_GetTick() - current_time >= 2) {
 

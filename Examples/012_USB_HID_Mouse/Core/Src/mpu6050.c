@@ -31,40 +31,6 @@ static void gyro_config();
 static void accelerometer_config();
 
 /**
-  * @brief Initializes the Kalman filter parameters.
-  * @param kf Pointer to the Kalman filter structure.
-  * @param process_variance Process variance parameter.
-  * @param measurement_variance Measurement variance parameter.
-  * @param estimated_error Estimated error parameter.
-  * @retval None
-  */
-void KalmanFilter_Init(KalmanFilter *kf, double process_variance, double measurement_variance, double estimated_error) {
-  kf->process_variance = process_variance;
-  kf->measurement_variance = measurement_variance;
-  kf->estimated_error = estimated_error;
-  kf->posteri_estimate = 0.0;
-  kf->posteri_error = 1.0;
-}
-
-/**
-  * @brief Updates the Kalman filter with a new measurement.
-  * @param kf Pointer to the Kalman filter structure.
-  * @param measurement The new measurement value.
-  * @retval The updated estimated value after applying the Kalman filter.
-  */
-double KalmanFilter_Update(KalmanFilter *kf, double measurement) {
-  double priori_estimate = kf->posteri_estimate;
-  double priori_error = kf->posteri_error + kf->process_variance;
-  double blending_factor = priori_error / (priori_error + kf->measurement_variance);
-
-  kf->posteri_estimate = priori_estimate + blending_factor * (measurement - priori_estimate);
-  kf->posteri_error = (1 - blending_factor) * priori_error;
-
-  return kf->posteri_estimate;
-}
-
-
-/**
   * @brief Initializes the MPU6050 sensor by configuring power management, gyroscope, and accelerometer.
   * @param None
   * @retval None
@@ -233,40 +199,4 @@ void MPU6050_Read_All(MPU6050_t *DataStruct) {
 	DataStruct->Gy = DataStruct->Gyro_Y_RAW / GYR_FS_SENSITIVITY_3;
 	DataStruct->Gz = DataStruct->Gyro_Z_RAW / GYR_FS_SENSITIVITY_3;
 	//printf("%d   %d   %d\n", DataStruct->Accel_X_RAW, DataStruct->Accel_Y_RAW, DataStruct->Accel_Z_RAW);
-}
-
-/**
-  * @brief Applies a filtering algorithm to gyroscope data.
-  * @param gyroz Pointer to the gyroscope data for the Z-axis.
-  * @param gyroy Pointer to the gyroscope data for the Y-axis.
-  * @retval None
-  */
-void filter_gyro_data(double *gyroz, double *gyroy) {
-  static KalmanFilter kf_gyroz;
-  static KalmanFilter kf_gyroy;
-  static int kf_initialized = 0;
-
-  if (!kf_initialized) {
-    KalmanFilter_Init(&kf_gyroz, 1e-5, 1e-2, 1.0);
-    KalmanFilter_Init(&kf_gyroy, 1e-5, 1e-2, 1.0);
-    kf_initialized = 1;
-  }
-
-  *gyroz = KalmanFilter_Update(&kf_gyroz, *gyroz);
-  *gyroy = KalmanFilter_Update(&kf_gyroy, *gyroy);
-}
-
-/**
-  * @brief  Reads and processes gyroscope data from the MPU6050 sensor.
-  * @param  mpu6050_data: Pointer to the MPU6050 data structure.
-  * @param  gyroz: Pointer to store the processed gyroscope Z-axis data.
-  * @param  gyroy: Pointer to store the processed gyroscope Y-axis data.
-  * @retval None
-  */
-void read_gyro_data(MPU6050_t *mpu6050_data, double *gyroz, double *gyroy)
-{
-  MPU6050_Read_All(mpu6050_data);
-  *gyroz = mpu6050_data->Gz;
-  *gyroy = mpu6050_data->Gy;
-  filter_gyro_data(gyroz, gyroy);
 }

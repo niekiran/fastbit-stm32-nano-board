@@ -1,3 +1,5 @@
+"./Core/Src/bmi270.o"
+"./Core/Src/bmi270_config_file.o"
 "./Core/Src/led.o"
 "./Core/Src/main.o"
 "./Core/Src/mpu6050.o"
@@ -20,5 +22,5 @@
 "./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"
 "./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"
 "./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"
-"./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o"
-"./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o"
+"./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o"
+"./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o"

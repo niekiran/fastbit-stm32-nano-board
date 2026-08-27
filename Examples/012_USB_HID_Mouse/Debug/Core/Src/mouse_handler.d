@@ -29,7 +29,7 @@ Core/Src/mouse_handler.o: ../Core/Src/mouse_handler.c \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h \
- ../Core/Inc/mpu6050.h ../Core/Inc/main.h
+ ../Core/Inc/main.h
 ../Core/Inc/mouse_handler.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
@@ -61,5 +61,4 @@ Core/Src/mouse_handler.o: ../Core/Src/mouse_handler.c \
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h:
-../Core/Inc/mpu6050.h:
 ../Core/Inc/main.h:

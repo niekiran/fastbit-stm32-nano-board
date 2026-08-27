@@ -23,7 +23,12 @@
 /* USER CODE BEGIN Includes */
 #include "usbd_hid.h"
 #include "usbd_def.h"
+#ifdef IMU_MPU6050
 #include "mpu6050.h"
+#endif
+#ifdef IMU_BMI270
+#include "bmi270.h"
+#endif
 #include "mouse_handler.h"
 #include <stdio.h>
 /* USER CODE END Includes */
@@ -36,6 +41,8 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define REPORT_DELAY_MS    2
+#define GYRO_CALIB_SAMPLES   200 /* ~200 samples * 5 ms = ~1 s of stillness at boot */
+#define GYRO_CALIB_DELAY_MS  5   /* independent of REPORT_DELAY_MS; only runs once */
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -48,7 +55,12 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 extern USBD_HandleTypeDef hUsbDeviceFS;
+#ifdef IMU_MPU6050
 MPU6050_t mpu6050_data;
+#endif
+#ifdef IMU_BMI270
+BMI270_t bmi270_data;
+#endif
 mouseHID mouse_hid = {0, 0, 0, 0};
 /* USER CODE END PV */
 
@@ -107,7 +119,33 @@ int main(void)
   MX_I2C1_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
+#ifdef IMU_MPU6050
   MPU6050_Init();
+#endif
+#ifdef IMU_BMI270
+  bmi270_init();
+#endif
+
+  /* Gyro bias calibration: average raw samples while the board is held
+   * still, so process_gyro_and_update_cursor() can subtract the sensor's
+   * rest bias from every later reading. */
+  {
+    double sum_gz = 0.0, sum_gy = 0.0;
+    for (int i = 0; i < GYRO_CALIB_SAMPLES; i++) {
+#ifdef IMU_MPU6050
+      MPU6050_Read_All(&mpu6050_data);
+      sum_gz += mpu6050_data.Gz;
+      sum_gy += mpu6050_data.Gy;
+#endif
+#ifdef IMU_BMI270
+      bmi270_read_all(&bmi270_data);
+      sum_gz += bmi270_data.Gz;
+      sum_gy += bmi270_data.Gy;
+#endif
+      HAL_Delay(GYRO_CALIB_DELAY_MS);
+    }
+    gyro_calibrate_bias(sum_gz / GYRO_CALIB_SAMPLES, sum_gy / GYRO_CALIB_SAMPLES);
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,7 +155,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    read_gyro_data(&mpu6050_data, &gyroz, &gyroy);
+#ifdef IMU_MPU6050
+    MPU6050_Read_All(&mpu6050_data);
+    gyroz = mpu6050_data.Gz;
+    gyroy = mpu6050_data.Gy;
+#endif
+#ifdef IMU_BMI270
+    bmi270_read_all(&bmi270_data);
+    gyroz = bmi270_data.Gz;
+    gyroy = bmi270_data.Gy;
+#endif
 
     r_btn = read_btn_state(RIGHT_BUTTON_GPIO_Port, RIGHT_BUTTON_Pin);
     l_btn = read_btn_state(LEFT_BUTTON_GPIO_Port, LEFT_BUTTON_Pin);
@@ -129,7 +176,7 @@ int main(void)
 
     update_btn_state(&mouse_hid, btn_pad_value);
 
-    move_cursor(gyroz, gyroy, &mouse_hid);
+    process_gyro_and_update_cursor(gyroz, gyroy, &mouse_hid);
     send_hid_report(&mouse_hid);
 
     HAL_Delay(REPORT_DELAY_MS);
